@@ -1,0 +1,37 @@
+@import "../../base/base";
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.#{$cls-prefix}alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.#{$cls-prefix}alert-dismissible {
+  //padding-right: ($alert-padding + 20);
+
+  // Adjust close link position
+  .#{$cls-prefix}alert-close {
+
+    position: absolute;
+    top: $alertFTrob-alert-dismissableCTrob-alert-closeBCTrob-alert-dismissibleCTrob-alert-closeFtop;
+    right: $alertFTrob-alert-dismissableCTrob-alert-closeBCTrob-alert-dismissibleCTrob-alert-closeFright;
+    width: $alertFTrob-alert-dismissableCTrob-alert-closeBCTrob-alert-dismissibleCTrob-alert-closeFwidth;
+    height: $alertFTrob-alert-dismissableCTrob-alert-closeBCTrob-alert-dismissibleCTrob-alert-closeFheight;
+    border-radius: 50%;
+    border: none;
+    font-size: $alertFTrob-alert-dismissableCTrob-alert-closeBCTrob-alert-dismissibleCTrob-alert-closeFfont-size;
+    color: #fff;
+
+
+    &:hover {
+      background-color: $alertFTrob-alert-dismissableCTrob-alert-closeWhoverBCTrob-alert-dismissibleCTrob-alert-closeWhoverFbackground-color;
+    }
+    &:focus {
+      outline: none;
+    }
+    span {
+      //margin-top: $alert-dismissible-close-span-margin-top;
+      line-height: 1;
+      display: block;
+      cursor: pointer;
+    }
+  }
+}

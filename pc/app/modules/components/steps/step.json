@@ -1,0 +1,54 @@
+{
+    "type": "步骤条",
+    "desc": "",
+    "id": "stepVars",
+    "vars": [{
+      "key": "$step-head-process-bg",
+      "value": "#bfcbd9",
+      "desc": "水平步骤背景颜色"
+    },{
+      "key": "$step-head-success-bg",
+      "value": "#13ce66",
+      "desc": "水平步骤成功背景颜色"
+    },{
+      "key": "$step-head-error-bg",
+      "value": "",
+      "desc": "水平步骤错误背景颜色"
+    },{
+      "key": "$step-head-finish-bg",
+      "value": "#ff4949",
+      "desc": "水平步骤完成背景颜色"
+    },{
+      "key": "$step-head-process-color",
+      "value": "#20a0ff",
+      "desc": "水平步骤process字体颜色"
+    },{
+      "key": "$step-head-success-color",
+      "value": "#fff",
+      "desc": "水平步骤success字体颜色"
+    },{
+      "key": "$step-head-finish-color",
+      "value": "#fff",
+      "desc": "水平步骤finish字体颜色"
+    },{
+      "key": "$step-head-error-color",
+      "value": "#fff",
+      "desc": "水平步骤error字体颜色"
+    },{
+      "key": "$step-border-width",
+      "value": "2px",
+      "desc": "步骤圆角宽度"
+    },{
+      "key": "$step-text-description",
+      "value": "12px",
+      "desc": "步骤描述字体大小"
+    },{
+      "key": "$step-title",
+      "value": "14px",
+      "desc": "步骤标题字体大小"
+    },{
+      "key": "$step-border-radius",
+      "value": "50%",
+      "desc": "步骤圆角"
+    }]
+  }

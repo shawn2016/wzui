@@ -1,0 +1,123 @@
+@import "../../base/base";
+
+//文字提示 tooltip
+
+
+
+.#{$cls-prefix}tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: $tooltipFTrob-tooltipFfont-size;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  white-space: nowrap;
+
+}
+.#{$cls-prefix}tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.#{$cls-prefix}tooltip.top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.#{$cls-prefix}tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.#{$cls-prefix}tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.#{$cls-prefix}tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.#{$cls-prefix}tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: $tooltipFTrob-tooltip-innerFcolor;
+  text-align: center;
+  background-color: $tooltipFTrob-tooltip-innerFbackground-color;
+  border-radius: $tooltipFTrob-tooltip-innerFborder-radius;
+}
+.#{$cls-prefix}tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.#{$cls-prefix}tooltip.top .#{$cls-prefix}tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: $tooltipFTrob-tooltipTtopCTrob-tooltip-arrowFborder-top-color;
+}
+.#{$cls-prefix}tooltip.top-left .#{$cls-prefix}tooltip-arrow {
+  bottom: 0;
+  right: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: $tooltipFTrob-tooltipTtop-leftCTrob-tooltip-arrowFborder-top-color;
+}
+.#{$cls-prefix}tooltip.top-right .#{$cls-prefix}tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: $tooltipFTrob-tooltipTtop-rightCTrob-tooltip-arrowFborder-top-color;
+}
+.#{$cls-prefix}tooltip.right .#{$cls-prefix}tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: $tooltipFTrob-tooltipTrightCTrob-tooltip-arrowFborder-right-color;
+}
+.#{$cls-prefix}tooltip.left .#{$cls-prefix}tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: $tooltipFTrob-tooltipTleftCTrob-tooltip-arrowFborder-left-color;
+
+}
+.#{$cls-prefix}tooltip.bottom .#{$cls-prefix}tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: $tooltipFTrob-tooltipTbottomCTrob-tooltip-arrowFborder-bottom-color;
+}
+.#{$cls-prefix}tooltip.bottom-left .#{$cls-prefix}tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: $tooltipFTrob-tooltipTbottom-leftCTrob-tooltip-arrowFborder-bottom-color;
+}
+.#{$cls-prefix}tooltip.bottom-right .#{$cls-prefix}tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: $tooltipFTrob-tooltipTbottom-rightCTrob-tooltip-arrowFborder-bottom-color;
+}

@@ -1,0 +1,13 @@
+@import "../../base/base";
+[type="radio"].#{$cls-prefix}radio-with-gap:checked + label:before {
+  border-radius: 50%;
+  border:$radioFLtypeDYradioYRTrob-radio-with-gapWcheckedCXClabelWbeforeFborder;
+}
+
+[type="radio"].#{$cls-prefix}radio-with-gap:checked + label:after {
+  border-radius: 50%;
+  border: $radioFLtypeDYradioYRTrob-radio-with-gapWcheckedCXClabelWafterFborder;
+  background-color: $radioFLtypeDYradioYRTrob-radio-with-gapWcheckedCXClabelWafterFbackground-color;
+  z-index: 0;
+  @include scale(.5);
+}

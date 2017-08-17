@@ -1,0 +1,59 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-switch,
+.rob-switch * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none; }
+
+.rob-switch label {
+  cursor: pointer; }
+
+.rob-switch label input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.rob-switch label input[type=checkbox]:checked + .rob-switch-lever {
+  background-color: #108ee9; }
+
+.rob-switch label input[type=checkbox]:checked + .rob-switch-lever:after {
+  background-color: #fff;
+  left: 24px; }
+
+.rob-switch label .rob-switch-lever {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 23px;
+  background-color: #c0c0c0;
+  border-radius: 15px;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+  vertical-align: middle;
+  margin: 0 16px; }
+
+.rob-switch label .rob-switch-lever:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border-radius: 21px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+  left: 2px;
+  top: 2px;
+  transition: left 0.2s ease, background .2s ease, box-shadow 0.1s ease;
+  background-color: #fff; }

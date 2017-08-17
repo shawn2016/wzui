@@ -1,0 +1,15 @@
+@import "../../base/base";
+//Aleter 小版
+.#{$cls-prefix}alert-sm {
+  border: 1px solid transparent;
+  border-radius: $alertFTrob-alert-smFborder-radius;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $alertFTrob-alert-smFwidth;
+  box-shadow: $alertFTrob-alert-smFbox-shadow;
+  line-height: normal;
+  z-index: 100;
+  background-color: $alertFTrob-alert-smFbackground-color;
+}

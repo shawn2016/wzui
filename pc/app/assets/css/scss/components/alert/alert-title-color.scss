@@ -1,0 +1,6 @@
+@import "../../base/base";
+//alert 标题背景颜色
+.#{$cls-prefix}alert-title-color {
+  background-color: $alertFTrob-alert-title-colorFbackground-color;
+  border-bottom: 0 !important;
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Slider 滑块",
+    "desc": "",
+    "isCheck": true,
+    "id": "Slider",
+    "components": [{
+      "value": "slider",
+      "isCheck": true,
+      "parentId": "slider1",
+      "arrayList": [],
+      "desc": "滑块条"
+    }]
+  }

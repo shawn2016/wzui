@@ -1,0 +1,56 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-danger.rob-btn-line {
+  color: #dc0000;
+  background-color: transparent;
+  border-color: #dc0000; }
+  .rob-btn-danger.rob-btn-line:focus, .rob-btn-danger.rob-btn-line.focus {
+    color: #dc0000;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: #dc0000;
+    border-color: #dc0000; }
+  .rob-btn-danger.rob-btn-line:hover {
+    color: #FFF;
+    background-color: #dc0000;
+    border-color: #dc0000; }
+  .rob-btn-danger.rob-btn-line:active, .rob-btn-danger.rob-btn-line.active,
+  .open > .rob-btn-danger.rob-btn-line.dropdown-toggle {
+    color: #dc0000;
+    background-color: #dc0000;
+    border-color: #dc0000; }
+    .rob-btn-danger.rob-btn-line:active:hover, .rob-btn-danger.rob-btn-line:active:focus, .rob-btn-danger.rob-btn-line:active.focus, .rob-btn-danger.rob-btn-line.active:hover, .rob-btn-danger.rob-btn-line.active:focus, .rob-btn-danger.rob-btn-line.active.focus,
+    .open > .rob-btn-danger.rob-btn-line.dropdown-toggle:hover,
+    .open > .rob-btn-danger.rob-btn-line.dropdown-toggle:focus,
+    .open > .rob-btn-danger.rob-btn-line.dropdown-toggle.focus {
+      color: #FFF;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: #dc0000;
+      border-color: #dc0000; }
+  .rob-btn-danger.rob-btn-line:active, .rob-btn-danger.rob-btn-line.active,
+  .open > .rob-btn-danger.rob-btn-line.dropdown-toggle {
+    background-image: none; }
+  .rob-btn-danger.rob-btn-line .badge {
+    color: transparent;
+    background-color: #dc0000; }
+  .rob-btn-danger.rob-btn-line:focus, .rob-btn-danger.rob-btn-line.focus, .rob-btn-danger.rob-btn-line:active, .rob-btn-danger.rob-btn-line.active {
+    color: #fff; }
+  .rob-btn-danger.rob-btn-line[disabled], .rob-btn-danger.rob-btn-line.disabled {
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    color: #FFF; }
+    .rob-btn-danger.rob-btn-line[disabled]:hover, .rob-btn-danger.rob-btn-line[disabled]:focus, .rob-btn-danger.rob-btn-line.disabled:hover, .rob-btn-danger.rob-btn-line.disabled:focus {
+      border-color: #d8d8d8;
+      background-color: #d8d8d8;
+      color: #FFF; }

@@ -1,0 +1,32 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-label-one {
+  background-color: #35baff;
+  display: inline-block;
+  padding: 9px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  font-family: YaHeiIKEA; }
+  .rob-label-one[href]:hover, .rob-label-one[href]:focus {
+    background-color: #02a9ff; }
+  .rob-label-one:empty {
+    display: none; }
+  .btn .rob-label-one {
+    position: relative;
+    top: -1px; }

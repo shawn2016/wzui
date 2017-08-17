@@ -1,0 +1,54 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+@media (min-width: 769px) {
+  .rob-navbar-horizen2 {
+    float: right;
+    font-size: 16px;
+    font-weight: 600; }
+    .rob-navbar-horizen2:after {
+      content: '';
+      width: 0;
+      height: 0;
+      clear: both; }
+    .rob-navbar-horizen2 li {
+      height: 80px;
+      line-height: 80px;
+      padding: 0 20px !important;
+      text-align: center;
+      position: relative;
+      top: 1px;
+      float: left;
+      border-bottom: 3px solid transparent; }
+      .rob-navbar-horizen2 li.active {
+        border-bottom: 3px solid #108ee9;
+        color: #108ee9; }
+      .rob-navbar-horizen2 li:hover {
+        border-bottom: 3px solid #108ee9;
+        color: #108ee9; } }
+
+@media (max-width: 768px) {
+  .rob-navbar-horizen2 {
+    background-color: #363d52; }
+    .rob-navbar-horizen2 > li {
+      padding: 0 40px;
+      border-top: 1px solid #222838;
+      position: relative;
+      font-size: 14px;
+      line-height: 54px;
+      color: #bcc2cb;
+      cursor: pointer; }
+      .rob-navbar-horizen2 > li > span {
+        display: block; }
+      .rob-navbar-horizen2 > li.active, .rob-navbar-horizen2 > li:hover {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.1) !important; } }

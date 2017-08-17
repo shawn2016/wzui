@@ -1,0 +1,362 @@
+@import "../../base/base";
+.rob-images-box {
+  background-color: #f2f2f5;
+  text-align: center;
+  .rob-images-setting {
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  .rob-images-setting-item {
+    &:last-child {
+      span {
+        border-left-width: 0px;
+      }
+    }
+    float: right;
+    span {
+      display: block;
+      margin: 5px 0;
+      padding: 0 10px;
+      border-left-width: 1px;
+      border-left-style: solid;
+      border-color: #d9d9d9;
+      line-height: 10px;
+      a {
+        font-size: 12px;
+        color: #333;
+        text-decoration: none;
+        i {
+          margin: 0 3px 0 0;
+        }
+        &:hover {
+          color: #eb7350;
+        }
+      }
+    }
+  }
+  .rob-images-view {
+    background: url(../images/img-loading.gif) 50% 50% no-repeat;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    &.leftcursor {
+      .rob-images-prev {
+        display: inline-block;
+        border: 1px solid #999;
+        color: #999;
+        opacity: 0.5;
+      }
+    }
+    &.rightcursor {
+      .rob-images-next {
+        display: inline-block;
+        border: 1px solid #999;
+        color: #999;
+        opacity: 0.5;
+      }
+    }
+    .rob-images-prev {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      opacity: 0.5;
+      padding: 3px 2px;
+      font-size: 25px;
+      border: 1px solid #999;
+      color: #999;
+      i {
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -moz-transform: rotate(90deg);
+        /* Firefox */
+        -webkit-transform: rotate(90deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotate(90deg);
+        display: inline-block;
+        color: #999;
+      }
+      &:hover {
+        border: 1px solid #333;
+        color: #333;
+        i {
+          color: #333;
+        }
+      }
+    }
+    .rob-images-next {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      border-radius: 50%;
+      width: 50px;
+      opacity: 0.5;
+      height: 50px;
+      padding: 3px 2px;
+      font-size: 25px;
+      border: 1px solid #999;
+      color: #999;
+      i {
+        display: inline-block;
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -moz-transform: rotate(-90deg);
+        /* Firefox */
+        -webkit-transform: rotate(-90deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotate(-90deg);
+        color: #999;
+      }
+      &:hover {
+        border: 1px solid #333;
+        color: #333;
+        i {
+          color: #333;
+        }
+      }
+    }
+  }
+  .rob-images-choose {
+    position: relative;
+    background: #f5f5f5;
+    margin-top: 15px;
+    border-top: 1px solid #e2e2ea;
+    .rob-images-prev {
+      position: absolute;
+      line-height: 65px;
+      width: 50px;
+      left: 0px;
+      z-index: 100;
+      text-align: left;
+      border-right: 1px solid #e2e2ea;
+      background: whitesmoke;
+      a {
+        color: #666;
+        display: inherit;
+        text-align: center;
+        opacity:.5 &:hover {
+          color: #333;
+          background-color: #eee;
+        }
+        i {
+          transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          /* IE 9 */
+          -moz-transform: rotate(90deg);
+          /* Firefox */
+          -webkit-transform: rotate(90deg);
+          /* Safari 和 Chrome */
+          -o-transform: rotate(90deg); 
+          /* Opera */
+          display: inline-block;
+        }
+      }
+    }
+    .rob-images-next { 
+      position: absolute;
+      line-height: 65px;
+      width: 50px;
+      right: 0px;
+      background: whitesmoke;
+      z-index: 100;
+      text-align: right;
+      border-left: 1px solid #e2e2ea;
+      a {
+        color: #666;
+        display: inherit;
+        text-align: center;
+        opacity: .5;
+        &:hover {
+          color: #333;
+          background-color: #eee;
+        }
+        i {
+          display: inline-block;
+          transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -moz-transform: rotate(-90deg);
+          /* Firefox */
+          -webkit-transform: rotate(-90deg);
+          /* Safari 和 Chrome */
+          -o-transform: rotate(-90deg);
+          /* Opera */
+        }
+      }
+    }
+    .rob-images-mini-list {
+      width: 100%;
+      padding: 0 27px;
+      overflow: hidden;
+      li {
+        &:hover,
+        &.current {
+          a {
+            padding: 0px;
+            border: 2px solid #fa7d3c;
+            opacity: 1;
+          }
+        }
+        padding:5px 0;
+        width:56px;
+        height:65px;
+        float: left;
+        overflow: hidden;
+        a {
+          background: url(../images/img-loading.gif) 50% 50% no-repeat;
+          width: 56px;
+          height: 56px;
+          display: inline-block;
+          opacity: 0.5;
+          padding: 2px;
+        }
+      }
+      img {
+        width: 50px;
+        height: 51px;
+        padding: 1px;
+      }
+    }
+  }
+}
+
+.rob-images-lg-box-bg {
+  z-index: 9999;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+  top: 0px;
+  left: 0px;
+}
+
+.rob-images-box-lg {
+  padding: 20px;
+  position: fixed;
+  z-index: 10000;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  text-align: center;
+  .rob-images-screen-box {
+    background: #fff;
+    min-width: 250px;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    text-align: right;
+    .success {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
+    i {
+      padding: 10px 8px;
+      opacity: .5;
+      display: inline-block;
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+  .rob-images-lg-close {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    background: url(http://img.t.sinajs.cn/t6/style/images/layer/multipic_ico.png?id=201505071104) 0 0 no-repeat;
+    cursor: pointer;
+    &:hover {
+      background-position: 0 -41px;
+    }
+  }
+  .rob-images-box {
+    background: #333;
+    padding-top: 30px;
+    overflow: auto;
+    .rob-images-setting {
+      display: none;
+    }
+    .rob-images-choose {
+      position: absolute;
+      width: calc(100% - 40px);
+      width: -moz-calc(100% - 40px);
+      width: -webkit-calc(100% - 40px);
+      width: calc(100% - 40px);
+      background: #383838;
+      margin-top: 0;
+      border-top: 1px solid #383838;
+      .rob-images-next {
+        background: #2f2f2f;
+        border-left: 1px solid #222;
+        &:hover {
+          cursor: pointer;
+          a {
+            color: #fff;
+            background-color: #333;
+            opacity: 1;
+          }
+        }
+      }
+      .rob-images-prev {
+        background: #2f2f2f;
+        border-right: 1px solid #222;
+        &:hover {
+          cursor: pointer;
+          a {
+            color: #fff;
+            background-color: #333;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .rob-images-view {
+      .rob-images-prev {
+        &:hover {
+          display: inline-block;
+          border: 1px solid #fff;
+          color: #fff;
+          opacity: 1;
+          i {
+            color: #fff;
+          }
+        }
+      }
+      .rob-images-next {
+        &:hover {
+          display: inline-block;
+          border: 1px solid #fff;
+          color: #fff;
+          opacity: 1;
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .rob-images-mini-list {
+    ul {
+      overflow: hidden;
+      height: 65px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+@mixin button-variant($color, $background, $border,$background-hover,$border-hover,$hover-color) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  &:focus,
+  &.focus {
+    color: $color;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: $background-hover;
+    border-color: $border-hover;
+    
+  }
+  &:hover {
+    color: $hover-color;
+    background-color: $background-hover;
+    border-color: $border-hover;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $background-hover;
+    border-color: $border-hover;
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $hover-color;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: $background-hover;
+      border-color: $border-hover;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      //background-color: $background;
+      //border-color: $border;
+    }
+  }
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+//Button outline
+@mixin button-outline($color,$background,$border,$border-style,$hover-color,$hover-background,$hover-border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  border-style: $border-style;
+  &:active,
+  &:focus,
+  &:hover {
+    color:$hover-color;
+    background-color: $hover-background;
+    border-color: $hover-border;
+  }
+}
+
+// Button sizes
+@mixin button-size($padding, $font-size, $line-height, $border-radius) {
+  padding: $padding;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+//disabled border-color background-color color
+@mixin button-disabled-bd-bg($disabled-bg-color, $disabled-bd-color,$disabled-color) {
+    border-color: $disabled-bd-color;
+    background-color: $disabled-bg-color;
+    color: $disabled-color;
+}

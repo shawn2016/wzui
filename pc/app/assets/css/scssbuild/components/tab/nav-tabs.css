@@ -1,0 +1,45 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-nav-tabs {
+  border-bottom: none;
+  background: transparent;
+  padding: 0; }
+  .rob-nav-tabs > li {
+    float: left;
+    margin-bottom: -1px; }
+    .rob-nav-tabs > li > a {
+      padding: 10px 65px;
+      color: #73808a;
+      margin-right: 2px;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 4px 4px 0 0;
+      background-color: #f3f7fc; }
+      .rob-nav-tabs > li > a:hover {
+        color: #35baff;
+        background: #f3f7fc; }
+    .rob-nav-tabs > li.active > a, .rob-nav-tabs > li.active > a:hover, .rob-nav-tabs > li.active > a:focus {
+      /* margin-top: -5px;*/
+      color: black;
+      background-color: #fff;
+      cursor: default;
+      /*padding: 20.5px 77px;*/ }
+  .rob-nav-tabs.response > li {
+    width: 13%;
+    min-width: 79px;
+    height: 10%; }
+    .rob-nav-tabs.response > li > a {
+      padding: 7% 10%; }
+
+.rob-tab-min-width {
+  min-width: 320px; }

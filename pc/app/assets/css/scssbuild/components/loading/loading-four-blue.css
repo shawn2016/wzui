@@ -1,0 +1,33 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-loading-four-blue {
+  background-color: #22d8ff; }
+  .rob-loading-four-blue .rob-loading-item-one {
+    background-color: #fff; }
+  .rob-loading-four-blue .rob-loading-item-two {
+    background-color: #fff; }
+  .rob-loading-four-blue .rob-loading-item-three {
+    background-color: #fff; }
+  .rob-loading-four-blue .rob-loading-item-four {
+    background-color: #fff; }
+  .rob-loading-four-blue .rob-loading-label {
+    color: #fff; }
+
+.rob-loading-ie-blue {
+  display: none;
+  display: block\9;
+  background: url(../images/loading-blue.gif) no-repeat;
+  width: 175px;
+  height: 35px;
+  margin: 0 auto;
+  display: block\9; }

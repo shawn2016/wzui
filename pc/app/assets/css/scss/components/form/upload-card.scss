@@ -1,0 +1,138 @@
+@import "../../base/base";
+.rob-file-icon {
+    background: url(../images/fileicon.png) -143px -336px no-repeat;
+    width: 50px;
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+    &.rob-file-icon-word {
+      background-position: -20px -33px;
+    }
+    &.rob-file-icon-pdf {
+      background-position: -80px -33px;
+    }
+    &.rob-file-icon-csv {
+      background-position: -140px -33px;
+    }
+    &.rob-file-icon-jpg {
+      background-position: -200px -33px;
+    }
+    &.rob-file-icon-zip {
+      background-position: -260px -33px;
+    }
+  }
+  
+  //card
+  .#{$cls-prefix}upload {
+    @include clearfix;
+    .#{$cls-prefix}upload-card {
+      border: $uploadFTrob-uploadCTrob-upload-cardFborder;
+      float: left;
+      color: $uploadFTrob-uploadCTrob-upload-cardFcolor;
+      position: relative;
+      border-radius: $uploadFTrob-uploadCTrob-upload-cardFborder-radius;
+      font-size: $uploadFTrob-uploadCTrob-upload-cardFfont-size;
+      text-align: center;
+      min-height: 125px;
+      min-width: 100px;
+      &:hover {
+        border: 1px solid #64971c;
+      }
+      .#{$cls-prefix}upload-close {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        color: $uploadFTrob-uploadCTrob-upload-cardCTrob-upload-closeFcolor;
+        padding: 5px;
+        &:hover {
+          color: #333;
+          cursor: pointer;
+        }
+      }
+      .#{$cls-prefix}upload-card-type {
+        margin: 29px 24px 5px;
+        text-align: center;
+        color: #b1b8c5;
+        position: relative;
+        cursor: pointer;
+        font-size: 18px;
+        min-width: 44px;
+        min-height: 60px;
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+        }
+      }
+      label {
+        display: block;
+      }
+      .#{$cls-prefix}upload-add {
+        border: $uploadFTrob-uploadCTrob-upload-cardCTrob-upload-addFborder;
+        &:hover {
+          border-color: $uploadFTrob-uploadCTrob-upload-cardCTrob-upload-addWhoverFborder-color;
+          color: $uploadFTrob-uploadCTrob-upload-cardCTrob-upload-addWhoverFcolor;
+          [type="file"] {
+            z-index: 1;
+          }
+        }
+      }
+      .#{$cls-prefix}upload-finish {
+        border: none;
+        cursor: default;
+        [type="file"] {
+          z-index: -1;
+        }
+        &+label {
+          cursor: pointer;
+        }
+      }
+      .#{$cls-prefix}upload-disable {
+        border: $uploadFTrob-uploadCTrob-upload-cardCTrob-upload-disableFborder;
+        cursor: default;
+        &+label {
+          color: $uploadFTrob-uploadCTrob-upload-cardCTrob-upload-disableCXClabelFcolor;
+        }
+      }
+      [type="file"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+    .rob-upload-card-response {
+      label {
+        position: absolute;
+        left: 50%;
+        bottom: -25px;
+        transform: translate(-50%);
+      }
+    }
+  }
+
+
+
+//上传预览裁切
+.canvas-box{ width: 300px; height: 200px; position: relative;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none }
+.canvas-box .overlay{ position: absolute; left: 0; top: 0; cursor: move;border:1px solid #69f;}
+.canvas-box div,.canvas-box canvas{-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none}
+
+.#{$cls-prefix}onchangecrop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    line-height: normal;
+    z-index: 100;
+    min-width: 280px;
+}

@@ -1,0 +1,166 @@
+<article class="markdown">
+    <h1>Loading 加载</h1>
+    <section class="markdown">
+        <p>
+            延迟加载
+        </p>
+    </section>
+    <section class="markdown">
+        <h2 id="代码演示"><span>代码演示</span><a href="#代码演示" class="anchor">#</a></h2>
+    </section>
+    <section class="rob-row">
+        <div class="rob-col-lg-24">
+            <div class="code-box">
+                <section class="code-box-demo">
+                    <button class="rob-btn rob-btn-default" ng-click="showCode('loading1')">样式一</button>
+                    <button class="rob-btn rob-btn-default" ng-click="showCode('loading2')">样式二</button>
+                    <button class="rob-btn rob-btn-default" ng-click="showCode('loading3')">样式三</button>
+                    <button class="rob-btn rob-btn-default" ng-click="showCode('loading4')">样式四</button>
+                    <button class="rob-btn rob-btn-default" ng-click="showCode('loading5')">样式五</button>
+
+                </section>
+                <!-- 样式一 -->
+                <div class="rob-loading-bg loading1 loading-demo"></div>
+                <div class="rob-loading rob-loading-four-white loading1 loading-demo">
+                    <div class="rob-loading-body">
+                        <div class="rob-loading-ie-white">
+                        </div>
+                        <div class="rob-loading-icon">
+                            <div class="rob-loading-item rob-loading-item-one"></div>
+                            <div class="rob-loading-item rob-loading-item-two"></div>
+                            <div class="rob-loading-item rob-loading-item-three"></div>
+                            <div class="rob-loading-item rob-loading-item-four"></div>
+                        </div>
+                        <div class="rob-loading-label">
+                            拼命加载中...
+                        </div>
+                    </div>
+                </div>
+                <!-- 样式二 -->
+                <div class="rob-loading-bg loading2 loading-demo"></div>
+                <div class="rob-loading rob-loading-four-blue loading2 loading-demo">
+                    <div class="rob-loading-body">
+                    <div class="rob-loading-ie-blue">
+                        </div>
+                        <div class="rob-loading-icon">
+                            <div class="rob-loading-item rob-loading-item-one"></div>
+                            <div class="rob-loading-item rob-loading-item-two"></div>
+                            <div class="rob-loading-item rob-loading-item-three"></div>
+                            <div class="rob-loading-item rob-loading-item-four"></div>
+                        </div>
+                        <div class="rob-loading-label">
+                            拼命加载中...
+                        </div>
+                    </div>
+                </div>
+                <!-- 样式三 -->
+                <div class="rob-loading-bg loading3 loading-demo"></div>
+                <div class="rob-loading-ring loading3 loading-demo">
+                    <div class="rob-loading-body">
+
+                        <div class="load-container rob-ring">
+                            <div class="rob-loader">Loading...</div>
+                              <div class="rob-loading-ie-grey">
+                    
+                        </div>
+                            <div class="rob-loading-label">
+                                拼命加载中...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 样式四 -->
+                <div class="rob-loading-bg loading4 loading-demo"></div>
+                <div class="rob-loading loading4 loading-demo">
+                    <div class="rob-loading-body">
+                        <div class="rob-loading-img"></div>
+                        <div class="rob-loading-ie-logo"></div>
+                        <div class="rob-loading-label">
+                            稍等,数据加载中...
+                        </div>
+                    </div>
+                </div>
+                 <!-- 样式五 -->
+                <div class="rob-loading-bg loading5 loading-demo"></div>
+                <div class="rob-loading rob-loading-four-white loading5 loading-demo">
+                    <div class="rob-loading-body">
+                        <div class="rob-loading-ie-smile">
+                        </div>
+                        <div class="rob-loading-label">
+                            拼命加载中...
+                        </div>
+                    </div>
+                </div>
+                <section class="code-box-meta markdown">
+                    <div class="code-box-title">
+                        <a href="">
+                           加载
+                       </a>
+                    </div>
+                    <p>
+                        延迟显示
+                    </p>
+                    <i class="rob-icon rob-icon-home code-show" ng-click="showCode('loadingCode')"></i>
+                </section>
+                <section class="code-box-content loadingCode">
+                    <pre>
+<code class="language-markup">
+&lt;!-- 样式一 -->
+                &lt;div class="rob-loading-bg loading1 loading-demo">&lt;/div>
+                &lt;div class="rob-loading loading1 loading-demo">
+                    &lt;div class="rob-loading-body">
+                        &lt;div class="rob-loading-icon">
+                            &lt;div class="rob-loading-item rob-loading-item-one">&lt;/div>
+                            &lt;div class="rob-loading-item rob-loading-item-two">&lt;/div>
+                            &lt;div class="rob-loading-item rob-loading-item-three">&lt;/div>
+                            &lt;div class="rob-loading-item rob-loading-item-four">&lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-loading-label">
+                            拼命加载中...
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &lt;!-- 样式二 -->
+                &lt;div class="rob-loading-bg loading2 loading-demo">&lt;/div>
+                &lt;div class="rob-loading rob-loading-blue loading2 loading-demo">
+                    &lt;div class="rob-loading-body">
+                        &lt;div class="rob-loading-icon">
+                            &lt;div class="rob-loading-item rob-loading-item-one">&lt;/div>
+                            &lt;div class="rob-loading-item rob-loading-item-two">&lt;/div>
+                            &lt;div class="rob-loading-item rob-loading-item-three">&lt;/div>
+                            &lt;div class="rob-loading-item rob-loading-item-four">&lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-loading-label">
+                            拼命加载中...
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &lt;!-- 样式三 -->
+                &lt;div class="rob-loading-bg loading3 loading-demo">&lt;/div>
+                &lt;div class="rob-loading-ring loading3 loading-demo">
+                    &lt;div class="rob-loading-body">
+                        &lt;div class="load-container rob-ring">
+                            &lt;div class="rob-loader">Loading...&lt;/div>
+                            &lt;div class="rob-loading-label">
+                                拼命加载中...
+                            &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;!-- 样式四 -->
+                &lt;div class="rob-loading-bg loading4 loading-demo">&lt;/div>
+                &lt;div class="rob-loading loading4 loading-demo">
+                    &lt;div class="rob-loading-body">
+                        &lt;div class="loading-img">&lt;/div>
+                        &lt;div class="rob-loading-label">
+                            稍等,数据加载中...
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+</code>
+</pre>
+                </section>
+            </div>
+        </div>
+    </section>
+</article>

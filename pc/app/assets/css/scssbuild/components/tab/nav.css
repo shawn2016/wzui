@@ -1,0 +1,53 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
+.rob-nav {
+  margin-bottom: 0;
+  padding-left: 100px;
+  list-style: none; }
+  .rob-nav::after {
+    display: block;
+    clear: both;
+    content: ""; }
+  .rob-nav::before {
+    content: " ";
+    display: table; }
+  .rob-nav > li {
+    position: relative;
+    display: block; }
+    .rob-nav > li > a {
+      position: relative;
+      display: block; }
+      .rob-nav > li > a:hover, .rob-nav > li > a:focus {
+        text-decoration: none; }
+    .rob-nav > li.disabled > a:hover, .rob-nav > li.disabled > a:focus {
+      text-decoration: none;
+      background-color: transparent;
+      cursor: not-allowed; }
+  .rob-nav > li > a > img {
+    max-width: none; }
+
+.rob-tab-content > .tab-pane {
+  display: none; }
+
+.rob-tab-content > .active {
+  display: block; }
+
+.rob-tab-scroll {
+  width: 100%;
+  overflow-x: auto; }

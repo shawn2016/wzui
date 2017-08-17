@@ -1,0 +1,57 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-warning {
+  color: #FFF;
+  background-color: #ff962f;
+  border-color: #f48b23; }
+  .rob-btn-warning:focus, .rob-btn-warning.focus {
+    color: #FFF;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: #f48b23;
+    border-color: #f48b23; }
+  .rob-btn-warning:hover {
+    color: #FFF;
+    background-color: #f48b23;
+    border-color: #f48b23; }
+  .rob-btn-warning:active, .rob-btn-warning.active,
+  .open > .rob-btn-warning.dropdown-toggle {
+    color: #FFF;
+    background-color: #f48b23;
+    border-color: #f48b23; }
+    .rob-btn-warning:active:hover, .rob-btn-warning:active:focus, .rob-btn-warning:active.focus, .rob-btn-warning.active:hover, .rob-btn-warning.active:focus, .rob-btn-warning.active.focus,
+    .open > .rob-btn-warning.dropdown-toggle:hover,
+    .open > .rob-btn-warning.dropdown-toggle:focus,
+    .open > .rob-btn-warning.dropdown-toggle.focus {
+      color: #FFF;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: #f48b23;
+      border-color: #f48b23; }
+  .rob-btn-warning:active, .rob-btn-warning.active,
+  .open > .rob-btn-warning.dropdown-toggle {
+    background-image: none; }
+  .rob-btn-warning .badge {
+    color: #ff962f;
+    background-color: #FFF; }
+  .rob-btn-warning[disabled],
+  fieldset[disabled] .rob-btn-warning {
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    color: #FFF; }
+    .rob-btn-warning[disabled]:hover, .rob-btn-warning[disabled]:focus,
+    fieldset[disabled] .rob-btn-warning:hover,
+    fieldset[disabled] .rob-btn-warning:focus {
+      border-color: #d8d8d8;
+      background-color: #d8d8d8;
+      color: #FFF; }

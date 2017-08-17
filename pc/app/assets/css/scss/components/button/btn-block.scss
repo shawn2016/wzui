@@ -1,0 +1,21 @@
+// Block button
+// --------------------------------------------------
+@import "../../base/base";
+.#{$cls-prefix}btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.#{$cls-prefix}btn-block + .#{$cls-prefix}btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.#{$cls-prefix}btn-block {
+    width: 100%;
+  }
+}

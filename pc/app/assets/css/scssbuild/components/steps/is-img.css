@@ -1,0 +1,60 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-steps.rob-is-horizontal.rob-is-img {
+  width: calc(100% - 75px); }
+  .rob-steps.rob-is-horizontal.rob-is-img .rob-is-img {
+    float: left; }
+    .rob-steps.rob-is-horizontal.rob-is-img .rob-is-img + .rob-is-img:last-child {
+      width: 0; }
+  .rob-steps.rob-is-horizontal.rob-is-img .rob-step-title {
+    width: 75px;
+    text-align: center; }
+  .rob-steps.rob-is-horizontal.rob-is-img .rob-step:last-child .rob-step-main {
+    position: absolute;
+    right: -75px;
+    text-align: right; }
+
+.rob-is-img .rob-step-head {
+  width: 75px;
+  height: 75px;
+  line-height: 75px; }
+
+.rob-is-img .rob-step-line.rob-is-horizontal {
+  top: 38px;
+  left: 75px; }
+
+.rob-is-img .rob-step-line-desc {
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  top: -50px; }
+
+.rob-is-img .rob-is-finish .rob-step-line-desc {
+  color: #20a0ff; }
+
+.rob-is-img .rob-is-error .rob-step-line-desc {
+  color: #ff4949; }
+
+.rob-is-img .rob-is-success .rob-step-line-desc {
+  color: #13ce66; }
+
+.rob-is-img .rob-is-wait .rob-step-line-desc {
+  color: #97a8be; }
+
+.rob-is-img .rob-is-process .rob-step-line-desc {
+  color: #bfcbd9; }
+
+.scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden; }

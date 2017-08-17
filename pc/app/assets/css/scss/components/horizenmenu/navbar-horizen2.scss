@@ -1,0 +1,66 @@
+@import "../../base/base";
+// 官网的样式
+@media (min-width:769px) {
+  .#{$cls-prefix}navbar-horizen2 {
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      clear: both;
+    }
+    float: right;
+    font-size: $horizenmenuFTrob-navbar-horizen2FAmediaCUmin-widthWC769pxVFfont-size;
+    font-weight: $horizenmenuFTrob-navbar-horizen2FAmediaCUmin-widthWC769pxVFfont-weight;
+    li {
+      height: $horizenmenuFTrob-navbar-horizen2CliFAmediaCUmin-widthWC769pxVFheight;
+      line-height: $horizenmenuFTrob-navbar-horizen2CliFAmediaCUmin-widthWC769pxVFline-height;
+      padding: $horizenmenuFTrob-navbar-horizen2CliFAmediaCUmin-widthWC769pxVFpadding;
+      text-align: center;
+      position: relative;
+      top: 1px;
+      float: left;
+      border-bottom: $horizenmenuFTrob-navbar-horizen2CliFAmediaCUmin-widthWC769pxVFborder;
+      // a {
+      //   display: block;
+      //   color: $horizenmenu2-color2;
+      // }
+      &.active {
+        border-bottom: $horizenmenuFTrob-navbar-horizen2CliTactiveFAmediaCUmin-widthWC769pxVFborder-bottom;
+        color: $horizenmenuFTrob-navbar-horizen2CliTactiveFAmediaCUmin-widthWC769pxVFcolor;
+        // a {
+        //   color: $horizenmenu2-color1;
+        // }
+      }
+      &:hover {
+        border-bottom: $horizenmenuFTrob-navbar-horizen2CliWhoverFAmediaCUmin-widthWC769pxVFborder-bottom;
+        color: $horizenmenuFTrob-navbar-horizen2CliWhoverFAmediaCUmin-widthWC769pxVFcolor;
+        // a {
+        //   color: $horizenmenu2-color1;
+        // }
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .#{$cls-prefix}navbar-horizen2 {
+    background-color: $horizenmenuFTrob-navbar-horizen2FAmediaCUmax-widthWC768pxVFbackground-color;
+    &>li {
+      padding: 0 40px;
+      border-top: $horizenmenuFTrob-navbar-horizen2CPCliFAmediaCUmax-widthWC768pxVFborder-top;
+      position: relative;
+      font-size: $horizenmenuFTrob-navbar-horizen2CPCliFAmediaCUmax-widthWC768pxVFfont-size;
+      line-height: $horizenmenuFTrob-navbar-horizen2CPCliFAmediaCUmax-widthWC768pxVFline-height;
+      color: $horizenmenuFTrob-navbar-horizen2CPCliFAmediaCUmax-widthWC768pxVFcolor;
+      cursor: pointer; //z-index:9 !important;
+      &>span {
+        display: block;
+      }
+      &.active,
+      &:hover {
+        color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListCPCliWhoverFAmediaCUmax-widthWC768pxVFcolor;
+        background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListCPCliWhoverFAmediaCUmax-widthWC768pxVFbackground;
+      }
+    }
+  }
+}

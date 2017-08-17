@@ -1,0 +1,16 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-success {
+  @include button-variant($buttonFTrob-btn-successFcolor, $buttonFTrob-btn-successFbackground-color, $buttonFTrob-btn-successFborder-color,$buttonFTrob-btn-successWhoverFbackground-color, $buttonFTrob-btn-successWhoverFborder-color,$buttonFTrob-btn-successWhoverFcolor);
+
+
+
+  
+  &[disabled],
+  fieldset[disabled] & {
+    @include button-disabled-bd-bg($buttonFTrob-btn-successLdisabledRBCfieldsetLdisabledRCTrob-btn-successFbackground-color,$buttonFTrob-btn-successLdisabledRBCfieldsetLdisabledRCTrob-btn-successFborder-color,$buttonFTrob-btn-successLdisabledRBCfieldsetLdisabledRCTrob-btn-successFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-successLdisabledRWhoverBCTrob-btn-successLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-successWhoverBCfieldsetLdisabledRCTrob-btn-successWfocusFbackground-color,$buttonFTrob-btn-successLdisabledRWhoverBCTrob-btn-successLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-successWhoverBCfieldsetLdisabledRCTrob-btn-successWfocusFborder-color,$buttonFTrob-btn-successLdisabledRWhoverBCTrob-btn-successLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-successWhoverBCfieldsetLdisabledRCTrob-btn-successWfocusFcolor);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+/* Circle Buttons */
+.rob-btn-circle {
+  border-radius: 20px !important; }
+
+.rob-btn-circle-right {
+  border-radius: 0 20px 20px 0 !important; }
+
+.rob-btn-circle-left {
+  border-radius: 20px 0 0 20px !important; }
+
+.rob-btn-circle-bottom {
+  border-radius: 0 0 20px 20px !important; }
+
+.rob-btn-circle-top {
+  border-radius: 20px 20px 0 0 !important; }

@@ -1,0 +1,7 @@
+@import "../../base/base";
+.#{$cls-prefix}img-div-position {
+      height: 100%;
+   position: relative;
+   overflow: hidden;
+   display: inline-block;
+}

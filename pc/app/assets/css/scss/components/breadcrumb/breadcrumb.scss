@@ -1,0 +1,50 @@
+@import "../../base/base";
+
+// -----------------------------------------*-----------------------------------------------------------------------
+
+.#{$cls-prefix}breadcrumb {
+  // padding: $breadcrumbFTrob-breadcrumbFpadding;
+  list-style: none;
+  // background-color: $breadcrumbFTrob-breadcrumbFbackground-color;
+  // border-radius: $breadcrumbFTrob-breadcrumbFborder-radius;
+
+  > li {
+    display: inline-block;
+
+    + li:before {
+      content: "#{$breadcrumbFTrob-breadcrumbCPCliCXCliWbeforeFcontent}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      //padding: 0 5px;
+      color: $breadcrumbFTrob-breadcrumbCPCliCXCliWbeforeFcolor;
+      vertical-align: middle;
+    }
+    > a {
+      color: $breadcrumbFTrob-breadcrumbCPCliCPCaFcolor;
+      >i {
+        padding-right:$breadcrumbFTrob-breadcrumbCPCliCPCaCPCiFpadding-right;
+      }
+      &:hover {
+        color: $breadcrumbFTrob-breadcrumbCPCliCPCaWhoverFcolor;
+      }
+    }
+  }
+
+  &.#{$cls-prefix}breadcrumb-pointed{
+  >li{
+     + li:before {
+       content: "#{$breadcrumbFTrob-breadcrumbTrob-breadcrumb-pointedCPCliCXCliWbeforeFcontent}\00a0"; 
+       color: $breadcrumbFTrob-breadcrumbTrob-breadcrumb-pointedCPCliCXCliWbeforeFcolor;
+       vertical-align: baseline;
+     }
+  }
+}
+
+  > .active {
+    color: $breadcrumbFTrob-breadcrumbCPCTactiveFcolor;
+    & > a {
+      color: $breadcrumbFTrob-breadcrumbCPCTactiveCPCaFcolor;
+      &:hover {
+        color: $breadcrumbFTrob-breadcrumbCPCTactiveCPCaWhoverFcolor;
+      }
+    }
+  }
+}

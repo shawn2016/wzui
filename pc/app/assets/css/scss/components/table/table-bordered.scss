@@ -1,0 +1,20 @@
+@import "../../base/base";
+.#{$cls-prefix}table-bordered {
+  border: $tableFTrob-table-borderedFborder;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border:  $tableFTrob-table-borderedCPCtheadCPCtrCPCthBCTrob-table-bordered-erectCPCtheadCPCtrCPCtdBCTrob-table-bordered-erectCPCtbodyCPCtrCPCthBCTrob-table-bordered-erectCPCtbodyCPCtrCPCtdBCTrob-table-bordered-erectCPCtfootCPCtrCPCthBCTrob-table-bordered-erectCPCtfootCPCtrCPCtdFborder;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 1px;
+    }
+  }
+}

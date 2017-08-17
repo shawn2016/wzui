@@ -1,0 +1,34 @@
+{
+    "type": "滑块",
+    "desc": "",
+    "id": "sliderVars",
+    "vars": [{
+      "key": "$slider-bg",
+      "value": "#e9e9e9",
+      "desc": "滑块背景颜色"
+    },{
+      "key": "$slider-active-bg",
+      "value": "#9fd2f6",
+      "desc": "滑块选择背景颜色"
+    },{
+      "key": "$slider-border-bg",
+      "value": "#88c7f4",
+      "desc": "滑块圆角背景颜色"
+    },{
+      "key": "$slider-border-hover-bg",
+      "value": "#49a9ee",
+      "desc": "滑块圆角悬浮背景颜色"
+    },{
+      "key": "$slider-tishi-bg",
+      "value": "#333",
+      "desc": "滑块提示背景"
+    },{
+      "key": "$slider-disabled-bg",
+      "value": "rgba(0,0,0,.25)",
+      "desc": "滑块禁用背景颜色"
+    },{
+      "key": "$slider-text-color",
+      "value": "#999",
+      "desc": "滑块刻度字体颜色"
+    }]
+  }

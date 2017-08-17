@@ -1,0 +1,897 @@
+<article class="markdown">
+    <h1>Button 按钮</h1>
+    <section class="markdown">
+        <p>
+            为 <code class="language-markup">&lt;a&gt;</code>、<code class="language-markup">&lt;button&gt;</code> 或 <code
+                class="language-markup">&lt;input&gt;</code> 元素添加按钮类即可使用的样式。
+        </p>
+    </section>
+    <section class="markdown">
+        <h2 id="实例"><span>基本实例</span><a href="#实例" class="anchor">#</a></h2>
+    </section>
+    <section class="rob-row">
+        <div class="rob-col-lg-24">
+            <div class="code-box">
+                <section class="code-box-demo">
+                    <h3>按钮</h3>
+                    <!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 -->
+                    <button class="rob-btn rob-btn-link">文字按钮</button>
+                    <!-- 标准的按钮 -->
+                    <button type="button" class="rob-btn rob-btn-default">默认按钮</button>
+                    <!-- 提供额外的视觉效果，标识一组按钮中的原始动作（标准的空心按钮） -->
+                    <button type="button" class="rob-btn rob-btn-default rob-btn-line">默认空心</button>
+                    <!-- 提供额外的视觉效果，标识一组按钮中的原始动作（标准的虚线按钮） -->
+                    <button type="button" class="rob-btn rob-btn-default rob-btn-dashed">默认虚线</button>
+                    <!-- 提供额外的视觉效果，标识一组按钮中的原始动作 -->
+                    <button type="button" class="rob-btn rob-btn-main">主要按钮</button>
+                    <!-- 有些地方会用到 -->
+                    <button type="button" class="rob-btn rob-btn-minor">次要按钮</button>
+                    <!-- 虚线按钮 -->
+                    <button type="button" class="rob-btn rob-btn-minor2">次要按钮2</button>
+                    <!-- 标准的圆按钮 -->
+                    <button type="button" class="rob-btn rob-btn-default rob-btn-circle ">默认按钮</button>
+                    <!-- 提供额外的视觉效果，标识一组按钮中的原始动作（圆） -->
+                    <button type="button" class="rob-btn rob-btn-main rob-btn-circle ">主要按钮</button>
+                    <!-- 虚线次要按钮 -->
+                    <button type="button" class="rob-btn rob-btn-minor2 rob-btn-circle ">次要按钮</button>
+
+                    <!-- 表示一个成功的或积极的动作 -->
+                    <button type="button" class="rob-btn rob-btn-success">成功按钮</button>
+                    <!-- 表示一个成功的或积极的动作空心 -->
+                    <button type="button" class="rob-btn rob-btn-success rob-btn-line">成功空心</button>
+                    <!-- 表示一个成功的或积极的动作虚线 -->
+                    <button type="button" class="rob-btn rob-btn-success rob-btn-dashed">成功虚线</button>
+                    <!-- 表示应谨慎采取的动作 -->
+                    <button type="button" class="rob-btn rob-btn-warning">警告按钮</button>
+                    <!-- 表示应谨慎采取的动作空心-->
+                    <button type="button" class="rob-btn rob-btn-warning rob-btn-line">警告空心</button>
+                    <!-- 表示应谨慎采取的动作虚线-->
+                    <button type="button" class="rob-btn rob-btn-warning rob-btn-dashed">警告虚线</button>
+                    <!-- 表示一个危险的或潜在的负面动作 -->
+                    <button type="button" class="rob-btn rob-btn-danger">危险按钮</button>
+                    <!-- 表示一个危险的或潜在的负面动作空心 -->
+                    <button type="button" class="rob-btn rob-btn-danger rob-btn-line">危险空心</button>
+                    <!-- 表示一个危险的或潜在的负面动作虚线 -->
+                    <button type="button" class="rob-btn rob-btn-danger rob-btn-dashed">危险虚线</button>
+                    <!-- 文字与icon的按钮 -->
+                    <h3>文字与icon的按钮</h3>
+                    <a role="button" class="rob-btn rob-btn-default">
+                        <i class="rob-icon-home"></i> 下载
+                    </a>
+                    <a role="button" class="rob-btn rob-btn-minor">
+                        <i class="rob-icon-home"></i> 下载
+                    </a>
+                    <a role="button" class="rob-btn rob-btn-minor2">
+                        <i class="rob-icon-home"></i> 下载
+                    </a>
+                    <a role="button" class="rob-btn rob-btn-link">
+                        <i class="rob-icon-home"></i> 下载
+                    </a>
+                    <a role="button" class="rob-btn rob-btn-main">
+                        <i class="rob-icon-home"></i> 返回
+                    </a>
+
+                    <!-- 只有icon的按钮 -->
+                    <h3>只有icon的按钮</h3>
+                    <a class="rob-btn rob-btn-default rob-btn-icon-only"><i class="rob-icon-home"></i></a>
+                    <a role="button" class="rob-btn rob-btn-minor rob-btn-icon-only">
+                        <i class="rob-icon-home"></i>
+                    </a>
+                    <a role="button" class="rob-btn rob-btn-minor2 rob-btn-icon-only">
+                        <i class="rob-icon-home"></i>
+                    </a>
+                    <!-- 只有icon的圆按钮 -->
+                    <a class="rob-btn rob-btn-default rob-btn-circle rob-btn-icon-only"><i
+                            class="rob-icon-home"></i></a>
+                    <a role="button" class="rob-btn rob-btn-minor rob-btn-circle rob-btn-icon-only">
+                        <i class="rob-icon-home"></i>
+                    </a>
+                    <a role="button" class="rob-btn rob-btn-minor2 rob-btn-circle rob-btn-icon-only">
+                        <i class="rob-icon-home"></i>
+                    </a>
+                </section>
+                <section class="code-box-meta markdown">
+                    <div class="code-box-title">
+                        <a href="">
+                            基本实例
+                        </a>
+                    </div>
+                    <p>
+                    <div class="rob-table-responsive">
+                        <table class="rob-table rob-table-hover rob-table-bordered">
+                            <thead>
+                            <tr>
+                                <th> 名称</th>
+                                <th> 序号</th>
+                                <th> 效果</th>
+                                <th> 所需类名</th>
+                                <th> 定制所需</th>
+                                <th> 备注</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 1</td>
+                                <td> 文字按钮</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-link</code>(文字按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-link</code>(文字按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 2</td>
+                                <td> 默认按钮</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-default</code>(默认按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-default</code>(默认)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 3</td>
+                                <td> 默认空心</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-default</code>(默认按钮样式)
+                                    <code class="language-markup">.rob-btn-line</code>(默认的空心按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-default</code>(默认)
+                                    <code class="language-markup">btn-default-line</code>(默认空心)
+
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 4</td>
+                                <td> 默认虚线</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-default</code>(默认按钮样式)
+                                    <code class="language-markup">.rob-btn-dashed</code>(默认的虚线按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-default</code>(默认)
+                                    <code class="language-markup">btn-default-dashed</code>(默认虚线)
+
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 5</td>
+                                <td> 主要按钮</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-main</code>(主要按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-main</code>(主要)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 6</td>
+                                <td> 次要按钮</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor</code>(次要按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-minor</code>(次要)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 7</td>
+                                <td> 次要按钮2</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor2</code>(次要按钮2样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-minor2</code>(次要2)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 8</td>
+                                <td> 默认按钮(圆)</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-default</code>(默认按钮样式)
+                                    <code class="language-markup">.rob-btn-circle</code>(按钮圆角)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-default</code>(默认)<code
+                                        class="language-markup">btn-circle</code>(按钮圆角)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-lg</code>(大尺寸按钮) <code class="language-markup">btn-sm</code>(小尺寸按钮)
+                                    <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 9</td>
+                                <td> 主要按钮(圆)</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-main</code>(主要按钮样式)
+                                    <code class="language-markup">.rob-btn-circle</code>(按钮圆角)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-main</code>(主要)<code class="language-markup">btn-circle</code>(按钮圆角)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-lg</code>(大尺寸按钮) <code class="language-markup">btn-sm</code>(小尺寸按钮)
+                                    <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 10</td>
+                                <td> 次要按钮(圆)</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor2</code>(次要按钮2样式)
+                                    <code class="language-markup">.rob-btn-circle</code>(按钮圆角)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-minor2</code>(次要2)<code
+                                        class="language-markup">btn-circle</code>(按钮圆角)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-lg</code>(大尺寸按钮) <code class="language-markup">btn-sm</code>(小尺寸按钮)
+                                    <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 11</td>
+                                <td> 成功按钮</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-success</code>(成功按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-success</code>(成功)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 12</td>
+                                <td> 成功空心</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-success</code>(成功按钮样式)
+                                    <code class="language-markup">.rob-btn-line</code>(成功的空心按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-success</code>(成功)
+                                    <code class="language-markup">btn-success-line</code>(成功空心)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 13</td>
+                                <td> 成功虚线</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-success</code>(成功按钮样式)
+                                    <code class="language-markup">.rob-btn-dashed</code>(成功的虚线按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-success</code>(成功)
+                                    <code class="language-markup">btn-success-dashed</code>(成功虚线)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 14</td>
+                                <td> 警告按钮</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-warning</code>(警告按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-warning</code>(警告)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 15</td>
+                                <td> 警告空心</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-warning</code>(警告按钮样式)
+                                    <code class="language-markup">.rob-btn-line</code>(警告的空心按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-warning</code>(警告)
+                                    <code class="language-markup">btn-warning-line</code>(警告空心)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 16</td>
+                                <td> 警告虚线</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-warning</code>(警告按钮样式)
+                                    <code class="language-markup">.rob-btn-dashed</code>(警告的虚线按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-warning</code>(警告)
+                                    <code class="language-markup">btn-warning-dashed</code>(警告虚线)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 17</td>
+                                <td> 危险按钮</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-danger</code>(危险按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-danger</code>(危险)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 18</td>
+                                <td> 危险空心</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-danger</code>(危险按钮样式)
+                                    <code class="language-markup">.rob-btn-line</code>(危险的空心按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-danger</code>(危险)
+                                    <code class="language-markup">btn-danger-line</code>(危险空心)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 按钮</th>
+                                <td> 19</td>
+                                <td> 危险虚线</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-danger</code>(警告按钮样式)
+                                    <code class="language-markup">.rob-btn-dashed</code>(警告的虚线按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-danger</code>(警告)
+                                    <code class="language-markup">btn-danger-dashed</code>(警告虚线)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th> 文字与icon的按钮</th>
+                                <td> 1</td>
+                                <td> 默认加icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-default</code>(默认按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-default</code>(默认)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 文字与icon的按钮</th>
+                                <td> 2</td>
+                                <td> 次要加icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor</code>(次要按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-minor</code>(次要)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 文字与icon的按钮</th>
+                                <td> 3</td>
+                                <td> 次要2加icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor2</code>(次要2按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-minor2</code>(次要2)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 文字与icon的按钮</th>
+                                <td> 4</td>
+                                <td> 文字按钮加icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-link</code>(文字按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-link</code>(文字按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 文字与icon的按钮</th>
+                                <td> 5</td>
+                                <td> 主要按钮加icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-main</code>(主要按钮样式)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-main</code>(主要)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 只有icon按钮</th>
+                                <td> 1</td>
+                                <td> 默认按钮只有icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-default</code>(默认按钮样式)
+                                    <code class="language-markup">.rob-btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-default</code>(默认)
+                                    <code class="language-markup">btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 只有icon按钮</th>
+                                <td> 2</td>
+                                <td> 次要按钮只有icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor</code>(次要按钮样式)
+                                    <code class="language-markup">.rob-btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-minor</code>(次要) <code class="language-markup">btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 只有icon按钮</th>
+                                <td> 3</td>
+                                <td> 次要2按钮只有icon</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor</code>(次要2按钮样式)
+                                    <code class="language-markup">.rob-btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-minor2</code>(次要2)
+                                    <code class="language-markup">btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-lg</code>(大尺寸按钮)
+                                    <code class="language-markup">btn-sm</code>(小尺寸按钮) <code class="language-markup">btn-xs</code>(超小尺寸按钮)
+                                    依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 只有icon按钮</th>
+                                <td> 4</td>
+                                <td> 默认按钮只有icon（圆）</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-default</code>(默认按钮样式)
+                                    <code class="language-markup">.rob-btn-icon-only</code>(默认按钮样式)<code
+                                            class="language-markup">.rob-btn-circle</code>(按钮圆角) <code
+                                            class="language-markup">.rob-btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-circle</code>(默认)
+                                    <code class="language-markup">btn-circle</code>(按钮圆角) <code class="language-markup">btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-lg</code>(大尺寸按钮) <code class="language-markup">btn-sm</code>(小尺寸按钮)
+                                    <code class="language-markup">btn-xs</code>(超小尺寸按钮) 依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 只有icon按钮</th>
+                                <td> 5</td>
+                                <td> 次要按钮只有icon（圆）</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor</code>(次要按钮样式)
+                                    <code class="language-markup">.rob-btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code
+                                        class="language-markup">btn-minor</code>(次要) <code class="language-markup">btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-lg</code>(大尺寸按钮) <code class="language-markup">btn-sm</code>(小尺寸按钮)
+                                    <code class="language-markup">btn-xs</code>(超小尺寸按钮) 依赖：icon
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> 只有icon按钮</th>
+                                <td> 6</td>
+                                <td> 次要2按钮只有icon（圆）</td>
+                                <td><code class="language-markup">.rob-btn</code>(必要) <code class="language-markup">.rob-btn-minor</code>(次要2按钮样式)
+                                    <code class="language-markup">.rob-btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td><code class="language-markup">btn</code>(必要) <code class="language-markup">btn-minor2</code>(次要2)
+                                    <code class="language-markup">btn-icon-only</code>(只有icon按钮)
+                                </td>
+                                <td> 可选定制：<code class="language-markup">btn-block</code>(通栏按钮) <code
+                                        class="language-markup">btn-lg</code>(大尺寸按钮) <code class="language-markup">btn-sm</code>(小尺寸按钮)
+                                    <code class="language-markup">btn-xs</code>(超小尺寸按钮) 依赖：icon
+                                </td>
+                            </tr>
+                            </tbody>
+                    </div>
+                    </table>
+                    </p>
+                    <i class="rob-icon rob-icon-home code-show" ng-click="showCode('rob-button')"></i>
+
+                </section>
+                <section class="code-box-content" id="rob-button">
+  <pre>
+<code class="language-markup">
+    
+    &lt;!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 -->
+    &lt;button class="rob-btn rob-btn-link">文字按钮&lt;/button>   
+    
+    &lt;!-- 标准的按钮 -->
+    &lt;button type="button" class="rob-btn rob-btn-default">默认按钮&lt;/button> 
+
+    &lt;!-- 提供额外的视觉效果，标识一组按钮中的原始动作（标准的空心按钮） -->
+    &lt;button type="button" class="rob-btn rob-btn-default rob-btn-line">默认空心&lt;/button>
+
+    &lt;!-- 提供额外的视觉效果，标识一组按钮中的原始动作（标准的虚线按钮） -->
+    &lt;button type="button" class="rob-btn rob-btn-default rob-btn-dashed">默认虚线&lt;/button>           
+
+    &lt;!-- 提供额外的视觉效果，标识一组按钮中的原始动作 -->
+    &lt;button type="button" class="rob-btn rob-btn-main">主要按钮&lt;/button>
+     
+    &lt;!-- 有些地方会用到 -->
+    &lt;button type="button" class="rob-btn rob-btn-minor">次要按钮&lt;/button>
+   
+    &lt;!-- 虚线按钮 -->
+    &lt;button type="button" class="rob-btn rob-btn-minor2">次要按钮2&lt;/button>
+    
+    &lt;!-- 标准的圆按钮 -->
+    &lt;button type="button" class="rob-btn rob-btn-default rob-btn-circle ">默认按钮&lt;/button> 
+    
+    &lt;!-- 提供额外的视觉效果，标识一组按钮中的原始动作（圆） -->
+    &lt;button type="button" class="rob-btn rob-btn-main rob-btn-circle ">主要按钮&lt;/button>
+    
+    &lt;!-- 虚线次要按钮 -->
+    &lt;button type="button" class="rob-btn rob-btn-minor2 rob-btn-circle ">次要按钮&lt;/button>
+    
+    &lt;!-- 表示一个成功的或积极的动作 -->
+    &lt;button type="button" class="rob-btn rob-btn-success">成功按钮&lt;/button>
+    
+    &lt;!-- 表示一个成功的或积极的动作空心 -->
+    &lt;button type="button" class="rob-btn rob-btn-success rob-btn-line">成功空心&lt;/button>
+
+    &lt;!-- 表示一个成功的或积极的动作虚线 -->
+    &lt;button type="button" class="rob-btn rob-btn-success rob-btn-dashed">成功虚线&lt;/button>
+               
+    &lt;!-- 表示应谨慎采取的动作 -->
+    &lt;button type="button" class="rob-btn rob-btn-warning">警告按钮&lt;/button>
+    
+    &lt;!-- 表示应谨慎采取的动作空心 -->
+    &lt;button type="button" class="rob-btn rob-btn-warning rob-btn-line">警告空心&lt;/button>
+
+    &lt;!-- 表示应谨慎采取的动作虚线-->
+    &lt;button type="button" class="rob-btn rob-btn-warning rob-btn-dashed">警告虚线&lt;/button>            
+    
+    &lt;!-- 表示一个危险的或潜在的负面动作 -->
+    &lt;button type="button" class="rob-btn rob-btn-danger">危险按钮&lt;/button>
+    
+    &lt;!-- 表示一个危险的或潜在的负面动作空心 -->
+    &lt;button type="button" class="rob-btn rob-btn-danger rob-btn-line">危险空心&lt;/button>
+
+    &lt;!-- 表示一个危险的或潜在的负面动作虚线 -->
+    &lt;button type="button" class="rob-btn rob-btn-danger rob-btn-dashed">危险虚线&lt;/button>   
+
+    &lt;!-- 文字与icon的按钮 -->
+    &lt;a role="button" class="rob-btn rob-btn-default">&lt;i class="rob-icon-home">&lt;/i>  下载&lt;/a> 
+   
+    &lt;a role="button" class="rob-btn rob-btn-minor">&lt;i class="rob-icon-home">&lt;/i>  下载&lt;/a>
+   
+    &lt;a role="button" class="rob-btn rob-btn-minor2">&lt;i class="rob-icon-home">&lt;/i>  下载&lt;/a>    
+   
+    &lt;a role="button" class="rob-btn rob-btn-link">&lt;i class="rob-icon-home">&lt;/i>  下载&lt;/a> 
+    
+    &lt;a role="button" class="rob-btn rob-btn-main">&lt;i class="rob-icon-home">&lt;/i>  返回&lt;/a> 
+
+    &lt;!-- 只有icon的方按钮 -->
+    &lt;a class="rob-btn rob-btn-default rob-btn-icon-only">&lt;i class="rob-icon-home">&lt;/i>&lt;/a> 
+    
+    &lt;a role="button" class="rob-btn rob-btn-minor rob-btn-icon-only">&lt;i class="rob-icon-home">&lt;/i>&lt;/a>
+   
+    &lt;a role="button" class="rob-btn rob-btn-minor2 rob-btn-icon-only">&lt;i class="rob-icon-home">&lt;/i>&lt;/a>    
+    
+    &lt;!-- 只有icon的圆按钮 -->
+    &lt;a class="rob-btn rob-btn-default rob-btn-circle rob-btn-icon-only">&lt;i class="rob-icon-home">&lt;/i>&lt;/a> 
+    
+    &lt;a role="button" class="rob-btn rob-btn-minor rob-btn-circle rob-btn-icon-only">&lt;i class="rob-icon-home">&lt;/i>&lt;/a>
+  
+    &lt;a role="button" class="rob-btn rob-btn-minor2 rob-btn-circle rob-btn-icon-only">&lt;i class="rob-icon-home">&lt;/i>&lt;/a>        
+
+</code>
+</pre>
+                </section>
+
+
+    </section>
+
+    <section class="markdown">
+        <h2 id="按钮尺寸"><span>按钮尺寸</span><a href="#按钮尺寸" class="anchor">#</a></h2>
+    </section>
+    <div class="rob-col-lg-24">
+        <div class="code-box">
+            <section class="code-box-demo">
+                <p>
+                    <button type="button" class="rob-btn rob-btn-default rob-btn-lg">（大按钮）Large button</button>
+                </p>
+                <p>
+                    <button type="button" class="rob-btn rob-btn-default">（默认尺寸）Default button</button>
+                </p>
+                <p>
+                    <button type="button" class="rob-btn rob-btn-default rob-btn-sm">（小按钮）Small button</button>
+                </p>
+                <p>
+                    <button type="button" class="rob-btn rob-btn-default rob-btn-xs">（超小尺寸）Extra small button
+                    </button>
+                </p>
+            </section>
+            <section class="code-box-meta markdown">
+                <div class="code-box-title">
+                    <a href="">
+                        按钮尺寸
+                    </a>
+                </div>
+                <!-- <p>
+                    按钮有大、中、小、超小四种尺寸。
+                </p>
+                <p>
+                    通过设置 size 为 btn-lg btn-sm btn-xs 分别把按钮设为大、小、超小尺寸。若不设置 size，则尺寸为中。
+                </p> -->
+                <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-hover rob-table-bordered">
+                        <thead>
+                        <tr>
+                            <th> 名称</th>
+                            <th> 序号</th>
+                            <th> 效果</th>
+                            <th> 所需类名</th>
+                            <th> 定制所需</th>
+                            <th> 备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>按钮尺寸</td>
+                            <td>1</td>
+                            <td>大按钮</td>
+                            <td><code class="language-markup">.rob-btn-lg</code>(大按钮)</td>
+                            <td><code class="language-markup">btn-lg</code>(大尺寸按钮)</td>
+                            <td>所有按钮都可以拿来用</td>
+                        </tr>
+                        <tr>
+                            <td>按钮尺寸</td>
+                            <td>2</td>
+                            <td>默认大小</td>
+                            <td><code class="language-markup">无</code>(中按钮(默认))</td>
+                            <td>无</td>
+                            <td>默认就是这个尺寸</td>
+                        </tr>
+                        <tr>
+                            <td>按钮尺寸</td>
+                            <td>3</td>
+                            <td>小按钮</td>
+                            <td><code class="language-markup">.rob-btn-sm</code>(小按钮)</td>
+                            <td><code class="language-markup">btn-sm</code>(小尺寸按钮)</td>
+                            <td>所有按钮都可以拿来用</td>
+                        </tr>
+                        <tr>
+                            <td>按钮尺寸</td>
+                            <td>4</td>
+                            <td>超小按钮</td>
+                            <td><code class="language-markup">.rob-btn-xs</code>(超小按钮)</td>
+                            <td><code class="language-markup">btn-xs</code>(超小尺寸按钮)</td>
+                            <td>所有按钮都可以拿来用</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <i class="rob-icon rob-icon-home code-show" ng-click="showCode('rob-size-button')"></i>
+
+            </section>
+            <section class="code-box-content" id="rob-size-button">
+                    <pre>
+<code class="language-markup">
+    &lt;button type="button" class="rob-btn rob-btn-default rob-btn-lg">（大按钮）Large button&lt;/button>
+    &lt;button type="button" class="rob-btn rob-btn-default">（默认尺寸）Default button&lt;/button>
+    &lt;button type="button" class="rob-btn rob-btn-default rob-btn-sm">（小按钮）Small button&lt;/button>
+    &lt;button type="button" class="rob-btn rob-btn-default rob-btn-xs">（超小尺寸）Extra small button&lt;/button>
+
+
+</code>
+</pre>
+            </section>
+        </div>
+    </div>
+    <section class="markdown">
+        <h2 id="激活状态"><span>激活状态</span><a href="#激活状态" class="anchor">#</a></h2>
+    </section>
+    <div class="rob-col-lg-24">
+        <div class="code-box">
+            <section class="code-box-demo">
+                <button type="button" class="rob-btn rob-btn-default rob-btn-lg active">Default button</button>
+                <a href="#" class="rob-btn rob-btn-default rob-btn-lg active" role="button">Default link</a>
+            </section>
+            <section class="code-box-meta markdown">
+                <div class="code-box-title">
+                    <a href="">
+                        激活状态
+                    </a>
+                </div>
+                <!-- <p>
+                    当按钮处于激活状态时，其表现为被按压下去（底色更深、边框夜色更深、向内投射阴影）。对于 &lt;button> 元素，是通过 :active 状态实现的。对于 &lt;a> 元素，是通过
+                    .active 类实现的。然而，你还可以将 .active 应用到 &lt;button> 上（包含 aria-pressed="true" 属性)），并通过编程的方式使其处于激活状态。
+                </p>
+                <P>
+                    可以为基于 &lt;a> 元素创建的按钮添加 .active 类。
+                </P> -->
+                <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-hover rob-table-bordered">
+                        <thead>
+                        <tr>
+                            <th> 名称</th>
+                            <th> 序号</th>
+                            <th> 效果</th>
+                            <th> 所需类名</th>
+                            <th> 定制所需</th>
+                            <th> 备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>激活状态</td>
+                            <td>1</td>
+                            <td>激活状态(button)</td>
+                            <td><code class="language-markup">.active</code>(选中) 或 [active]属性</td>
+                            <td> 无</td>
+                            <td>所有按钮都可以直接使用</td>
+                        </tr>
+                        <tr>
+                            <td>激活状态</td>
+                            <td>2</td>
+                            <td>激活状态(a)</td>
+                            <td><code class="language-markup">.active</code>(选中)</td>
+                            <td>无</td>
+                            <td>所有按钮都可以直接使用</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <i class="rob-icon rob-icon-home code-show" ng-click="showCode('rob-state-button')"></i>
+
+            </section>
+            <section class="code-box-content" id="rob-state-button">
+                    <pre>
+<code class="language-markup">
+    &lt;button type="button" class="rob-btn rob-btn-default rob-btn-lg active">Default button&lt;/button>
+    &lt;a href="#" class="rob-btn rob-btn-default rob-btn-lg active" role="button">Default link&lt;/a>
+</code>
+</pre>
+            </section>
+        </div>
+    </div>
+
+    <section class="markdown">
+        <h2 id="禁用状态"><span>禁用状态</span><a href="#禁用状态" class="anchor">#</a></h2>
+    </section>
+    <div class="rob-col-lg-24">
+        <div class="code-box">
+            <section class="code-box-demo">
+                <button type="button" class="rob-btn rob-btn-lg rob-btn-default" disabled="disabled">Default
+                    button
+                </button>
+                <a href="#" class="rob-btn rob-btn-default rob-btn-lg" disabled="disabled" role="button">Default
+                    link</a>
+            </section>
+            <section class="code-box-meta markdown">
+                <div class="code-box-title">
+                    <a href="">
+                        禁用状态
+                    </a>
+                </div>
+                <!-- <p>
+                    通过为按钮（Internet Explorer 9 及更低版本的浏览器将会把按钮中的文本绘制为灰色而且会有阴影）或a标签的属性设置 disabled 属性或为a标签设置类名就可以呈现出无法点击的效果。
+                </p> -->
+                <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-hover rob-table-bordered">
+                        <thead>
+                        <tr>
+                            <th> 名称</th>
+                            <th> 序号</th>
+                            <th> 效果</th>
+                            <th> 所需类名</th>
+                            <th> 定制所需</th>
+                            <th> 备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>禁用状态</td>
+                            <td>1</td>
+                            <td>禁用状态(button)</td>
+                            <td><code class="language-markup">.disabled</code>(禁用) 或 [disabled]属性</td>
+                            <td> 无</td>
+                            <td>所有按钮都可以直接使用</td>
+                        </tr>
+                        <tr>
+                            <td>禁用状态</td>
+                            <td>2</td>
+                            <td>禁用状态(a)</td>
+                            <td><code class="language-markup">.disabled</code>(禁用) 或 [disabled]属性</td>
+                            <td>无</td>
+                            <td>所有按钮都可以直接使用</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <i class="rob-icon rob-icon-home code-show" ng-click="showCode('rob-disabled-button')"></i>
+
+            </section>
+            <section class="code-box-content" id="rob-disabled-button">
+                    <pre>
+<code class="language-markup">
+    &lt;!-- 按钮的disabled属性 -->
+    &lt;button type="button" class="rob-btn rob-btn-lg rob-btn-default" disabled="disabled">Default button&lt;/button>
+
+    &lt;!-a标签的disabled属性 -->
+    &lt;a href="#" class="rob-btn rob-btn-default rob-btn-lg" disabled="disabled" role="button">Default link&lt;/a>
+
+    &lt;!-a标签的disabled类名 -->
+    &lt;a href="#" class="rob-btn rob-btn-default rob-btn-lg disabled" role="button">Default link&lt;/a>
+</code>
+</pre>
+            </section>
+        </div>
+    </div>
+    </section>
+</article>

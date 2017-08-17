@@ -1,0 +1,12 @@
+@import "../../base/base";
+//Aleter遮盖层
+.#{$cls-prefix}alert-cover {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, .8);
+}

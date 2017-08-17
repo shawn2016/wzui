@@ -1,0 +1,26 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-badge-bell1 {
+  /*width: 14px;
+  background: 14px;*/
+  font-size: 25px;
+  position: relative; }
+  .rob-badge-bell1 .badge-bell-remind {
+    position: absolute;
+    left: 14px;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background: #ff3434;
+    display: inline-block; }

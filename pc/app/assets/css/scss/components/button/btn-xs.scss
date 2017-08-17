@@ -1,0 +1,4 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-xs {
+  @include button-size($buttonFTrob-btn-xsFpadding, $buttonFTrob-btn-xsFfont-size, $buttonFTrob-btn-xsFline-height, $buttonFTrob-btn-xsFborder-radius);
+}

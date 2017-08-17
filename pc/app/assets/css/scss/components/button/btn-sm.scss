@@ -1,0 +1,5 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($buttonFTrob-btn-smFpadding, $buttonFTrob-btn-smFfont-size, $buttonFTrob-btn-smFline-height, $buttonFTrob-btn-smFborder-radius);
+}

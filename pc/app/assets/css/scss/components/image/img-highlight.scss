@@ -1,0 +1,9 @@
+@import "../../base/base";
+.#{$cls-prefix}img-highlight {
+   &:hover { 
+    filter:$imgFTrob-img-highlightWhoverFfilter;
+    box-shadow: $imgFTrob-img-highlightWhoverFbox-shadow;
+    transition: all .3s;
+  }
+  
+}

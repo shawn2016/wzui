@@ -1,0 +1,31 @@
+{
+    "type": "Step 步骤条",
+    "desc": "",
+    "isCheck": true,
+    "id": "Step",
+    "components": [{
+      "value": "steps/steps",
+      "isCheck": true,
+      "parentId": "Step1",
+      "arrayList": [{
+      "value": "steps/horizontal",
+      "isCheck": true,
+      "parentId": "Step1",
+      "arrayList": [],
+      "desc": "水平步骤条"
+    },{
+      "value": "steps/vertical",
+      "isCheck": true,
+      "parentId": "Step1",
+      "arrayList": [],
+      "desc": "垂直步骤条"
+    },{
+      "value": "steps/img",
+      "isCheck": true,
+      "parentId": "Step1",
+      "arrayList": [],
+      "desc": "图片步骤条"
+    }],
+      "desc": "步骤条公用"
+    }]
+  }

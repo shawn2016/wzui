@@ -1,0 +1,107 @@
+@import "../../base/base";
+.#{$cls-prefix}select {
+    position: relative;
+    .#{$cls-prefix}select-items {
+        border: $selectFTrob-selectCTrob-select-itemsFborder;
+        border-radius: 4px;
+        overflow: auto;
+        position: absolute;
+        display: none;
+        background-color: $selectFTrob-selectCTrob-select-itemsFbackground-color;
+        width: 100%;
+        max-height: 400px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+        margin-top: 2px;
+        .#{$cls-prefix}select-item {
+            padding: $selectFTrob-selectCTrob-select-itemsCTrob-select-itemFpadding;
+            font-size: $selectFTrob-selectCTrob-select-itemsCTrob-select-itemFfont-size;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            &:hover {
+                background: $selectFTrob-selectCTrob-select-itemsCTrob-select-itemWhoverFbackground;
+            }
+            &.active {
+                color: $selectFTrob-selectCTrob-select-itemsCTrob-select-itemTactiveFcolor;
+                background-color: $selectFTrob-selectCTrob-select-itemsCTrob-select-itemTactiveFbackground-color;
+                opacity: 0.6;
+            }
+            &.disabled {
+                color: $selectFTrob-selectCTrob-select-itemsCTrob-select-itemTdisabledFcolor;
+                cursor: not-allowed;
+                background-color: transparent;
+            }
+        }
+        .#{$cls-prefix}select-nodata {
+            padding: 10px 0;
+            margin: 0;
+            text-align: center;
+            color: $selectFTrob-selectCTrob-select-itemsCTrob-select-nodataFcolor;
+            font-size: $selectFTrob-selectCTrob-select-itemsCTrob-select-nodataFfont-size;
+            cursor: not-allowed;
+        }
+    }
+    &.open {
+        .#{$cls-prefix}select-items {
+            display: block;
+        }
+    }
+    .#{$cls-prefix}select-box {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: $selectFTrob-selectCTrob-select-boxFheight;
+        padding: $selectFTrob-selectCTrob-select-boxFpadding;
+        font-size: $selectFTrob-selectCTrob-select-boxFfont-size;
+        line-height: $selectFTrob-selectCTrob-select-boxFline-height;
+        color: $selectFTrob-selectCTrob-select-boxFcolor;
+        background-color: $selectFTrob-selectCTrob-select-boxFbackground-color;
+        border: $selectFTrob-selectCTrob-select-boxFborder;
+        text-align: left;
+        border-radius: $selectFTrob-selectCTrob-select-boxFborder-radius;
+        cursor: pointer;
+        @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+        @include form-control-focus;
+        @include placeholder;
+        &:hover {
+            border: $selectFTrob-selectCTrob-select-boxWhoverFborder;
+        }
+        &::-ms-expand {
+            border: 0;
+            background-color: transparent;
+        }
+        &.disabled {
+            background-color: $selectFTrob-selectCTrob-select-boxTdisabledFbackground-color;
+            color: $selectFTrob-selectCTrob-select-boxTdisabledFcolor;
+            opacity: 1;
+            &:hover {
+                color: $selectFTrob-selectCTrob-select-boxTdisabledWhoverFcolor;
+                cursor: not-allowed;
+                background-color: $selectFTrob-selectCTrob-select-boxTdisabledWhoverFbackground-color;
+                border: $selectFTrob-selectCTrob-select-boxTdisabledWhoverFborder;
+            }
+        }
+        &[disabled],
+        fieldset[disabled] & {
+            cursor: not-allowed;
+        }
+    }
+    &.open .#{$cls-prefix}icon-angle-down {
+        transform: rotate(-180deg);
+        transform-origin: 50% 40%;
+    }
+    & .#{$cls-prefix}icon-angle-down {
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+}
+
+.#{$cls-prefix}select-address {
+    margin-left: -5px;
+    margin-right: -5px;
+    .#{$cls-prefix}select-address-item {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

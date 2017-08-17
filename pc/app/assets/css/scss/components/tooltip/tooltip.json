@@ -1,0 +1,24 @@
+"tooltip": [ {
+    "type": "tooltip ",
+    "desc":"",
+    "id":"tooltipVars",
+    "vars": [
+     {
+      "key": "$tooltip-font-size",
+      "value": "12px",
+      "desc": "文字提示字体大小"
+    }, {
+      "key": "$tooltip-background-color",
+      "value": "#000",
+      "desc": "文字提示背景颜色"
+    }, {
+      "key": "$tooltip-color",
+      "value": "#fff",
+      "desc": "文字提示字体颜色"
+    }, {
+      "key": "$tooltip-border-radius",
+      "value": "4px",
+      "desc": "文字提示圆角"
+    }
+    ]
+  }]

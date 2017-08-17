@@ -1,0 +1,41 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-link {
+  color: #393939;
+  font-weight: normal;
+  border-radius: 0;
+  text-decoration: underline;
+  border: none; }
+  .rob-btn-link.disabled {
+    color: #999999 !important;
+    background-color: transparent !important;
+    box-shadow: none; }
+    .rob-btn-link.disabled:hover, .rob-btn-link.disabled:focus {
+      color: #999999; }
+  .rob-btn-link, .rob-btn-link:active, .rob-btn-link.active, .rob-btn-link[disabled],
+  fieldset[disabled] .rob-btn-link {
+    background-color: transparent;
+    box-shadow: none; }
+  .rob-btn-link, .rob-btn-link:hover, .rob-btn-link:focus, .rob-btn-link:active {
+    border-color: transparent; }
+  .rob-btn-link:hover, .rob-btn-link:focus, .rob-btn-link:active, .rob-btn-link.active {
+    color: #35baff;
+    text-decoration: underline;
+    background-color: transparent; }
+  .rob-btn-link[disabled],
+  fieldset[disabled] .rob-btn-link {
+    color: #999999; }
+    .rob-btn-link[disabled]:hover, .rob-btn-link[disabled]:focus,
+    fieldset[disabled] .rob-btn-link:hover,
+    fieldset[disabled] .rob-btn-link:focus {
+      color: #999999; }

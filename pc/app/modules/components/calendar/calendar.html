@@ -1,0 +1,278 @@
+<article class="markdown">
+    <h1>Calendar 日期选择器</h1>
+    <section class="markdown">
+        <p>
+            用于选择或输入日期
+        </p>
+    </section>
+    <section class="markdown">
+        <h2 id="代码演示"><span>代码演示</span><a href="#代码演示" class="anchor">#</a></h2>
+    </section>
+    <section class="rob-row">
+        <div class="rob-col-lg-24">
+            <div class="code-box">
+                <section class="code-box-demo">
+                    <div class="rob-form rob-row">
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">多选时间：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input id="calendar1" type="text" class="rob-input" placeholder="请选择日期">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">点击确定关闭：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input calendar" placeholder="请选择日期">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">点击日期关闭：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input calendar2" placeholder="请选择日期">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">工作日：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input calendar3" placeholder="请选择日期">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">日期范围：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24 rob-input-date">
+                                <div class="rob-input-item rob-has-icon-right">
+                                    <i class="rob-is-icon-right rob-icon rob-icon-home "></i>
+                                    <input type="text" class="rob-input calendar6" id="inputEmail3" placeholder="请输入姓名">
+                                </div>
+                                <div class="rob-input-item rob-has-icon-right">
+                                    <i class="rob-is-icon-right rob-icon rob-icon-home "></i>
+                                    <input type="text" class="rob-input calendar7" id="inputEmail3" placeholder="请输入姓名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">选择范围：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input calendar6" placeholder="请选择日期">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">选月份：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input calendar8" placeholder="请选择日期">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-12">
+                            <div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                <label for="inputEmail3" class="rob-input-label">只选时分不选秒：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input calendar9" placeholder="请选择日期">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="code-box-meta markdown">
+                    <div class="code-box-title">
+                        <a href="">
+                           日期选择器
+                       </a>
+                    </div>
+                    <p>
+                        用于选择或输入日期
+                    </p>
+                    <i class="rob-icon rob-icon-home code-show" ng-click="showCode('calendar')"></i>
+                </section>
+                <section id="calendar" class="code-box-content">
+                    <pre class=" rob-col-lg-16">
+<code class="language-markup">
+<h3>DOM部分</h3>
+&lt;div class="rob-form rob-row">
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">多选时间：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24">
+                                &lt;div class="rob-input-item">
+                                    &lt;input id="calendar1" type="text" class="rob-input" placeholder="请选择日期">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">点击确定关闭：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24">
+                                &lt;div class="rob-input-item">
+                                    &lt;input type="text" class="rob-input calendar" placeholder="请选择日期">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">点击日期关闭：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24">
+                                &lt;div class="rob-input-item">
+                                    &lt;input type="text" class="rob-input calendar2" placeholder="请选择日期">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">工作日：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24">
+                                &lt;div class="rob-input-item">
+                                    &lt;input type="text" class="rob-input calendar3" placeholder="请选择日期">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">日期范围：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24 rob-input-date">
+                                &lt;div class="rob-input-item rob-has-icon-right">
+                                    &lt;i class="rob-is-icon-right rob-icon rob-icon-home ">&lt;/i>
+                                    &lt;input type="text" class="rob-input calendar6" id="inputEmail3" placeholder="请输入姓名">
+                                &lt;/div>
+                                &lt;div class="rob-input-item rob-has-icon-right">
+                                    &lt;i class="rob-is-icon-right rob-icon rob-icon-home ">&lt;/i>
+                                    &lt;input type="text" class="rob-input calendar7" id="inputEmail3" placeholder="请输入姓名">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">选择范围：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24">
+                                &lt;div class="rob-input-item">
+                                    &lt;input type="text" class="rob-input calendar6" placeholder="请选择日期">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">选月份：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24">
+                                &lt;div class="rob-input-item">
+                                    &lt;input type="text" class="rob-input calendar8" placeholder="请选择日期">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="rob-form-group rob-col-lg-12">
+                            &lt;div class="rob-col-lg-4 rob-col-xs-24 text-right">
+                                &lt;label for="inputEmail3" class="rob-input-label">只选时分不选秒：
+                                &lt;/label>
+                            &lt;/div>
+                            &lt;div class="rob-col-lg-20 rob-col-xs-24">
+                                &lt;div class="rob-input-item">
+                                    &lt;input type="text" class="rob-input calendar9" placeholder="请选择日期">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;h3>JS部分&lt;/h3>                    
+</code></pre><pre class="rob-col-lg-8">
+                    <code class="language-JavaScript  ">
+                    //日历
+    var calendar = new Calendar();
+    calendar.init({
+      target: $('#calendar1'),
+      range: [],
+      multiple: true,
+      maxdays: 5,
+      goCallback:function(type,date){
+        console.log(type,date,this)
+      },
+      overdays: function(a) {
+        alert('添加已达上限 ' + a + ' 天');
+      }
+    });
+    $(".calendar").Calendar({toolbar:true,zIndex:999});
+    $(".calendar2").Calendar();
+    $(".calendar3").Calendar({
+      filter:function(time){
+      var date = new Date(time);
+      if(date.getDay()==0||date.getDay()==6){
+        return false;
+      }
+      return true;
+    }});
+    var c_start = $(".calendar4").Calendar({time:true,
+      afterSelected: function(obj, date) {
+        $(obj).blur();
+        c_end.setRange([date, null]);
+      }})[0];
+    var c_end = $(".calendar5").Calendar({time:true,
+      afterSelected: function(obj, date) {
+        $(obj).blur();
+        c_start.setRange([null, date]);
+      }})[0];
+    var c_start2 = $(".calendar6").Calendar({
+      afterSelected: function(obj, date) {
+        $(obj).blur();
+        c_end2.setRange([date, null]);
+      }})[0];
+    var c_end2 = $(".calendar7").Calendar({
+      afterSelected: function(obj, date) {
+        $(obj).blur();
+        c_start2.setRange([null, date]);
+      }})[0];
+    $(".calendar8").Calendar({onlyYM:true,selected:function(){
+      console.log($(this.settings.target))
+    }});
+    $(".calendar9").Calendar({onlyHm:true,time:true});
+</code>
+ </pre>
+                </section>
+            </div>
+        </div>
+    </section>
+</article>

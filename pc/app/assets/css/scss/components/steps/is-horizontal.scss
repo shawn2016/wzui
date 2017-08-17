@@ -1,0 +1,38 @@
+@import "../../base/base";
+.#{$cls-prefix}steps.#{$cls-prefix}is-horizontal {
+  width: -moz-calc(100% - 28px);
+  width: -webkit-calc(100% - 28px);
+  width: calc(100% - 28px);
+  .rob-is-horizontal{
+    float: left;
+  }
+  .rob-step{
+    &:last-child{
+      .rob-step-main{
+        position: absolute;
+        right: -28px;
+        text-align: right;
+      }
+
+    }
+  }
+}
+.#{$cls-prefix}steps.#{$cls-prefix}is-horizontal.#{$cls-prefix}is-center {
+  text-align: center
+}
+.#{$cls-prefix}step.#{$cls-prefix}is-horizontal,.#{$cls-prefix}step-line {
+  display: inline-block
+}
+.#{$cls-prefix}step-line.#{$cls-prefix}is-horizontal {
+  top: 15px;
+  height: 1px;
+  left: 32px;
+  right: 0
+}
+.#{$cls-prefix}step-line.#{$cls-prefix}is-icon.#{$cls-prefix}is-horizontal {
+  right: 4px
+}
+.scroll{
+  width: 100%; overflow-x: auto;
+  overflow-y: hidden;
+}

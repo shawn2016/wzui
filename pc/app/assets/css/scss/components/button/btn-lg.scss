@@ -1,0 +1,5 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($buttonFTrob-btnFfont-size, $buttonFTrob-btn-lgFfont-size, $buttonFTrob-btn-lgFline-height, $buttonFTrob-btn-lgFborder-radius);
+}

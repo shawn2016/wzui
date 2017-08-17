@@ -1,0 +1,234 @@
+@import "../../base/base";
+.#{$cls-prefix}sidebar-menu-1 {
+    // background-color: $menuFTrob-sidebar-menu-1Fbackground-color;
+    /*菜单背景颜色*/
+    li {
+        a {
+            /*公共样式*/
+            display: block;
+            position: relative;
+            margin: 0;
+            text-decoration: none;
+            font-weight: 300;
+            border-top: $menuFTrob-sidebar-menu-1CliCaFborder-top;
+            color: $menuFTrob-sidebar-menu-1CliCaFcolor; // background-color: $menuFTrob-sidebar-menu-1CliCaFbackground-color;
+            background-color: #fff;
+        }
+        span.arrow {
+            /*菜单的箭头样式（闭合状态）*/
+            font-size: 12px;
+            float: right;
+            margin-top: -1px;
+            transform: rotate(90deg);
+            transition: all .3s;
+        }
+        span.arrow.open {
+            /*菜单的箭头样式（展开状态）*/
+            font-size: 12px;
+            float: right;
+            margin-top: -1px;
+            transform: rotate(180deg);
+        }
+    }
+    ul.sub-menu a {
+        background-color: #f6f7f9;
+    }
+    >li {
+        //&.open{
+        //  >.sub-menu{
+        //    display: block;
+        //  }
+        //}
+        >a {
+            padding: $menuFTrob-sidebar-menu-1CPCliCPCaFpadding;
+            font-size: $menuFTrob-sidebar-menu-1CPCliCPCaFfont-size;
+            line-height: $menuFTrob-sidebar-menu-1CPCliCPCaFline-height;
+            height: $menuFTrob-sidebar-menu-1CPCliCPCaFheight;
+            >.title {
+                font-size: $menuFTrob-sidebar-menu-1CPCliCPCaCPCTtitleFfont-size;
+                padding-left: 15px;
+                /*一级菜单的字体大小*/
+            }
+        }
+        >a {
+            background: $menuFTrob-sidebar-menu-1CPCliCPCaFbackground;
+            color: $menuFTrob-sidebar-menu-1CPCliTactiveCPCaFcolor;
+            border-top: $menuFTrob-sidebar-menu-1CPCliTactiveCPCaFborder-top;
+            .selected {
+                /*右侧选择指示箭头*/
+                display: block;
+                float: right;
+                position: absolute;
+                right: 0;
+                top: 8px;
+                background: 0 0;
+                width: 0;
+                height: 0;
+                border-top: $menuFTrob-sidebar-menu-1CPCliTactiveCPCaCTselectedFborder-top;
+                border-bottom: $menuFTrob-sidebar-menu-1CPCliTactiveCPCaCTselectedFborder-bottom;
+                border-right: $menuFTrob-sidebar-menu-1CPCliTactiveCPCaCTselectedFborder-right;
+            }
+        }
+        >a:hover {
+            /*一级菜单hover颜色*/
+            background-color: $menuFTrob-sidebar-menu-1CPCliCPCaWhoverFbackground-color;
+            color: $menuFTrob-sidebar-menu-1CPCliCPCaWhoverFcolor;
+        }
+        >.sub-menu {
+            >li {
+                &.open,
+                &.active {
+                    >a {
+                        /*二级菜单展开和选中的时候背景颜色改变*/
+                        background-color: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliWhoverCPCaFbackground-color;
+                        border-right: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTopenCPCaBCTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTactiveCPCaFborder-right;
+                        color: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTopenCPCaBCTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTactiveCPCaFcolor;
+                        cursor: pointer;
+                    }
+                }
+                &:hover {
+                    >a {
+                        /*二级菜hover的时候背景颜色改变*/
+                        background-color: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTopenCPCaBCTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTactiveCPCaFbackground-color;
+                        color: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTopenCPCaBCTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTactiveCPCaFcolor;
+                        border-right: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTopenCPCaBCTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliTactiveCPCaFborder-right;
+                        cursor: pointer;
+                    }
+                }
+                >a {
+                    padding: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCaFpadding;
+                    font-size: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCaFfont-size;
+                    line-height: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCaFline-height;
+                    height: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCaFheight;
+                    >.title {
+                        font-size: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCaCPCTtitleFfont-size;
+                        padding-left: 15px;
+                        /*二级菜单的字体大小*/
+                    }
+                }
+                >.sub-menu {
+                    >li {
+                        &.open,
+                        &.active {
+                            >a {
+                                /*三级菜单展开和选中的时候背景颜色改变*/
+                                background-color: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliWhoverCPCaFbackground-color;
+                            }
+                        }
+                        &:hover {
+                            >a {
+                                /*三级菜hover的时候背景颜色改变*/
+                                background: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliWhoverCPCaFbackground-color;
+                            }
+                        }
+                        >a {
+                            padding: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliCPCaFpadding;
+                            /*三级菜单的padding*/
+                            font-size: $menuFTrob-sidebar-menu-1CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliCPCaFfont-size;
+                            /*三级菜单的图标大小*/
+                            >.title {
+                                font-size: 14px;
+                                padding-left: 15px;
+                                /*三级菜单的字体大小*/
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sub-menu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #f6f7f9;
+    }
+}
+
+//   
+.#{$cls-prefix}sidebar-menu-1.close {
+    /*菜单背景颜色*/
+    width: 45px !important;
+    &:hover {
+        .sub-menu {
+            // background-color: $menuFTrob-sidebar-menu-1TcloseWhoverCTsub-menuFbackground-color;
+        }
+    }
+
+    .#{$cls-prefix}menu-firstnode:hover {
+        width: 100% !important;
+    }
+    >li {
+        >.sub-menu {
+            display: none !important;
+        }
+        >a {
+            .title {
+                display: none;
+            }
+            .arrow {
+                display: none;
+            }
+        }
+
+        &:hover {
+            width: 200px !important;
+            position: relative !important;
+            display: block !important;
+            >a {
+                >i {
+                    margin-right: 10px;
+                }
+                >.title {
+                    display: inline !important;
+                    padding-left: 15px;
+                }
+            }
+            >.sub-menu {
+                width: 155px;
+                position: absolute;
+                z-index: 60;
+                left: 45px;
+                margin-top: 0;
+                top: 100%;
+                display: block !important;
+                >li {
+                    >a {
+                        padding-left: 15px !important;
+                    }
+                    >.sub-menu {
+                        >li {
+                            >a {
+                                padding-left: 30px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .#{$cls-prefix}sidebar-menu-1 {
+        z-index: 20;
+        position: static !important;
+        width: 100% !important;
+        height: auto!important;
+        >li.open {
+            >.sub-menu {
+                width: auto !important;
+                >li {
+                    >.sub-menu {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.#{$cls-prefix}clearmargin {
+    margin: 0;
+}

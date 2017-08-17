@@ -1,0 +1,29 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-step.rob-is-vertical .rob-step-head, .rob-step.rob-is-vertical .rob-step-main {
+  display: inline-block; }
+
+.rob-step.rob-is-vertical .rob-step-main {
+  padding-left: 10px; }
+
+.rob-step-line.rob-is-vertical {
+  width: 2px;
+  box-sizing: border-box;
+  top: 32px;
+  bottom: 0;
+  left: 15px; }
+
+.scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden; }

@@ -1,0 +1,10 @@
+@import "../../base/base";
+.#{$cls-prefix}badge-Warning{
+  display: inline-block;
+  width: $badgeFTrob-badge-WarningFwidth;
+  height: $badgeFTrob-badge-remindFheight;
+  border-radius: 100%;
+  margin-left: 8px;
+
+  background:   $badgeFTrob-badge-remindFbackground;
+}

@@ -1,0 +1,144 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+form::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+form::before {
+  content: " ";
+  display: table; }
+
+.rob-form-group {
+  font-size: 12px;
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.65);
+  vertical-align: top;
+  position: relative; }
+  .rob-form-group:before {
+    display: table;
+    content: " "; }
+  .rob-form-group::after {
+    display: block;
+    clear: both;
+    content: ""; }
+  .rob-form-group::before {
+    content: " ";
+    display: table; }
+
+.rob-input {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 1.42857;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  .rob-input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+  .rob-input::-moz-placeholder {
+    color: #999;
+    opacity: 1; }
+  .rob-input:-ms-input-placeholder {
+    color: #999; }
+  .rob-input::-webkit-input-placeholder {
+    color: #999; }
+  .rob-input:hover {
+    border: 1px solid #66afe9; }
+  .rob-input::-ms-expand {
+    border: 0;
+    background-color: transparent; }
+  .rob-input[disabled],
+  fieldset[disabled] .rob-input {
+    background-color: #ccc;
+    opacity: 1; }
+  .rob-input[disabled],
+  fieldset[disabled] .rob-input {
+    cursor: not-allowed; }
+
+.rob-is-icon-left {
+  display: none; }
+
+.rob-is-icon-right {
+  display: none; }
+
+.rob-has-icon-left {
+  position: relative; }
+  .rob-has-icon-left .rob-input {
+    padding-left: 35px; }
+  .rob-has-icon-left .rob-is-icon-left {
+    display: block;
+    color: #ccc;
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    top: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer; }
+
+.rob-has-icon-right {
+  position: relative; }
+  .rob-has-icon-right .rob-input {
+    padding-right: 35px; }
+  .rob-has-icon-right .rob-is-icon-right {
+    display: block;
+    color: #ccc;
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    top: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer; }
+
+.rob-panel {
+  border: 1px solid #dfdfdf;
+  margin: 40px auto;
+  width: 35%;
+  min-width: 300px;
+  padding: 20px 20px 0; }
+  .rob-panel .rob-form-group .rob-panel-button {
+    padding: 0 20px; }
+  .rob-panel .rob-form-group input {
+    font-size: 14px; }
+  .rob-panel .rob-form-group button {
+    margin-top: 30px;
+    font-size: 14px; }
+  .rob-panel .rob-panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .rob-panel .rob-panel-heading h3 {
+      color: #5e6970;
+      font-size: 28px;
+      font-weight: 400;
+      margin-top: 10px;
+      margin-bottom: 50px; }
+
+.rob-panel-fixed {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }

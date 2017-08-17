@@ -1,0 +1,22 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-minor {
+  &,
+  &[disabled],
+  fieldset[disabled] & {
+    @include button-disabled-bd-bg($buttonFTrob-btn-minorBCTrob-btn-minorLdisabledRBCfieldsetLdisabledRCTrob-btn-minorFbackground-color,$buttonFTrob-btn-minorBCTrob-btn-minorLdisabledRBCfieldsetLdisabledRCTrob-btn-minorFborder-color,$buttonFTrob-btn-minorBCTrob-btn-minorLdisabledRBCfieldsetLdisabledRCTrob-btn-minorFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-minorWhoverBCTrob-btn-minorWfocusBCTrob-btn-minorLdisabledRWhoverBCTrob-btn-minorLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-minorWhoverBCfieldsetLdisabledRCTrob-btn-minorWfocusFbackground-color,$buttonFTrob-btn-minorWhoverBCTrob-btn-minorWfocusBCTrob-btn-minorLdisabledRWhoverBCTrob-btn-minorLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-minorWhoverBCfieldsetLdisabledRCTrob-btn-minorWfocusFborder-color,$buttonFTrob-btn-minorWhoverBCTrob-btn-minorWfocusBCTrob-btn-minorLdisabledRWhoverBCTrob-btn-minorLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-minorWhoverBCfieldsetLdisabledRCTrob-btn-minorWfocusFcolor);
+    }
+  }
+}
+.#{$cls-prefix}btn-minor {
+  @include button-variant($buttonFTrob-btn-minorFcolor, $buttonFTrob-btn-minorFbackground-color, $buttonFTrob-btn-minorFborder-color, $buttonFTrob-btn-minorWhoverFbackground-color,$buttonFTrob-btn-minorWhoverFborder-color,$buttonFTrob-btn-minorWhoverFcolor);
+  &:focus,
+    &.focus,
+    &:active,
+    &.active
+      {
+        color: $buttonFTrob-btn-minorWfocusBCTrob-btn-minorTfocusBCTrob-btn-minorWactiveBCTrob-btn-minorTactiveFcolor;
+      }
+}

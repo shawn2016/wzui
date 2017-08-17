@@ -1,0 +1,45 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-input-line {
+  border-bottom: 1px solid #66afe9; }
+  .rob-input-line [class*="col-"] {
+    position: static; }
+  .rob-input-line .rob-input {
+    border: none; }
+    .rob-input-line .rob-input:focus {
+      outline: 0;
+      box-shadow: none; }
+      .rob-input-line .rob-input:focus + .rob-input-line-border {
+        border-bottom: 1px solid #66afe9;
+        width: 100%;
+        position: absolute;
+        left: 0; }
+        .rob-input-line .rob-input:focus + .rob-input-line-border:after {
+          content: '';
+          position: absolute;
+          z-index: 5;
+          bottom: 0;
+          left: 50%;
+          height: 2px;
+          width: 0;
+          visibility: hidden;
+          transition: .2s ease all; }
+    .rob-input-line .rob-input[disabled] {
+      background-color: transparent; }
+  .rob-input-line .rob-has-icon-left, .rob-input-line .rob-has-icon-right {
+    position: static; }
+  .rob-input-line .rob-has-icon-left .rob-is-icon-left {
+    left: 15px; }
+  .rob-input-line x
+.rob-has-icon-right .rob-is-icon-right {
+    right: 15px; }

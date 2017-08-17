@@ -1,0 +1,33 @@
+@import "../../base/base";
+
+
+.#{$cls-prefix}upload {
+  @include clearfix;
+  //按钮
+  .#{$cls-prefix}upload-btn {
+    padding: $uploadFTrob-uploadCTrob-upload-btnFpadding;
+    font-size: $uploadFTrob-uploadCTrob-upload-btnFfont-size;
+    text-align: center;
+    border: $uploadFTrob-uploadCTrob-upload-btnFborder;
+    cursor: pointer;
+    position: relative;
+    color: $uploadFTrob-uploadCTrob-upload-btnFcolor;
+    background-color: #fff;
+    border-radius: $uploadFTrob-uploadCTrob-upload-btnFborder-radius;
+    &:hover {
+      background-color: $uploadFTrob-uploadCTrob-upload-btnWhoverFbackground-color;
+      color: #fff;
+      transition: all .3s;
+    }
+    [type="file"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+}

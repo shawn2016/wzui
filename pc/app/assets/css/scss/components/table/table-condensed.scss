@@ -1,0 +1,13 @@
+@import "../../base/base";
+.#{$cls-prefix}table-condensed {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $tableFTrob-table-condensedCPCtheadCPCtrCPCthBCTrob-table-condensedCPCtheadCPCtrCPCtdBCTrob-table-condensedCPCtbodyCPCtrCPCthBCTrob-table-condensedCPCtbodyCPCtrCPCtdBCTrob-table-condensedCPCtfootCPCtrCPCthBCTrob-table-condensedCPCtfootCPCtrCPCtdFpadding;
+      }
+    }
+  }
+}

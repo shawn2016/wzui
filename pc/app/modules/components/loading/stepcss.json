@@ -1,0 +1,37 @@
+{
+  "type": "Loading 加载",
+  "desc": "",
+  "isCheck": true,
+  "id": "loading",
+  "components": [{
+    "value": "loading/loading",
+    "isCheck": true,
+    "parentId": "loading1",
+    "arrayList": [{
+      "value": "loading/loading-ring",
+      "isCheck": true,
+      "parentId": "loading1",
+      "arrayList": [],
+      "desc": "加载圈"
+    },{
+      "value": "loading/loading-img",
+      "isCheck": true,
+      "parentId": "loading1",
+      "arrayList": [],
+      "desc": "加载-图片"
+    },{
+      "value": "loading/loading-four-white",
+      "isCheck": true,
+      "parentId": "loading1",
+      "arrayList": [],
+      "desc": "加载-白色背景"
+    },{
+      "value": "loading/loading-four-bule",
+      "isCheck": true,
+      "parentId": "loading1",
+      "arrayList": [],
+      "desc": "加载-蓝色背景"
+    }],
+    "desc": "加载"
+  }]
+}

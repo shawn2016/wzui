@@ -1,0 +1,53 @@
+@import "../../base/base";
+//下拉输入组合
+.#{$cls-prefix}input-select-group {
+  position: relative;
+  padding-left: $selectFTrob-input-select-groupFpadding-left;
+  border: $selectFTrob-input-select-groupFborder;
+  border-radius: $selectFTrob-input-select-groupFborder-radius;
+  &:hover {
+    border: $selectFTrob-input-select-groupWhoverFborder;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+  .#{$cls-prefix}input-select {
+    position: absolute;
+  }
+  .#{$cls-prefix}input-input {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+  }
+  //输入组合
+  .#{$cls-prefix}select {
+    position: absolute;
+    left: 0;
+    width: $selectFTrob-input-select-groupCTrob-selectFwidth;
+    z-index: 20;
+    top: 0;
+    .#{$cls-prefix}select-box {
+      border: none;
+      height: 24px;
+      margin: 3px 0;
+      padding: 3px 12px;
+      width: $selectFTrob-input-select-groupCTrob-selectCTrob-select-boxFwidth;
+      border-right: $selectFTrob-input-select-groupCTrob-selectCTrob-select-boxFborder-right;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .#{$cls-prefix}select-box {
+      &:hover {
+        border: none;
+        border-right: $selectFTrob-input-select-groupCTrob-selectCTrob-select-boxWhoverFborder-right;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+    .#{$cls-prefix}select-items {
+      width: $selectFTrob-input-select-groupCTrob-selectCTrob-select-itemsFwidth;
+    }
+  }
+  .#{$cls-prefix}has-icon-right .#{$cls-prefix}is-icon-right {
+    top: 0px;
+  }
+}

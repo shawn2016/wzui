@@ -1,0 +1,41 @@
+@import "../../base/base";
+.#{$cls-prefix}label-five {
+  @include label-variant($labelFTrob-label-fiveFbackground-color);
+
+  color:$labelFTrob-label-fiveFcolor;
+  &:hover{
+    background: $labelFTrob-label-fiveWhoverFbackground;
+    color: $labelFTrob-label-fiveWhoverFcolor;
+
+  }
+  &:active {
+    background: $labelFTrob-label-fiveWactiveFbackground;
+    color: $labelFTrob-label-fiveWactiveFcolor;
+
+  }
+  display: inline-block;
+  padding: $labelFTrob-label-fiveFpadding;
+  font-size: $labelFTrob-label-fiveFfont-size;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  font-family: YaHeiIKEA;
+
+  // [converter] extracted a& to a.label
+
+  // Empty labels collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+
+  // Quick fix for labels in buttons
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+
+}
+

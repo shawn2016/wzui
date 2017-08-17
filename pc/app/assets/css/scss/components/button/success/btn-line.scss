@@ -1,0 +1,22 @@
+@import "../../../base/base";
+.#{$cls-prefix}btn-success.#{$cls-prefix}btn-line {
+  @include button-variant($buttonFTrob-btn-successTrob-btn-lineFcolor,$buttonFTrob-btn-successTrob-btn-lineFbackground-color,$buttonFTrob-btn-successTrob-btn-lineFborder-color,$buttonFTrob-btn-successTrob-btn-lineWhoverFbackground-color, $buttonFTrob-btn-successTrob-btn-lineWhoverFborder-color,$buttonFTrob-btn-successTrob-btn-lineWhoverFcolor);
+  		&:focus,
+ 		  &.focus,
+    &:active,
+    &.active   {
+		    color: $buttonFTrob-btn-successTrob-btn-lineWfocusBCTrob-btn-successTrob-btn-lineTfocusBCTrob-btn-successTrob-btn-lineWactiveBCTrob-btn-successTrob-btn-lineTactiveFcolor;
+		  }
+
+
+	&.disabled,
+	&[disabled] {
+    @include button-disabled-bd-bg($buttonFTrob-btn-successTrob-btn-lineTdisabledBCTrob-btn-successTrob-btn-lineLdisabledRFbackground-color,$buttonFTrob-btn-successTrob-btn-lineTdisabledBCTrob-btn-successTrob-btn-lineLdisabledRFborder-color,$buttonFTrob-btn-successTrob-btn-lineTdisabledBCTrob-btn-successTrob-btn-lineLdisabledRFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-successTrob-btn-lineTdisabledWhoverBCTrob-btn-successTrob-btn-lineTdisabledWfocusBCTrob-btn-successTrob-btn-lineLdisabledRWhoverBCTrob-btn-successTrob-btn-lineLdisabledRWfocusFbackground-color,$buttonFTrob-btn-successTrob-btn-lineTdisabledWhoverBCTrob-btn-successTrob-btn-lineTdisabledWfocusBCTrob-btn-successTrob-btn-lineLdisabledRWhoverBCTrob-btn-successTrob-btn-lineLdisabledRWfocusFborder-color,$buttonFTrob-btn-successTrob-btn-lineTdisabledWhoverBCTrob-btn-successTrob-btn-lineTdisabledWfocusBCTrob-btn-successTrob-btn-lineLdisabledRWhoverBCTrob-btn-successTrob-btn-lineLdisabledRWfocusFcolor);
+    }
+  }
+
+	
+}

@@ -1,0 +1,54 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-danger {
+  color: #FFF;
+  background-color: #cc1612;
+  border-color: #cc1612; }
+  .rob-btn-danger:focus, .rob-btn-danger.focus {
+    color: #FFF;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: #dc0000;
+    border-color: #dc0000; }
+  .rob-btn-danger:hover {
+    color: #FFF;
+    background-color: #dc0000;
+    border-color: #dc0000; }
+  .rob-btn-danger:active, .rob-btn-danger.active,
+  .open > .rob-btn-danger.dropdown-toggle {
+    color: #FFF;
+    background-color: #dc0000;
+    border-color: #dc0000; }
+    .rob-btn-danger:active:hover, .rob-btn-danger:active:focus, .rob-btn-danger:active.focus, .rob-btn-danger.active:hover, .rob-btn-danger.active:focus, .rob-btn-danger.active.focus,
+    .open > .rob-btn-danger.dropdown-toggle:hover,
+    .open > .rob-btn-danger.dropdown-toggle:focus,
+    .open > .rob-btn-danger.dropdown-toggle.focus {
+      color: #FFF;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: #dc0000;
+      border-color: #dc0000; }
+  .rob-btn-danger:active, .rob-btn-danger.active,
+  .open > .rob-btn-danger.dropdown-toggle {
+    background-image: none; }
+  .rob-btn-danger .badge {
+    color: #cc1612;
+    background-color: #FFF; }
+  .rob-btn-danger.disabled, .rob-btn-danger[disabled] {
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    color: #FFF; }
+    .rob-btn-danger.disabled:hover, .rob-btn-danger.disabled:focus, .rob-btn-danger[disabled]:hover, .rob-btn-danger[disabled]:focus {
+      border-color: #d8d8d8;
+      background-color: #d8d8d8;
+      color: #FFF; }

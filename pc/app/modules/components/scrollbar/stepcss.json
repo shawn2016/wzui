@@ -1,0 +1,13 @@
+{
+    "type": "Scrollbar 滚动条",
+    "desc": "",
+    "isCheck": true,
+    "id": "Scrollbar",
+    "components": [{
+      "value": "scrollbar",
+      "isCheck": true,
+      "parentId": "scrollbar1",
+      "arrayList": [],
+      "desc": "滚动条"
+    }]
+  }

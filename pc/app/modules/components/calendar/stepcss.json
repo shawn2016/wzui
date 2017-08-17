@@ -1,0 +1,13 @@
+{
+    "type": "Calendar 日历",
+    "desc": "",
+    "isCheck": true,
+    "id": "Calendar",
+    "components": [{
+      "value": "calendar",
+      "isCheck": true,
+      "parentId": "Calendar1",
+      "arrayList": [],
+      "desc": "日历选择器"
+    }]
+  }

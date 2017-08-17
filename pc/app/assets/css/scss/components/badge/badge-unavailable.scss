@@ -1,0 +1,10 @@
+@import "../../base/base";
+.#{$cls-prefix}badge-unavailable{
+  display: inline-block;
+  width: $badgeFTrob-badge-unavailableFwidth;
+  height: $badgeFTrob-badge-unavailableFheight;
+  border-radius: 100%;
+  margin-left: 8px;
+
+  background:  $badgeFTrob-badge-unavailableFbackground;
+}

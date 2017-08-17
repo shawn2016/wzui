@@ -1,0 +1,187 @@
+@import "../../base/base";
+
+// Alerts
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+
+.#{$cls-prefix}alert {
+  //padding: $alert-padding;
+  //margin-bottom: $line-height-computed;
+  border: 1px solid transparent;
+  border-radius: $alertFTrob-alertFborder-radius;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: $alertFTrob-alertFwidth;
+  box-shadow: $alertFTrob-alertFbox-shadow;
+  line-height: normal;
+  z-index: 100;
+  min-width: 280px;
+  background-color: $alertFTrob-alertFbackground-color;
+  // Headings for larger alerts
+  .#{$cls-prefix}alert-title {
+    margin-top: 0;
+    // Specified for the h4 to prevent conflicts of changing $headings-color
+    color: $alertFTrob-alertCTrob-alert-titleFcolor;
+    border-bottom: 1px dashed #EAEAEA;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;
+    padding: $alertFTrob-alertCTrob-alert-titleFpadding;
+    font-size: $alertFTrob-alertCTrob-alert-titleFfont-size;
+    margin-bottom: $alertFTrob-alertCTrob-alert-titleFmargin-bottom;
+
+  }
+
+  .#{$cls-prefix}alert-content {
+
+    padding: $alertFTrob-alertCTrob-alert-contentFpadding;
+    text-align: center;
+    color: $alertFTrob-alertCTrob-alert-contentFcolor;
+    font-size: $alertFTrob-alertCTrob-alert-contentFfont-size;
+
+    .#{$cls-prefix}alert-content-title {
+
+      font-size: $alertFTrob-alertCTrob-alert-contentCTrob-alert-content-titleFfont-size;
+      padding-bottom: $alertFTrob-alertCTrob-alert-contentCTrob-alert-content-titleFpadding-bottom;
+      font-weight: 500;
+      color: $alertFTrob-alertCTrob-alert-contentCTrob-alert-content-titleFcolor;
+    }
+    label {
+        padding-right: pxToem(20px);
+    }
+
+    i {
+
+      font-size: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCiFfont-size;
+      vertical-align: sub;
+    }
+
+    .content-left {
+      display: inline-block;
+      span, i {
+        margin-bottom: 0;
+        margin-right: $alertFTrob-alertCTrob-alert-contentCTcontent-leftCspanBCTrob-alertCTrob-alert-contentCTcontent-leftCiFmargin-right;
+      }
+    }
+    .content-right {
+      display: inline-block;
+      vertical-align: middle;
+
+    }
+  }
+
+  // Improve alignment and spacing of inner content
+  > .#{$cls-prefix}alert-title + .#{$cls-prefix}alert-content {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentFfont-size;
+    padding: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentFpadding;
+    color: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentFcolor;
+    i {
+
+      font-size: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCiFfont-size;
+      vertical-align: sub;
+    }
+
+    label {
+        padding-right: pxToem(20px);
+    }
+
+    > ul {
+
+      margin: 0 auto;
+      //width: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCPCulFwidth;
+      margin-bottom: 0;
+      color: #8f8f8f;
+
+    }
+
+    li {
+      line-height: pxToem(30px);
+      @include clearfix();
+      margin-bottom: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCliFmargin-bottom;
+      text-align: right;
+
+      label {
+        float: left;
+        width: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCliClabelFwidth;
+        padding-right: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCliClabelFpadding-right;
+      }
+      span {
+        float: left;
+      }
+      .#{$cls-prefix}alert-content-li-span {
+        font-size: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCliCTrob-alert-content-li-spanFfont-size;
+
+        color: $alertFTrob-alertCPCTrob-alert-titleCXCTrob-alert-contentCliCTrob-alert-content-li-spanFcolor;
+      }
+
+      input {
+        float: left;
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+
+    }
+  }
+  .#{$cls-prefix}alert-content + .#{$cls-prefix}alert-button, .#{$cls-prefix}alert-content + .#{$cls-prefix}alert-button-color {
+
+    margin-top: $alertFTrob-alertCTrob-alert-contentCXCTrob-alert-buttonBCTrob-alertCTrob-alert-contentCXCTrob-alert-button-colorFmargin-top;
+  }
+
+  // .#{$cls-prefix}alert-link {
+  //   font-weight: $alert-link-font-weight;
+  // }
+
+  > .#{$cls-prefix}alert-button {
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: $alertFTrob-alertCPCTrob-alert-buttonFmargin-bottom;
+    button {
+      line-height: 1;
+      margin: 0;
+      font-size: $alertFTrob-alertCPCTrob-alert-buttonCbuttonFfont-size;
+      padding: $alertFTrob-alertCPCTrob-alert-buttonCbuttonFpadding;
+      min-width: 120px;
+      width: 35%;
+    }
+    button:nth-child(2) {
+      margin-left:0.8em;
+    }
+  }
+  > .#{$cls-prefix}alert-button-color {
+
+    margin-bottom: 0;
+    text-align: center;
+    padding: $alertFTrob-alertCPCTrob-alert-button-colorFpadding;
+    background-color: $alertFTrob-alertCPCTrob-alert-button-colorFbackground-color;
+    button {
+      line-height: 1;
+      margin: 0;
+      font-size: $alertFTrob-alertCPCTrob-alert-button-colorCbuttonFfont-size;
+      padding: $alertFTrob-alertCPCTrob-alert-button-colorCbuttonFpadding;
+      min-width: 120px;
+      width: 35%;
+
+    }
+
+    button:nth-child(2) {
+      margin-left: 0.8em;
+    }
+  }
+  > p + p {
+    margin-top: pxToem(5px);
+  }
+}
+
+
+

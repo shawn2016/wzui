@@ -1,0 +1,33 @@
+.rob-left-menu{
+  ul{
+   padding: 0;
+    padding-bottom: 50px;
+    margin: 0;
+    li{
+     padding: 0 16px;
+    font-size: 12px;
+    line-height: 42px;
+    height: 42px;
+    overflow: hidden;
+    padding-left: 24px;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    a{
+          display: block;
+    color: rgba(0,0,0,.65);
+    &:hover{
+          color: #108ee9;
+    }
+    }
+    }
+    .select-active{
+          background-color: #ecf6fd;
+          border-right: 3px solid #5bc0de;
+          cursor: pointer;
+          a{
+                color: #108ee9;
+          }
+    }
+  }
+
+}

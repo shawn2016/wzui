@@ -1,0 +1,122 @@
+@import "../../base/base";
+
+
+.rob-progress {
+  position: relative;
+  line-height: 1;
+}
+
+.rob-progress.is-exception .rob-progress-bar-inner {
+  background-color: $progressFTrob-progressTis-exceptionCTrob-progress-bar-innerFbackground-color
+}
+
+.rob-progress.is-exception .rob-progress-text {
+  color:$progressFTrob-progressTis-exceptionCTrob-progress-textFcolor
+}
+
+.rob-progress.is-success .rob-progress-bar-inner {
+  background-color: $progressFTrob-progressTis-successCTrob-progress-bar-innerFbackground-color
+}
+
+.rob-progress.is-success .rob-progress-text {
+  color: $progressFTrob-progressTis-successCTrob-progress-textFcolor
+}
+
+.rob-progress-text {
+  font-size: $progressFTrob-progress-textFfont-size;
+  color: $progressFTrob-progress-textFcolor;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  line-height: 1
+}
+
+.rob-progress-text i {
+  vertical-align: middle;
+  display: block
+}
+
+.rob-progress-circle {
+  display: inline-block
+}
+
+.rob-progress-circle .rob-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  transform: translateY(-50%)
+}
+
+.rob-progress-circle .rob-progress-text i {
+  vertical-align: middle;
+  display: inline-block
+}
+
+.rob-progress-without-text .rob-progress-text {
+  display: none
+}
+
+.rob-progress-without-text .rob-progress-bar {
+  padding-right: 0;
+  margin-right: 0;
+  display: block
+}
+
+.rob-progress-text-inside .rob-progress-bar {
+  padding-right: 0;
+  margin-right: 0
+}
+
+.rob-progress-bar {
+  padding-right: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -55px;
+  box-sizing: border-box
+}
+
+.rob-progress-bar-outer {
+  //height:$progress-height;
+  border-radius: 100px;
+  height: $progressFTrob-progress-bar-outerFheight;
+  background-color: #e4e8f1;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle
+}
+
+.rob-progress-bar-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+  background-color: $progressFTrob-progress-bar-innerFbackground-color;
+  text-align: right;
+  border-radius: 100px;
+  line-height: 1
+}
+
+.rob-progress-bar-innerText {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 12px;
+  margin: 0 5px
+}
+
+@keyframes progress {
+  0% {
+    background-position: 0 0
+  }
+  to {
+    background-position: 32px 0
+  }
+}
+
+
+

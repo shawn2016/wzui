@@ -1,0 +1,15 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-default {
+  &,
+  &[disabled],
+  fieldset[disabled] & {
+    @include button-disabled-bd-bg($buttonFTrob-btn-defaultBCTrob-btn-defaultLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultFbackground-color,$buttonFTrob-btn-defaultBCTrob-btn-defaultLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultFborder-color,$buttonFTrob-btn-defaultBCTrob-btn-defaultLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-defaultWhoverBCTrob-btn-defaultWfocusBCTrob-btn-defaultLdisabledRWhoverBCTrob-btn-defaultLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultWhoverBCfieldsetLdisabledRCTrob-btn-defaultWfocusFbackground-color,$buttonFTrob-btn-defaultWhoverBCTrob-btn-defaultWfocusBCTrob-btn-defaultLdisabledRWhoverBCTrob-btn-defaultLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultWhoverBCfieldsetLdisabledRCTrob-btn-defaultWfocusFborder-color,$buttonFTrob-btn-defaultWhoverBCTrob-btn-defaultWfocusBCTrob-btn-defaultLdisabledRWhoverBCTrob-btn-defaultLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultWhoverBCfieldsetLdisabledRCTrob-btn-defaultWfocusFcolor);
+    }
+  }
+}
+.#{$cls-prefix}btn-default {
+  @include button-variant($buttonFTrob-btn-defaultFcolor, $buttonFTrob-btn-defaultFbackground-color, $buttonFTrob-btn-defaultFborder-color, $buttonFTrob-btn-defaultWhoverFbackground-color,$buttonFTrob-btn-defaultWhoverFborder-color,$buttonFTrob-btn-defaultWhoverFcolor);
+}

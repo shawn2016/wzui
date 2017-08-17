@@ -1,0 +1,18 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-img-darken:hover {
+  border-color: #ff9600;
+  box-shadow: 0px 4px 9px 0 rgba(0, 0, 0, 0.21);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  transition: all .3s; }

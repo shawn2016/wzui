@@ -1,0 +1,99 @@
+@import "../../base/base";
+//
+// 网格系统
+// --------------------------------------------------
+
+
+// Container 宽度
+//
+// 
+.#{$cls-prefix}container {
+  @include container-fixed;
+
+  @media (min-width: $gridFscreen-smFwidth) {
+    width: $gridFcontainer-smFwidth;
+  }
+  @media (min-width: $gridFscreen-mdFwidth) {
+    width: $gridFcontainer-mdFwidth;
+  }
+  @media (min-width: $gridFscreen-lgFwidth) {
+    width: $gridFcontainer-lgFwidth;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.#{$cls-prefix}container-fluid {
+  @include container-fixed;
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+.#{$cls-prefix}row {
+  @include make-row;
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns;
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $gridFscreen-smFwidth) {
+  @include make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $gridFscreen-mdFwidth) {
+  @include make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $gridFscreen-lgFwidth) {
+  @include make-grid(lg);
+}
+
+
+
+
+  // Remove the negative margin from default .row, then the horizontal padding
+  // from all immediate children columns (to prevent runaway style inheritance).
+  .#{$cls-prefix}no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }

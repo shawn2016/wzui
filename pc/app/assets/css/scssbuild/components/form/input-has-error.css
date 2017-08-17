@@ -1,0 +1,38 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-input-has-error.rob-input-line {
+  border-bottom: 1px solid #f95a5a; }
+
+.rob-input-has-error .rob-input, .rob-input-has-error .rob-input:hover {
+  border-color: #f95a5a; }
+
+.rob-input-has-error .rob-input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(249, 90, 90, 0.2); }
+
+.rob-input-has-error .rob-is-icon-left {
+  color: #f95a5a; }
+
+.rob-input-has-error .rob-is-icon-right {
+  color: #f95a5a; }
+
+.rob-input-has-error .rob-error-message {
+  color: #cc1612;
+  position: absolute;
+  height: 15px;
+  line-height: 15px;
+  margin-top: 6px;
+  overflow: hidden; }
+
+.rob-input-has-error .rob-input-label-error {
+  color: #f95a5a; }

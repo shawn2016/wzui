@@ -1,0 +1,15 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-icon-only {
+  height: $buttonFTrob-btn-icon-onlyFheight;
+  width: $buttonFTrob-btn-icon-onlyFwidth; 
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+
+  
+  > i {
+    text-align: center;
+    margin-top: 2px;
+    line-height: $buttonFTrob-btn-icon-onlyFheight/2 + $buttonFTrob-btn-xsFfont-size/2;
+  }
+}

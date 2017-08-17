@@ -1,0 +1,10 @@
+@import "../../base/base";
+.#{$cls-prefix}img-shoal {
+    
+    
+  &:hover { 
+    opacity:$imgFTrob-img-shoalWhoverFopacity;
+        transition: all .3s;
+    
+  }
+}

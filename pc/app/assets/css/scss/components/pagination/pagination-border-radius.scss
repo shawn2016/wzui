@@ -1,0 +1,54 @@
+@import "../../base/base";
+.#{$cls-prefix}pagination-border-radius{
+
+
+  > li {
+    border-radius: 4px;
+
+    a{
+
+      @include border-radius(4px);
+
+    }
+    input{
+      border-radius: 4px;
+    }
+
+    &:first-child {
+      > a,
+      > span {
+
+        @include border-left-radius(4px);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        @include border-right-radius(4px);
+      }
+    }
+
+  }
+
+
+
+
+
+
+}
+@media only screen and (max-width: 768px) {
+  .#{$cls-prefix}pagination-border-radius {
+    > li{
+      a{
+        margin:0;
+        padding:5px 10px;
+      }
+      > span{
+        padding:5px 10px;
+      }
+      input{
+        padding:2px 4px;
+      }
+    }
+  }
+}

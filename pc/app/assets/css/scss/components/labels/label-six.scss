@@ -1,0 +1,19 @@
+@import "../../base/base";
+
+.#{$cls-prefix}label-six{
+  padding: 7px 9px;
+  width: 60px;
+  color: #8091a7;
+  border: 1px dashed #8091a7 ;
+  &:hover{
+
+    color: #35baff;
+    border: 1px dashed #35baff
+
+  }
+  &:focus{
+    border: 1px solid #35baff ;
+  }
+}
+
+

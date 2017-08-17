@@ -1,0 +1,24 @@
+@import "../../../base/base";
+.#{$cls-prefix}btn-default.#{$cls-prefix}btn-dashed {
+ 
+  &,
+  &[disabled],
+  fieldset[disabled] & {
+    @include button-disabled-bd-bg($buttonFTrob-btn-defaultTrob-btn-dashedBCTrob-btn-defaultTrob-btn-dashedLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedFbackground-color,$buttonFTrob-btn-defaultTrob-btn-dashedBCTrob-btn-defaultTrob-btn-dashedLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedFborder-color,$buttonFTrob-btn-defaultTrob-btn-dashedBCTrob-btn-defaultTrob-btn-dashedLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-defaultTrob-btn-dashedWhoverBCTrob-btn-defaultTrob-btn-dashedWfocusBCTrob-btn-defaultTrob-btn-dashedLdisabledRWhoverBCTrob-btn-defaultTrob-btn-dashedLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedWhoverBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedWfocusFbackground-color,$buttonFTrob-btn-defaultTrob-btn-dashedWhoverBCTrob-btn-defaultTrob-btn-dashedWfocusBCTrob-btn-defaultTrob-btn-dashedLdisabledRWhoverBCTrob-btn-defaultTrob-btn-dashedLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedWhoverBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedWfocusFborder-color,$buttonFTrob-btn-defaultTrob-btn-dashedWhoverBCTrob-btn-defaultTrob-btn-dashedWfocusBCTrob-btn-defaultTrob-btn-dashedLdisabledRWhoverBCTrob-btn-defaultTrob-btn-dashedLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedWhoverBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-dashedWfocusFcolor);
+    }
+  }
+}
+
+.#{$cls-prefix}btn-default.#{$cls-prefix}btn-dashed {
+    @include button-variant($buttonFTrob-btn-defaultTrob-btn-dashedFcolor, $buttonFTrob-btn-defaultTrob-btn-dashedFbackground-color, $buttonFTrob-btn-defaultTrob-btn-dashedFborder-color, $buttonFTrob-btn-defaultTrob-btn-dashedWhoverFbackground-color,$buttonFTrob-btn-defaultTrob-btn-dashedWhoverFborder-color,$buttonFTrob-btn-defaultTrob-btn-dashedWhoverFcolor);
+     border-style: dashed;
+      &:focus,
+      &.focus,
+      &:active,
+      &.active   {
+        color: $buttonFTrob-btn-defaultTrob-btn-dashedWfocusBCTrob-btn-defaultTrob-btn-dashedTfocusBCTrob-btn-defaultTrob-btn-dashedWactiveBCTrob-btn-defaultTrob-btn-dashedTactiveFcolor;
+      }
+    }

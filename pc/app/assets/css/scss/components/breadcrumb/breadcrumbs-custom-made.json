@@ -1,0 +1,14 @@
+"cssCopy": [{
+    "type": "breadcrumbs 面包屑",
+    "desc":"",
+    "id":"breadcrumbs",
+    "components": [
+    {
+      "value": "breadcrumbs/breadcrumbs",
+      "isCheck": true,
+      "parentId": "breadcrumbs",
+      "arrayList": [],
+      "desc": "必要"
+    }
+    ]
+    }]  

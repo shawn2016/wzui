@@ -1,0 +1,146 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-file-icon {
+  background: url(../images/fileicon.png) -143px -336px no-repeat;
+  width: 50px;
+  height: 64px;
+  display: inline-block;
+  vertical-align: middle; }
+  .rob-file-icon.rob-file-icon-word {
+    background-position: -20px -33px; }
+  .rob-file-icon.rob-file-icon-pdf {
+    background-position: -80px -33px; }
+  .rob-file-icon.rob-file-icon-csv {
+    background-position: -140px -33px; }
+  .rob-file-icon.rob-file-icon-jpg {
+    background-position: -200px -33px; }
+  .rob-file-icon.rob-file-icon-zip {
+    background-position: -260px -33px; }
+
+.rob-upload::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.rob-upload::before {
+  content: " ";
+  display: table; }
+
+.rob-upload .rob-upload-card {
+  border: 1px solid #ccc;
+  float: left;
+  color: #64971c;
+  position: relative;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  min-height: 125px;
+  min-width: 100px; }
+  .rob-upload .rob-upload-card:hover {
+    border: 1px solid #64971c; }
+  .rob-upload .rob-upload-card .rob-upload-close {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    color: #ccc;
+    padding: 5px; }
+    .rob-upload .rob-upload-card .rob-upload-close:hover {
+      color: #333;
+      cursor: pointer; }
+  .rob-upload .rob-upload-card .rob-upload-card-type {
+    margin: 29px 24px 5px;
+    text-align: center;
+    color: #b1b8c5;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    min-width: 44px;
+    min-height: 60px; }
+    .rob-upload .rob-upload-card .rob-upload-card-type i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%); }
+  .rob-upload .rob-upload-card label {
+    display: block; }
+  .rob-upload .rob-upload-card .rob-upload-add {
+    border: 1px dashed #ccc; }
+    .rob-upload .rob-upload-card .rob-upload-add:hover {
+      border-color: #64971c;
+      color: #64971c; }
+      .rob-upload .rob-upload-card .rob-upload-add:hover [type="file"] {
+        z-index: 1; }
+  .rob-upload .rob-upload-card .rob-upload-finish {
+    border: none;
+    cursor: default; }
+    .rob-upload .rob-upload-card .rob-upload-finish [type="file"] {
+      z-index: -1; }
+    .rob-upload .rob-upload-card .rob-upload-finish + label {
+      cursor: pointer; }
+  .rob-upload .rob-upload-card .rob-upload-disable {
+    border: 1px dashed #ccc;
+    cursor: default; }
+    .rob-upload .rob-upload-card .rob-upload-disable + label {
+      color: #ccc; }
+  .rob-upload .rob-upload-card [type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer; }
+
+.rob-upload .rob-upload-card-response label {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%); }
+
+.canvas-box {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+.canvas-box .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: move;
+  border: 1px solid #69f; }
+
+.canvas-box div, .canvas-box canvas {
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+.rob-onchangecrop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  line-height: normal;
+  z-index: 100;
+  min-width: 280px; }

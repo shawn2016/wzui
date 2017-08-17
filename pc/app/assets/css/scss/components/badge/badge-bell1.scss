@@ -1,0 +1,19 @@
+@import "../../base/base";
+.#{$cls-prefix}badge-bell1{
+  /*width: 14px;
+  background: 14px;*/
+  font-size: $badgeFTrob-badge-bell1Ffont-size;
+  position: relative;
+
+  .badge-bell-remind{
+    position: absolute;
+    left: $badgeFTrob-badge-bell1CTbadge-bell-remindFleft;
+    top: $badgeFTrob-badge-bell1CTbadge-bell-remindFtop;
+    width: $badgeFTrob-badge-bell1CTbadge-bell-remindFwidth;
+    height: $badgeFTrob-badge-bell1CTbadge-bell-remindFheight;
+    border-radius: 100%;
+    background: $badgeFTrob-badge-bell1CTbadge-bell-remindFbackground;
+    display: inline-block;
+  }
+
+}

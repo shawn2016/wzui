@@ -1,0 +1,654 @@
+<article class="markdown">
+    <h1>Steps 步骤条</h1>
+    <section class="markdown">
+        <p>
+            引导用户按照流程完成任务的分步导航条，可根据实际应用场景设定步骤，步骤不得少于 2 步。
+        </p>
+    </section>
+    <section class="markdown">
+        <h2 id="代码演示"><span>代码演示</span><a href="#代码演示" class="anchor">#</a></h2>
+    </section>
+    <section class="rob-row">
+        <div class="rob-col-lg-24">
+            <div class="code-box">
+                <section class="code-box-demo rob-grid">
+                    <h2>步骤条</h2>
+                    <div class="rob-step-scroll" >
+                    <div class="rob-steps rob-is-horizontal" style=";width: 80%;margin: 0 auto;margin-right: 0">
+                        <div class="rob-step rob-is-horizontal" style="width: 33%;">
+                            <div class="rob-step-head rob-is-process rob-is-text">
+                                <div class="rob-step-line rob-is-horizontal" style="margin-right: 0px;">
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;height:1px;background-color:red;width: 100%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                                <div>1</div>
+                                <!-- <i class="rob-icon-check"></i> -->
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: -25%;width: 50%;text-align: center;padding-right: 0; position: relative;left: 15px;">
+                                <div class="rob-step-title rob-is-process">步骤 1</div>
+                                <div class="rob-step-description rob-is-process">斤斤计较军军</div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal" style="width: 33%;">
+                            <div class="rob-step-head rob-is-wait rob-is-text">
+                                <div class="rob-step-line rob-is-horizontal" style="margin-right: 0px;"><i class="rob-step-line-inner" style="transition-delay: -150ms; border-width: 0px; width: 0%;"></i></div><span class="rob-step-icon"><span>2</span></span></div>
+                            <div class="rob-step-main" style="margin-left: -25%;width: 50%;text-align: center;position: relative;left: 15px;padding-right: 0;">
+                                <div class="rob-step-title rob-is-process">步骤 2</div>
+                                <div class="rob-step-description rob-is-process">斤斤计较军军</div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal" style="width: 33%;">
+                            <div class="rob-step-head rob-is-wait rob-is-text">
+                                <div class="rob-step-line rob-is-horizontal"><i class="rob-step-line-inner"></i></div><span class="rob-step-icon"><div>3</div></span></div>
+                            <div class="rob-step-main" style="margin-left: -25%;width: 50%;text-align: center;position: relative;left: 15px;padding-right: 0;">
+                                <div class="rob-step-title rob-is-wait">步骤 3</div>
+                                <div class="rob-step-description rob-is-process">斤斤计较军军</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                <h2>步骤条(图片水平图标) </h2>
+                    <div class="rob-step-scroll" >
+                        <div style="">
+                    <div class="rob-steps rob-is-horizontal">
+                        <div class="rob-step rob-is-horizontal" style="width:50%">
+                            <div class="rob-step-head rob-is-success ">
+                                <div class="rob-step-line rob-is-horizontal rob-is-icon" style="margin-right: 0px;">
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <i class="rob-icon rob-icon-home"></i>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-process">步骤 1</div>
+                                <div class="rob-step-description rob-is-process">斤斤计较军军</div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal" style="width:50%">
+                            <div class="rob-step-head rob-is-wait rob-is-text">
+                                <div class="rob-step-line rob-is-horizontal" style="margin-right: 0px;"><i class="rob-step-line-inner" style="transition-delay: -150ms; border-width: 0px; width: 0%;"></i></div><span class="rob-step-icon"><div>2</div></span></div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-process">步骤 2</div>
+                                <div class="rob-step-description rob-is-process"></div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal" style="width: 0%;">
+                            <div class="rob-step-head rob-is-wait rob-is-text">
+                                <div class="rob-step-line rob-is-horizontal"><i class="rob-step-line-inner"></i></div><span class="rob-step-icon"><div>3</div></span></div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-wait">步骤 3</div>
+                                <div class="rob-step-description rob-is-wait"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <h2>步骤条(无图片垂直) </h2>
+
+
+                    <div class="rob-steps rob-is-vertical">
+                        <div class="rob-step rob-is-vertical" style="margin-right: 0px; height: 100px;">
+                            <div class="rob-step-head rob-is-finish rob-is-text">
+                                <div class="rob-step-line rob-is-vertical" style="margin-right: 0px;"><i class="rob-step-line-inner" style="transition-delay: 0ms; border-width: 1px; height: 50%;"></i></div><span class="rob-step-icon"><div>1</div></span></div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-finish">步骤 1</div>
+                                <div class="rob-step-description rob-is-finish"></div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-vertical" style="margin-right: 0px; height: 100px;">
+                            <div class="rob-step-head rob-is-process rob-is-text">
+                                <div class="rob-step-line rob-is-vertical" style="margin-right: 0px;"><i class="rob-step-line-inner" style="transition-delay: -150ms; border-width: 0px; height: 0%;"></i></div><span class="rob-step-icon"><div>2</div></span></div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-process">步骤 2</div>
+                                <div class="rob-step-description rob-is-process"></div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-vertical">
+                            <div class="rob-step-head rob-is-wait rob-is-text">
+                                <div class="rob-step-line rob-is-vertical">
+                                    <i class="rob-step-line-inner"></i>
+                                </div><span class="rob-step-icon"><div>3</div></span></div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-wait">步骤 3</div>
+                                <div class="rob-step-description rob-is-wait"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <h2>步骤条(图片三步骤) </h2>
+                    <div class="rob-step-scroll" >
+                        <div style="min-width: 498px">
+                    <div class="rob-steps rob-is-horizontal   rob-is-img" >
+                        <div class="rob-step rob-is-horizontal rob-is-img" style="width:50%">
+                            <div class="rob-step-head rob-is-success">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <div class="rob-step-line-desc rob-is-success">
+                                        哈哈哈哈
+                                    </div>
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f1"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-success">步骤 1</div>
+                                <div class="rob-step-description rob-is-success">斤斤计较军军</div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal  rob-is-img" style="width:50%">
+                            <div class="rob-step-head rob-is-process">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <div class="rob-step-line-desc">
+                                        哈哈哈哈
+                                    </div>
+                                    <!--  <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;"></i> -->
+                                    <i class="rob-step-line-inner"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f02"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-process">步骤 2</div>
+                                <div class="rob-step-description rob-is-process">斤斤计较军军</div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal  rob-is-img" style="width:0%">
+                            <div class="rob-step-head rob-is-process ">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f03"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-process">步骤 3</div>
+                                <div class="rob-step-description rob-is-process">斤斤计较军军</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+                <h2>步骤条(图片四步骤)  </h2>
+                    <div class="rob-step-scroll" >
+                        <div style="min-width: 598px">
+                    <div class="rob-steps rob-is-horizontal   rob-is-img">
+                        <div class="rob-step rob-is-horizontal  rob-is-img" style="width: 25%;">
+                            <div class="rob-step-head rob-is-success ">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <div class="rob-step-line-desc rob-is-success">
+                                        哈哈哈哈
+                                    </div>
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 100%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f1"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-success">步骤 1</div>
+                                <div class="rob-step-description rob-is-success">斤斤计较军军</div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal  rob-is-img" style="width: 25%;">
+                            <div class="rob-step-head rob-is-success ">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <div class="rob-step-line-desc rob-is-success">
+                                        哈哈哈哈
+                                    </div>
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 100%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f1"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-success">步骤 1</div>
+                                <div class="rob-step-description rob-is-success">斤斤计较军军</div>
+                            </div>
+                        </div>
+                        <div class="rob-step rob-is-horizontal  rob-is-img" style="width: 25%;">
+                            <div class="rob-step-head rob-is-success ">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <div class="rob-step-line-desc">
+                                        哈哈哈哈
+                                    </div>
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f1"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-success">步骤 2</div>
+                                <div class="rob-step-description rob-is-success">斤斤计较军军</div>
+                            </div>
+                        </div>
+                         <div class="rob-step rob-is-horizontal  rob-is-img" style="width: 25%;">
+                            <div class="rob-step-head rob-is-success ">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <div class="rob-step-line-desc">
+                                        哈哈哈哈
+                                    </div>
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f1"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-success">步骤 2</div>
+                                <div class="rob-step-description rob-is-success">斤斤计较军军</div>
+                            </div>
+                        </div>
+                    
+                        <div class="rob-step rob-is-horizontal  rob-is-img" style="width: 0%;">
+                            <div class="rob-step-head rob-is-process ">
+                                <div class="rob-step-line rob-is-horizontal">
+                                    <i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 0%;"></i>
+                                </div>
+                                <span class="rob-step-icon">
+                               <!-- <i class="rob-icon rob-icon-home"></i> -->
+                               <span class="ioc_info icon-f03"></span>
+                                </span>
+                            </div>
+                            <div class="rob-step-main" style="margin-left: 0px;">
+                                <div class="rob-step-title rob-is-process">步骤 4</div>
+                                <div class="rob-step-description rob-is-process">斤斤计较军军</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="code-box-meta markdown">
+                    <div class="code-box-title">
+                        <a href="">
+                           步骤条
+                       </a>
+                    </div>
+                    <p>
+                    <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-hover rob-table-bordered">
+                        <thead>
+                        <tr>
+                            <th> 名称</th>
+                            <th> 序号</th>
+                            <th> 效果</th>
+                            <th> 所需类名</th>
+                            <th> 定制所需类名</th>
+                            <th> 备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td> 步骤条</td>
+                            <td> 1</td>
+                            <td> 无图标无图片水平</td>
+                            <td>
+                                <code class="language-markup">.rob-steps </code>
+                                <code class="language-markup">.rob-is-horizontal</code>
+
+
+                            </td>
+                            <td>
+                                <code class="language-markup">steps</code>
+                                <code class="language-markup">horizontal</code>
+
+
+                            </td>
+                            <td>
+                                可选定制:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 步骤条(图片水平图标)</td>
+                            <td> 2</td>
+                            <td> 图片水平图标</td>
+                            <td>
+                                <code class="language-markup">.rob-steps </code>
+                                <code class="language-markup">.rob-is-horizontal</code>
+
+
+                            </td>
+                            <td>
+                                <code class="language-markup">steps</code>
+                                <code class="language-markup">horizontal</code>
+
+
+                            </td>
+                            <td>
+                                可选定制:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>步骤条(无图片垂直) </td>
+                            <td> 3</td>
+                            <td> 无图片垂直</td>
+                            <td>
+                                <code class="language-markup">.rob-steps </code>
+                                <code class="language-markup">.rob-is-vertical</code>
+
+
+                            </td>
+                            <td>
+                                <code class="language-markup">steps</code>
+                                <code class="language-markup">vertical</code>
+
+
+                            </td>
+                            <td>
+                                可选定制:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>步骤条(图片三步骤) </td>
+                            <td> 4</td>
+                            <td> 图片三步骤</td>
+
+
+
+                            <td>
+                                <code class="language-markup">.rob-steps </code>
+                                <code class="language-markup">.rob-is-horizontal</code>
+                                <code class="language-markup">.rob-is-img</code>
+
+
+                            </td>
+                            <td>
+                                <code class="language-markup">steps</code>
+                                <code class="language-markup">horizontal</code>
+                                <code class="language-markup">img</code>
+
+
+                            </td>
+                            <td>
+                                可选定制:
+                            </td>
+
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>步骤条(图片四步骤) </td>
+                            <td> 4</td>
+                            <td> 图片四步骤</td>
+
+                            <td>
+                                <code class="language-markup">.rob-steps </code>
+                                <code class="language-markup">.rob-is-horizontal</code>
+                                <code class="language-markup">.rob-is-img</code>
+
+
+                            </td>
+                            <td>
+                                <code class="language-markup">steps</code>
+                                <code class="language-markup">horizontal</code>
+                                <code class="language-markup">img</code>
+
+
+                            </td>
+                            <td>
+                                可选定制:
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    </div>
+                    </p>
+                    <i class="rob-icon rob-icon-home code-show" ng-click="showCode('step')"></i>
+                </section>
+
+                <section class="code-box-content" id="step">
+                    <pre>
+<code class="language-markup">
+    &lt;h2>步骤条&lt;/h2>
+    &lt;div class="rob-steps rob-is-horizontal">
+        &lt;div class="rob-step rob-is-horizontal" style="margin-right: 0px; width: 100px;">
+            &lt;div class="rob-step-head rob-is-process rob-is-text">
+                &lt;div class="rob-step-line rob-is-horizontal" style="margin-right: 0px;">
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                                &lt;div>1&lt;/div>
+                                &lt;!-- &lt;i class="rob-icon-check">&lt;/i> -->
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 1&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal" style="margin-right: 0px; width: 100px;">
+            &lt;div class="rob-step-head rob-is-wait rob-is-text">
+                &lt;div class="rob-step-line rob-is-horizontal" style="margin-right: 0px;">&lt;i class="rob-step-line-inner" style="transition-delay: -150ms; border-width: 0px; width: 0%;">&lt;/i>&lt;/div>&lt;span class="rob-step-icon">&lt;div>2&lt;/div>&lt;/span>&lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 2&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal" style="width: 100px;">
+            &lt;div class="rob-step-head rob-is-wait rob-is-text">
+                &lt;div class="rob-step-line rob-is-horizontal">&lt;i class="rob-step-line-inner">&lt;/i>&lt;/div>&lt;span class="rob-step-icon">&lt;div>3&lt;/div>&lt;/span>&lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-wait">步骤 3&lt;/div>
+                &lt;div class="rob-step-description rob-is-wait">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+
+    &lt;h2>步骤条(图片水平图标) &lt;/h2>
+
+    &lt;div class="rob-steps rob-is-horizontal">
+        &lt;div class="rob-step rob-is-horizontal" style="margin-right: 0px; width: 100px;">
+            &lt;div class="rob-step-head rob-is-success ">
+                &lt;div class="rob-step-line rob-is-horizontal rob-is-icon" style="margin-right: 0px;">
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;i class="rob-icon rob-icon-home">&lt;/i>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 1&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal" style="margin-right: 0px; width: 100px;">
+            &lt;div class="rob-step-head rob-is-wait rob-is-text">
+                &lt;div class="rob-step-line rob-is-horizontal" style="margin-right: 0px;">&lt;i class="rob-step-line-inner" style="transition-delay: -150ms; border-width: 0px; width: 0%;">&lt;/i>&lt;/div>&lt;span class="rob-step-icon">&lt;div>2&lt;/div>&lt;/span>&lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 2&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal" style="width: 100px;">
+            &lt;div class="rob-step-head rob-is-wait rob-is-text">
+                &lt;div class="rob-step-line rob-is-horizontal">&lt;i class="rob-step-line-inner">&lt;/i>&lt;/div>&lt;span class="rob-step-icon">&lt;div>3&lt;/div>&lt;/span>&lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-wait">步骤 3&lt;/div>
+                &lt;div class="rob-step-description rob-is-wait">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+
+    &lt;h2>步骤条(无图片垂直) &lt;/h2>
+
+    &lt;div class="rob-steps rob-is-vertical">
+        &lt;div class="rob-step rob-is-vertical" style="margin-right: 0px; height: 100px;">
+            &lt;div class="rob-step-head rob-is-finish rob-is-text">
+                &lt;div class="rob-step-line rob-is-vertical" style="margin-right: 0px;">&lt;i class="rob-step-line-inner" style="transition-delay: 0ms; border-width: 1px; height: 50%;">&lt;/i>&lt;/div>&lt;span class="rob-step-icon">&lt;div>1&lt;/div>&lt;/span>&lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-finish">步骤 1&lt;/div>
+                &lt;div class="rob-step-description rob-is-finish">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-vertical" style="margin-right: 0px; height: 100px;">
+            &lt;div class="rob-step-head rob-is-process rob-is-text">
+                &lt;div class="rob-step-line rob-is-vertical" style="margin-right: 0px;">&lt;i class="rob-step-line-inner" style="transition-delay: -150ms; border-width: 0px; height: 0%;">&lt;/i>&lt;/div>&lt;span class="rob-step-icon">&lt;div>2&lt;/div>&lt;/span>&lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 2&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-vertical">
+            &lt;div class="rob-step-head rob-is-wait rob-is-text">
+                &lt;div class="rob-step-line rob-is-vertical">
+                    &lt;i class="rob-step-line-inner">&lt;/i>
+                &lt;/div>&lt;span class="rob-step-icon">&lt;div>3&lt;/div>&lt;/span>&lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-wait">步骤 3&lt;/div>
+                &lt;div class="rob-step-description rob-is-wait">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+
+    &lt;h2>步骤条(图片三步骤) &lt;/h2>
+
+    &lt;div class="rob-steps rob-is-horizontal   rob-is-img">
+        &lt;div class="rob-step rob-is-horizontal">
+            &lt;div class="rob-step-head rob-is-success ">
+                &lt;div class="rob-step-line rob-is-horizontal">
+                    &lt;div class="rob-step-line-desc rob-is-success">
+                        哈哈哈哈
+                    &lt;/div>
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;!-- &lt;i class="rob-icon rob-icon-home">&lt;/i> -->
+                               &lt;span class="ioc_info icon-f1">&lt;/span>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-success">步骤 1&lt;/div>
+                &lt;div class="rob-step-description rob-is-success">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal  rob-is-img">
+            &lt;div class="rob-step-head rob-is-process ">
+                &lt;div class="rob-step-line rob-is-horizontal">
+                    &lt;div class="rob-step-line-desc">
+                        哈哈哈哈
+                    &lt;/div>
+                    &lt;!--  &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;">&lt;/i> -->
+                    &lt;i class="rob-step-line-inner">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;!-- &lt;i class="rob-icon rob-icon-home">&lt;/i> -->
+                               &lt;span class="ioc_info icon-f02">&lt;/span>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 2&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal  rob-is-img">
+            &lt;div class="rob-step-head rob-is-process ">
+                &lt;div class="rob-step-line rob-is-horizontal">
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;!-- &lt;i class="rob-icon rob-icon-home">&lt;/i> -->
+                               &lt;span class="ioc_info icon-f03">&lt;/span>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 3&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+
+    &lt;h2>步骤条(图片四步骤)  &lt;/h2>
+
+    &lt;div class="rob-steps rob-is-horizontal   rob-is-img">
+        &lt;div class="rob-step rob-is-horizontal">
+            &lt;div class="rob-step-head rob-is-success ">
+                &lt;div class="rob-step-line rob-is-horizontal">
+                    &lt;div class="rob-step-line-desc rob-is-success">
+                        哈哈哈哈
+                    &lt;/div>
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 100%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;!-- &lt;i class="rob-icon rob-icon-home">&lt;/i> -->
+                               &lt;span class="ioc_info icon-f1">&lt;/span>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-success">步骤 1&lt;/div>
+                &lt;div class="rob-step-description rob-is-success">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal  rob-is-img">
+            &lt;div class="rob-step-head rob-is-success ">
+                &lt;div class="rob-step-line rob-is-horizontal">
+                    &lt;div class="rob-step-line-desc">
+                        哈哈哈哈
+                    &lt;/div>
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 50%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;!-- &lt;i class="rob-icon rob-icon-home">&lt;/i> -->
+                               &lt;span class="ioc_info icon-f1">&lt;/span>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-success">步骤 2&lt;/div>
+                &lt;div class="rob-step-description rob-is-success">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal  rob-is-img">
+            &lt;div class="rob-step-head rob-is-process ">
+                &lt;div class="rob-step-line rob-is-horizontal">
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-style:dashed;border-width: 1px;width: 0%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;!-- &lt;i class="rob-icon rob-icon-home">&lt;/i> -->
+                               &lt;span class="ioc_info icon-f03">&lt;/span>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 3&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="rob-step rob-is-horizontal  rob-is-img">
+            &lt;div class="rob-step-head rob-is-process ">
+                &lt;div class="rob-step-line rob-is-horizontal">
+                    &lt;i class="rob-step-line-inner" style="transition-delay: 0ms;border-width: 1px;width: 0%;">&lt;/i>
+                &lt;/div>
+                                &lt;span class="rob-step-icon">
+                               &lt;!-- &lt;i class="rob-icon rob-icon-home">&lt;/i> -->
+                               &lt;span class="ioc_info icon-f03">&lt;/span>
+                                &lt;/span>
+            &lt;/div>
+            &lt;div class="rob-step-main" style="margin-left: 0px;">
+                &lt;div class="rob-step-title rob-is-process">步骤 4&lt;/div>
+                &lt;div class="rob-step-description rob-is-process">斤斤计较军军&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+</code>
+</pre>
+                </section>
+            </div>
+        </div>
+    </section>
+</article>

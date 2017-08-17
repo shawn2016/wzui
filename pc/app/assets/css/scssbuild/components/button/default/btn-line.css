@@ -1,0 +1,60 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-default.rob-btn-line, .rob-btn-default.rob-btn-line[disabled],
+fieldset[disabled] .rob-btn-default.rob-btn-line {
+  border-color: #d8d8d8;
+  background-color: #d8d8d8;
+  color: #FFF; }
+  .rob-btn-default.rob-btn-line:hover, .rob-btn-default.rob-btn-line:focus, .rob-btn-default.rob-btn-line[disabled]:hover, .rob-btn-default.rob-btn-line[disabled]:focus,
+  fieldset[disabled] .rob-btn-default.rob-btn-line:hover,
+  fieldset[disabled] .rob-btn-default.rob-btn-line:focus {
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    color: #FFF; }
+
+.rob-btn-default.rob-btn-line {
+  color: #35baff;
+  background-color: #FFF;
+  border-color: #35baff; }
+  .rob-btn-default.rob-btn-line:focus, .rob-btn-default.rob-btn-line.focus {
+    color: #35baff;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: #33aeed;
+    border-color: #33aeed; }
+  .rob-btn-default.rob-btn-line:hover {
+    color: #FFF;
+    background-color: #33aeed;
+    border-color: #33aeed; }
+  .rob-btn-default.rob-btn-line:active, .rob-btn-default.rob-btn-line.active,
+  .open > .rob-btn-default.rob-btn-line.dropdown-toggle {
+    color: #35baff;
+    background-color: #33aeed;
+    border-color: #33aeed; }
+    .rob-btn-default.rob-btn-line:active:hover, .rob-btn-default.rob-btn-line:active:focus, .rob-btn-default.rob-btn-line:active.focus, .rob-btn-default.rob-btn-line.active:hover, .rob-btn-default.rob-btn-line.active:focus, .rob-btn-default.rob-btn-line.active.focus,
+    .open > .rob-btn-default.rob-btn-line.dropdown-toggle:hover,
+    .open > .rob-btn-default.rob-btn-line.dropdown-toggle:focus,
+    .open > .rob-btn-default.rob-btn-line.dropdown-toggle.focus {
+      color: #FFF;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: #33aeed;
+      border-color: #33aeed; }
+  .rob-btn-default.rob-btn-line:active, .rob-btn-default.rob-btn-line.active,
+  .open > .rob-btn-default.rob-btn-line.dropdown-toggle {
+    background-image: none; }
+  .rob-btn-default.rob-btn-line .badge {
+    color: #FFF;
+    background-color: #35baff; }
+  .rob-btn-default.rob-btn-line:focus, .rob-btn-default.rob-btn-line.focus, .rob-btn-default.rob-btn-line:active, .rob-btn-default.rob-btn-line.active {
+    color: #fff; }

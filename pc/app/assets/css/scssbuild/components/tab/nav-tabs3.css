@@ -1,0 +1,51 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-nav-tabs3 {
+  background-color: #eff1f6;
+  border: solid 1px #e5e6e9;
+  /* border-bottom: none;
+   background:  #ebecee;*/
+  padding: 0; }
+  .rob-nav-tabs3 > li {
+    float: left;
+    margin-bottom: -1px; }
+    .rob-nav-tabs3 > li > a {
+      padding: 11px 22px;
+      color: #393939;
+      margin-right: 61px;
+      /* border: 1px solid transparent;*/ }
+      .rob-nav-tabs3 > li > a:hover {
+        color: #35baff;
+        background-color: #eff1f6; }
+    .rob-nav-tabs3 > li.active > a, .rob-nav-tabs3 > li.active > a:hover, .rob-nav-tabs3 > li.active > a:focus {
+      background-color: #eff1f6;
+      color: #35baff;
+      /* border: 1px solid #91ce3b;*/
+      border-bottom: 3px solid #35baff;
+      cursor: default;
+      /*  padding: 20px 79px;*/
+      text-align: center; }
+  .rob-nav-tabs3.response > li {
+    text-align: center;
+    width: 8%;
+    min-width: 79px;
+    height: 10%;
+    margin-right: 2%; }
+    .rob-nav-tabs3.response > li > a {
+      padding: 10% 10%;
+      width: 100%;
+      text-align: center;
+      margin-right: 10%; }
+    .rob-nav-tabs3.response > li.active > a, .rob-nav-tabs3.response > li.active > a:hover, .rob-nav-tabs3.response > li.active > a:focus {
+      padding: 12% 10%;
+      margin-top: -4%; }

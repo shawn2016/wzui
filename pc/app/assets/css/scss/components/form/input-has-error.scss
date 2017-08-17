@@ -1,0 +1,34 @@
+@import "../../base/base";
+.#{$cls-prefix}input-has-error {
+  &.rob-input-line {
+    border-bottom: $inputFTrob-input-has-errorTrob-input-lineFborder-bottom;
+  }
+  .#{$cls-prefix}input {
+    &,
+    &:hover {
+      border-color: $inputFTrob-input-has-errorCTrob-inputBCTrob-input-has-errorCTrob-inputWhoverFborder-color;
+    }
+    &:focus {
+      outline: 0;
+      box-shadow: $inputFTrob-input-has-errorCTrob-inputWfocusFbox-shadow;
+    }
+  }
+  .#{$cls-prefix}is-icon-left {
+    color: $inputFTrob-input-has-errorCTrob-is-icon-leftFcolor;
+  }
+  .#{$cls-prefix}is-icon-right {
+    color: $inputFTrob-input-has-errorCTrob-is-icon-rightFcolor;
+  }
+  .#{$cls-prefix}error-message {
+    color: $inputFTrob-input-has-errorCTrob-error-messageFcolor;
+    position: absolute;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+
+  .#{$cls-prefix}input-label-error {
+    color: $inputFTrob-input-has-errorCTrob-input-label-errorFcolor;
+  }
+}

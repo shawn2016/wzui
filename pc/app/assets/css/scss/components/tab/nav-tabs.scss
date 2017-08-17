@@ -1,0 +1,67 @@
+@import "../../base/base";
+
+
+.#{$cls-prefix}nav-tabs {
+  border-bottom: none;
+  background:  transparent;
+  padding:  0;
+
+  > li {
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -1px;
+
+    // Actual tabs (as links)
+    > a {
+      padding: 10px 65px ;
+      color:  $tabFTrob-nav-tabsCPCliCPCaFcolor;
+      margin-right: 2px;
+      text-align: center;
+      //width:180px;
+      border: 1px solid transparent;
+      border-radius:4px 4px 0 0;
+      &:hover {
+        color: $tabFTrob-nav-tabsCPCliCPCaWhoverFcolor;
+        background:$tabFTrob-nav-tabsCPCliCPCaWhoverFbackground ;
+      }
+      background-color: $tabFTrob-nav-tabsCPCliCPCaFbackground-color;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        /* margin-top: -5px;*/
+        color: $tabFTrob-nav-tabsCPCliTactiveCPCaBCTrob-nav-tabsCPCliTactiveCPCaWhoverBCTrob-nav-tabsCPCliTactiveCPCaWfocusFcolor;
+        background-color: $tabFTrob-nav-tabsCPCliTactiveCPCaBCTrob-nav-tabsCPCliTactiveCPCaWhoverBCTrob-nav-tabsCPCliTactiveCPCaWfocusFbackground-color;
+        //border: $nav-active-border;
+        //border-bottom-color: transparent;
+        cursor: default;
+        /*padding: 20.5px 77px;*/
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  &.response{
+    > li {
+      width: 13%;
+      min-width: 79px;
+      height: 10%;
+      > a{
+        padding: 7% 10%;
+      }
+
+    }
+  }
+
+
+}
+.rob-tab-min-width{
+  min-width: 320px;
+}
+
+
+
+
+

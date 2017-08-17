@@ -1,0 +1,166 @@
+@import "../../base/base";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.#{$cls-prefix}pagination-simple-input {
+  display: inline-block;
+
+
+
+  > li {
+    margin-left: 0;
+    float: left;
+    line-height: 0px;
+    display: inline; // Remove list-style and block-level defaults
+    font-size: 12px;
+    a{
+
+      border: none;
+      margin: 0 0;
+      color: #8e8e8e;
+      /*     @include border-radius(4px);*/
+      position: relative;
+      float: left; // Collapse white-space
+      padding: $paginationFTrob-pagination-simple-inputCPCliCaFpadding;
+      line-height: 1.428571429;
+      text-decoration: none;
+
+      /*     background-color: $pagination-bg;*/
+
+      margin-left: -1px;
+    }
+
+    &:first-child {
+      > a,
+      > span {
+        margin-left: 0;
+        /*        @include border-left-radius($border-radius-base);*/
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        /*        @include border-right-radius($border-radius-base);*/
+      }
+    }
+    /*  input{
+        width: 35px;
+        border: 1px solid $pagination-a-borderColor;
+        padding: 2px 4px;
+        margin: 0 10px;
+        height: 31px;
+   /!*     border-radius: 4px;*!/
+      }*/
+    input {
+      width: 35px;
+      border: 1px solid #ededed;
+      padding: $paginationFTrob-pagination-simple-inputCPCliCinputFpadding;
+      margin: 0 10px;
+      height: 31px;
+      border-radius: 0;
+    }
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      color: #fff ;
+      background: #8ac537;
+      border-color: #8ac537;
+      transition: all .3s;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: #8ac537;
+      border-color: #8ac537;
+      transition: all .3s;
+    }
+  }
+  li{
+
+
+    &:last-child ,&:first-child{
+      > a {
+        &:hover,&:focus{
+
+          color:#8ac536 ;
+          background: #ffffff;
+          border: none;
+          @include border-right-radius(4px);
+        }
+      }
+    }
+  }
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color:  #cecece;
+      background: #ffffff;
+
+      border-color: #ddd;
+      cursor: not-allowed;
+
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .#{$cls-prefix}pagination-simple-input {
+    > li{
+      a{
+        margin:0 5px;
+        padding:5px 10px;margin-left: -1px;
+
+      }
+      > span{
+        padding:5px 10px;
+      }
+      input{
+        padding:2px 4px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

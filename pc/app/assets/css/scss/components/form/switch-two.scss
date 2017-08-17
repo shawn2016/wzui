@@ -1,0 +1,130 @@
+
+@import "../../base/base";
+
+
+.#{$cls-prefix}switch-two {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: $switchFTrob-switch-twoFheight;
+  min-width: $switchFTrob-switch-twoFmin-width;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: $switchFTrob-switch-twoFborder-radius;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, .25);
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.#{$cls-prefix}switch-two-inner {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 24px;
+  margin-right: 6px;
+  display: block;
+  line-height: 23px;
+}
+
+.#{$cls-prefix}switch-two:after {
+  position: absolute;
+  width: $switchFTrob-switch-twoWafterFwidth;
+  height: $switchFTrob-switch-twoWafterFheight;
+  left: 1px;
+  top: 1px;
+  border-radius: $switchFTrob-switch-twoWafterFborder-radius;
+  background-color:$switchFTrob-switch-twoWafterFbackground-color;
+  content: " ";
+  cursor: pointer;
+  -webkit-transition: all .3s, width .3s;
+  transition: all .3s, width .3s
+}
+
+.#{$cls-prefix}switch-two:active:after {
+  width: 24px
+}
+
+.#{$cls-prefix}switch-two:focus {
+  box-shadow: 0 0 0 2px rgba(16, 142, 233, .2);
+  outline: 0
+}
+
+.#{$cls-prefix}switch-two:focus:hover {
+  box-shadow: none
+}
+
+.#{$cls-prefix}switch-two-small {
+  height: 14px;
+  min-width: 28px;
+  line-height: 12px
+}
+
+.#{$cls-prefix}switch-two-small .#{$cls-prefix}switch-two-inner {
+  margin-left: 18px;
+  margin-right: 3px;
+  line-height: 12px;
+}
+
+.#{$cls-prefix}switch-two-small:after {
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: .5px
+}
+
+.#{$cls-prefix}switch-two-small:active:after {
+  width: 16px
+}
+
+.#{$cls-prefix}switch-two-small.#{$cls-prefix}switch-two-checked:after {
+  left: 100%;
+  margin-left: -12.5px
+}
+
+.#{$cls-prefix}switch-two-small.#{$cls-prefix}switch-two-checked .#{$cls-prefix}switch-two-inner {
+  margin-left: 3px;
+  margin-right: 18px
+}
+
+.#{$cls-prefix}switch-two-small:active.#{$cls-prefix}switch-two-checked:after {
+  margin-left: -16.5px
+}
+
+.#{$cls-prefix}switch-two-checked {
+  border-color: $switchFTrob-switch-two-checkedFborder-color;
+  background-color: $switchFTrob-switch-two-checkedFbackground-color;
+}
+
+.#{$cls-prefix}switch-two-checked .#{$cls-prefix}switch-two-inner {
+  margin-left: 6px;
+  margin-right: 24px;
+}
+
+.#{$cls-prefix}switch-two-checked:after {
+  left: 100%;
+  margin-left: -19px
+}
+
+.#{$cls-prefix}switch-two-checked:active:after {
+  margin-left: -25px
+}
+
+.#{$cls-prefix}switch-two-disabled {
+  cursor: not-allowed;
+  background: #f4f4f4;
+  border-color: #f4f4f4
+}
+
+.#{$cls-prefix}switch-two-disabled:after {
+  background: #ccc;
+  cursor: not-allowed
+}
+
+.#{$cls-prefix}switch-two-disabled .#{$cls-prefix}switch-two-inner {
+  color: rgba(0, 0, 0, .25)
+}

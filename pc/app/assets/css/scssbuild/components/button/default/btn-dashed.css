@@ -1,0 +1,61 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-default.rob-btn-dashed, .rob-btn-default.rob-btn-dashed[disabled],
+fieldset[disabled] .rob-btn-default.rob-btn-dashed {
+  border-color: #d8d8d8;
+  background-color: #d8d8d8;
+  color: #FFF; }
+  .rob-btn-default.rob-btn-dashed:hover, .rob-btn-default.rob-btn-dashed:focus, .rob-btn-default.rob-btn-dashed[disabled]:hover, .rob-btn-default.rob-btn-dashed[disabled]:focus,
+  fieldset[disabled] .rob-btn-default.rob-btn-dashed:hover,
+  fieldset[disabled] .rob-btn-default.rob-btn-dashed:focus {
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    color: #FFF; }
+
+.rob-btn-default.rob-btn-dashed {
+  color: #35baff;
+  background-color: #ffffff;
+  border-color: #35baff;
+  border-style: dashed; }
+  .rob-btn-default.rob-btn-dashed:focus, .rob-btn-default.rob-btn-dashed.focus {
+    color: #35baff;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: #33aeed;
+    border-color: #33aeed; }
+  .rob-btn-default.rob-btn-dashed:hover {
+    color: #ffffff;
+    background-color: #33aeed;
+    border-color: #33aeed; }
+  .rob-btn-default.rob-btn-dashed:active, .rob-btn-default.rob-btn-dashed.active,
+  .open > .rob-btn-default.rob-btn-dashed.dropdown-toggle {
+    color: #35baff;
+    background-color: #33aeed;
+    border-color: #33aeed; }
+    .rob-btn-default.rob-btn-dashed:active:hover, .rob-btn-default.rob-btn-dashed:active:focus, .rob-btn-default.rob-btn-dashed:active.focus, .rob-btn-default.rob-btn-dashed.active:hover, .rob-btn-default.rob-btn-dashed.active:focus, .rob-btn-default.rob-btn-dashed.active.focus,
+    .open > .rob-btn-default.rob-btn-dashed.dropdown-toggle:hover,
+    .open > .rob-btn-default.rob-btn-dashed.dropdown-toggle:focus,
+    .open > .rob-btn-default.rob-btn-dashed.dropdown-toggle.focus {
+      color: #ffffff;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: #33aeed;
+      border-color: #33aeed; }
+  .rob-btn-default.rob-btn-dashed:active, .rob-btn-default.rob-btn-dashed.active,
+  .open > .rob-btn-default.rob-btn-dashed.dropdown-toggle {
+    background-image: none; }
+  .rob-btn-default.rob-btn-dashed .badge {
+    color: #ffffff;
+    background-color: #35baff; }
+  .rob-btn-default.rob-btn-dashed:focus, .rob-btn-default.rob-btn-dashed.focus, .rob-btn-default.rob-btn-dashed:active, .rob-btn-default.rob-btn-dashed.active {
+    color: #ffffff; }

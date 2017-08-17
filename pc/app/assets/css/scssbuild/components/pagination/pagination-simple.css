@@ -1,0 +1,91 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-pagination-simple {
+  display: inline-block; }
+  .rob-pagination-simple > li {
+    margin-left: 0;
+    float: left;
+    line-height: 0;
+    display: inline;
+    font-size: 12px;
+    /* input{
+       width: 35px;
+       border: 1px solid $pagination-a-borderColor;
+       padding: 2px 4px;
+       margin: 0 10px;
+       height: 31px;
+ /!*      border-radius: 4px;*!/
+     }*/ }
+    .rob-pagination-simple > li a {
+      margin: 0 15px;
+      color: #8e8e8e;
+      /*   @include border-radius(4px);*/
+      position: relative;
+      float: left;
+      padding: 6px 12px;
+      line-height: 1.428571429;
+      text-decoration: none;
+      background-color: #ffffff;
+      margin-left: -1px; }
+    .rob-pagination-simple > li:first-child > a,
+    .rob-pagination-simple > li:first-child > span {
+      margin-left: 0;
+      color: #cecece;
+      background: #ffffff;
+      border: none;
+      /*       @include border-left-radius($border-radius-base);*/ }
+    .rob-pagination-simple > li:last-child > a,
+    .rob-pagination-simple > li:last-child > span {
+      background: #ffffff;
+      border: none;
+      /*     @include border-right-radius($border-radius-base);*/ }
+  .rob-pagination-simple > li > a:hover, .rob-pagination-simple > li > a:focus,
+  .rob-pagination-simple > li > span:hover,
+  .rob-pagination-simple > li > span:focus {
+    color: #fff;
+    background: #cc1612;
+    border-color: #cc1612;
+    transition: all .3s; }
+  .rob-pagination-simple li:last-child > a:hover, .rob-pagination-simple li:last-child > a:focus, .rob-pagination-simple li:first-child > a:hover, .rob-pagination-simple li:first-child > a:focus {
+    color: #8ac536;
+    background: #ffffff;
+    border: none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px; }
+  .rob-pagination-simple > .active > a, .rob-pagination-simple > .active > a:hover, .rob-pagination-simple > .active > a:focus,
+  .rob-pagination-simple > .active > span,
+  .rob-pagination-simple > .active > span:hover,
+  .rob-pagination-simple > .active > span:focus {
+    color: #fff;
+    background: #cc1612;
+    border-color: #cc1612; }
+  .rob-pagination-simple > .disabled > span,
+  .rob-pagination-simple > .disabled > span:hover,
+  .rob-pagination-simple > .disabled > span:focus,
+  .rob-pagination-simple > .disabled > a,
+  .rob-pagination-simple > .disabled > a:hover,
+  .rob-pagination-simple > .disabled > a:focus {
+    color: #cecece;
+    background-color: #ffffff;
+    border-color: #ddd;
+    cursor: not-allowed; }
+
+@media only screen and (max-width: 768px) {
+  .rob-pagination-simple > li a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    margin-left: -1px; }
+  .rob-pagination-simple > li > span {
+    padding: 5px 10px; }
+  .rob-pagination-simple > li input {
+    padding: 2px 4px; } }

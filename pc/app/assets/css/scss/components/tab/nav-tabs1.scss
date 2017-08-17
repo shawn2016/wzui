@@ -1,0 +1,79 @@
+@import "../../base/base";
+
+.#{$cls-prefix}nav-tabs1 {
+  border-bottom: none;
+  background:  #fafbfd;
+  padding:20px 0 20px 23px ;
+  > li {
+    float: left;
+    margin-bottom: -1px;
+    > a {
+      padding: 18px 77px;
+      color:  $tabFTrob-nav-tabs1CPCliCPCaFcolor;
+      margin-right: 20px;
+
+      border: 1px solid #dedede;
+      border-radius:0 0 0 0;
+      &:hover {
+        color: $tabFTrob-nav-tabs1CPCliCPCaWhoverFcolor;
+        background:$tabFTrob-nav-tabs1CPCliCPCaWhoverFbackground ;
+        border:$tabFTrob-nav-tabs1CPCliCPCaWhoverFborder;
+      }
+      background-color: $tabFTrob-nav-tabs1CPCliCPCaFbackground-color;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $tabFTrob-nav-tabs1CPCliTactiveCPCaBCTrob-nav-tabs1CPCliTactiveCPCaWhoverBCTrob-nav-tabs1CPCliTactiveCPCaWfocusFcolor;
+        background-color: $tabFTrob-nav-tabs1CPCliTactiveCPCaBCTrob-nav-tabs1CPCliTactiveCPCaWhoverBCTrob-nav-tabs1CPCliTactiveCPCaWfocusFbackground-color;
+        border: $tabFTrob-nav-tabs1CPCliTactiveCPCaBCTrob-nav-tabs1CPCliTactiveCPCaWhoverBCTrob-nav-tabs1CPCliTactiveCPCaWfocusFborder;
+        cursor: default;
+      }
+    }
+  }
+  &.response{
+    > li {
+      text-align: center;
+      width: 7.6%;
+      min-width: 79px;
+      height: 10%;
+      font-size: 12px;
+      > a{
+        padding: 6px 10%;
+      }
+
+    }
+  }
+
+}
+
+
+// -------------------------
+
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}
+
+
+// Dropdowns
+// -------------------------
+
+// Specific dropdowns
+
+
+
+
+
+//hhhhhhhhhhhhhh
+
+
+

@@ -1,0 +1,177 @@
+@import "../../base/base";
+.#{$cls-prefix}steps>:last-child .#{$cls-prefix}step-line {
+  display: none
+}
+
+.#{$cls-prefix}step {
+  position: relative;
+  vertical-align: top
+}
+
+.#{$cls-prefix}step:last-child .#{$cls-prefix}step-main {
+  padding-right: 0
+}
+
+.#{$cls-prefix}step-line {
+  position: absolute;
+  border-color: inherit;
+  background-color: $stepsFTrob-step-lineFbackground-color;
+}
+
+.#{$cls-prefix}step-line-inner {
+  display: block;
+  border-width: 0px;
+  border-style: solid;
+  border-color: inherit;
+  transition: all .15s;
+  width: 0;
+  height: 0;
+
+}
+
+.#{$cls-prefix}step-icon {
+  display: block;
+  //line-height: 25px
+}
+
+.#{$cls-prefix}step-icon>* {
+  line-height: inherit;
+  //vertical-align: middle
+}
+
+.#{$cls-prefix}step-head {
+  width: $stepsFTrob-step-headFwidth;
+  height: $stepsFTrob-step-headFheight;
+  border-radius: $stepsFTrob-step-headFborder-radius;
+  background-color: transparent;
+  text-align: center;
+  line-height: $stepsFTrob-step-headFline-height;
+  font-size: $stepsFTrob-step-headFfont-size;
+  vertical-align: top;
+  transition: all .15s
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-finish {
+  color: $stepsFTrob-step-headTrob-is-finishFcolor;
+  border-color: $stepsFTrob-step-headTrob-is-finishFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-error {
+  color: $stepsFTrob-step-headTrob-is-errorFcolor;
+  border-color: $stepsFTrob-step-headTrob-is-errorFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-success {
+  color: $stepsFTrob-step-headTrob-is-successFcolor;
+  border-color: $stepsFTrob-step-headTrob-is-successFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-process,
+.#{$cls-prefix}step-head.#{$cls-prefix}is-wait {
+  color: $stepsFTrob-step-headTrob-is-waitFcolor;
+  border-color: $stepsFTrob-step-headTrob-is-waitFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-text {
+  font-size: $stepsFTrob-step-headTrob-is-textFfont-size;
+  border-width: $stepsFTrob-step-headTrob-is-textFborder-width;
+  border-style: solid
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-text.#{$cls-prefix}is-finish {
+  color: $stepsFTrob-step-headTrob-is-textTrob-is-finishFcolor;
+  background-color: $stepsFTrob-step-headTrob-is-textTrob-is-finishFbackground-color;
+  border-color: $stepsFTrob-step-headTrob-is-textTrob-is-finishFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-text.#{$cls-prefix}is-error {
+  color: $stepsFTrob-step-headTrob-is-textTrob-is-errorFcolor;
+  background-color: $stepsFTrob-step-headTrob-is-textTrob-is-errorFbackground-color;
+  border-color: $stepsFTrob-step-headTrob-is-textTrob-is-errorFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-text.#{$cls-prefix}is-success {
+  color: $stepsFTrob-step-headTrob-is-textTrob-is-successFcolor;
+  background-color: $stepsFTrob-step-headTrob-is-textTrob-is-successFbackground-color;
+  border-color: $stepsFTrob-step-headTrob-is-textTrob-is-successFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-text.#{$cls-prefix}is-wait {
+  color: $stepsFTrob-step-headTrob-is-textTrob-is-waitFcolor;
+  background-color: $stepsFTrob-step-headTrob-is-textTrob-is-waitFbackground-color;
+  border-color: $stepsFTrob-step-headTrob-is-textTrob-is-waitFborder-color;
+}
+
+.#{$cls-prefix}step-head.#{$cls-prefix}is-text.#{$cls-prefix}is-process {
+  color: $stepsFTrob-step-headTrob-is-textTrob-is-processFcolor;
+  background-color: $stepsFTrob-step-headTrob-is-textTrob-is-processFbackground-color;
+  border-color: $stepsFTrob-step-headTrob-is-textTrob-is-processFborder-color;
+}
+
+.#{$cls-prefix}step-main {
+  white-space: normal;
+  padding-right: 10px;
+  text-align: left
+}
+
+.#{$cls-prefix}step-title {
+  font-size: 14px;
+  line-height: 32px;
+  display: inline-block
+}
+
+.#{$cls-prefix}step-title.#{$cls-prefix}is-finish {
+  color: $stepsFTrob-step-titleTrob-is-finishFcolor;
+}
+
+.#{$cls-prefix}step-title.#{$cls-prefix}is-error {
+  color: $stepsFTrob-step-titleTrob-is-errorFcolor;
+}
+
+.#{$cls-prefix}step-title.#{$cls-prefix}is-success {
+  color: $stepsFTrob-step-titleTrob-is-successFcolor;
+}
+
+.#{$cls-prefix}step-title.#{$cls-prefix}is-wait {
+  font-weight: 400;
+  color: $stepsFTrob-step-titleTrob-is-waitFcolor;
+}
+
+.#{$cls-prefix}step-title.#{$cls-prefix}is-process {
+  color: $stepsFTrob-step-titleTrob-is-processFcolor;
+}
+
+.#{$cls-prefix}step-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  width:75px;
+}
+
+.#{$cls-prefix}step-description.#{$cls-prefix}is-finish {
+  color: $stepsFTrob-step-descriptionTrob-is-finishFcolor;
+}
+
+.#{$cls-prefix}step-description.#{$cls-prefix}is-error {
+  color: $stepsFTrob-step-descriptionTrob-is-errorFcolor;
+}
+
+.#{$cls-prefix}step-description.#{$cls-prefix}is-success {
+  color: $stepsFTrob-step-descriptionTrob-is-successFcolor;
+}
+
+.#{$cls-prefix}step-description.#{$cls-prefix}is-wait {
+  color: $stepsFTrob-step-descriptionTrob-is-waitFcolor;
+}
+
+.#{$cls-prefix}step-description.#{$cls-prefix}is-process {
+  color: $stepsFTrob-step-descriptionTrob-is-processFcolor;
+}
+
+.#{$cls-prefix}step-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+

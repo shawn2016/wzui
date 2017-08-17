@@ -1,0 +1,26 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-minor2 {
+  border-style: dashed;
+    
+   
+  
+  &,
+  &[disabled],
+  fieldset[disabled] & {
+    @include button-disabled-bd-bg($buttonFTrob-btn-minor2BCTrob-btn-minor2LdisabledRBCfieldsetLdisabledRCTrob-btn-minor2Fbackground-color,$buttonFTrob-btn-minor2BCTrob-btn-minor2LdisabledRBCfieldsetLdisabledRCTrob-btn-minor2Fborder-color,$buttonFTrob-btn-minor2BCTrob-btn-minor2LdisabledRBCfieldsetLdisabledRCTrob-btn-minor2Fcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-minor2WhoverBCTrob-btn-minor2WfocusBCTrob-btn-minor2LdisabledRWhoverBCTrob-btn-minor2LdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-minor2WhoverBCfieldsetLdisabledRCTrob-btn-minor2WfocusFbackground-color,$buttonFTrob-btn-minor2WhoverBCTrob-btn-minor2WfocusBCTrob-btn-minor2LdisabledRWhoverBCTrob-btn-minor2LdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-minor2WhoverBCfieldsetLdisabledRCTrob-btn-minor2WfocusFborder-color,$buttonFTrob-btn-minor2WhoverBCTrob-btn-minor2WfocusBCTrob-btn-minor2LdisabledRWhoverBCTrob-btn-minor2LdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-minor2WhoverBCfieldsetLdisabledRCTrob-btn-minor2WfocusFcolor);
+    }
+  }
+}
+.#{$cls-prefix}btn-minor2 {
+  @include button-variant($buttonFTrob-btn-minor2Fcolor, $buttonFTrob-btn-minor2Fbackground-color, $buttonFTrob-btn-minor2Fborder-color, $buttonFTrob-btn-minor2WhoverFbackground-color,$buttonFTrob-btn-minor2WhoverFborder-color,$buttonFTrob-btn-minor2WhoverFcolor);
+  &:focus,
+    &.focus,
+    &:active,
+    &.active
+      {
+        color: $buttonFTrob-btn-minor2WfocusBCTrob-btn-minor2TfocusBCTrob-btn-minor2WactiveBCTrob-btn-minor2TactiveFcolor;
+      }
+}

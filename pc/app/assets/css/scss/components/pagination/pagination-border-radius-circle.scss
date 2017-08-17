@@ -1,0 +1,53 @@
+@import "../../base/base";
+.#{$cls-prefix}pagination-border-radius-circle{
+
+
+  > li {
+
+    a{
+      border-radius: 50%;
+
+      /*@include border-radius(0);*/
+
+    }
+
+
+    &:first-child {
+      > a,
+      > span {
+        border-radius: 50%;
+        /* @include border-left-radius(0);*/
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        border-radius: 50%;
+        /*@include border-right-radius(0);*/
+      }
+    }
+
+  }
+
+
+
+
+
+
+}
+@media only screen and (max-width: 768px) {
+  .#{$cls-prefix}pagination-border-radius-circle {
+    > li{
+      a{
+        margin:0;
+        padding:5px 10px;
+      }
+      > span{
+        padding:5px 10px;
+      }
+      input{
+        padding:2px 4px;
+      }
+    }
+  }
+}

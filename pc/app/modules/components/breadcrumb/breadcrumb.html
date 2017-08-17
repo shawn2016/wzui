@@ -1,0 +1,95 @@
+<article class="markdown">
+    <h1>breadcrumb 面包屑导航</h1>
+    <section class="markdown">
+        <p>
+            
+            在一个带有层次的导航结构中标明当前页面的位置,各路径间的分隔符已经自动通过 CSS 的 <code class="language-markup">:before</code> 里的 <code class="language-markup">content</code> 属性添加了
+        </p>
+    </section>
+
+
+<section class="markdown">
+        <h2 id="面包屑"><span>基本实例</span><a href="#面包屑" class="anchor">#</a></h2>
+    </section>
+   <div class="rob-col-lg-24">
+            <div class="code-box">
+                <section class="code-box-demo code-box-demo-img">
+                  <h3 style="margin: 5px 0;">面包屑</h3>
+                    <ol class="rob-breadcrumb">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Library</a></li>
+                          <li  class="active"><a href="#">Data</a></li>
+                       </ol>
+                  <h3 style="margin: 5px 0;">面包屑icon</h3>
+                  <ol class="rob-breadcrumb">
+                          <li><a href="#"><i class="rob-icon-home"></i>Home</a></li>
+                          <li><a href="#"><i class="rob-icon-home"></i>Library</a></li>
+                          <li  class="active"><a href="#">Data</a></li>
+                    </ol>
+                </section>
+                <section class="code-box-meta markdown">
+                    <div class="code-box-title">
+                       基本实例
+                    </div>
+                    <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-hover rob-table-bordered">
+                        <thead>
+                            <tr>
+                                <th> 名称</th>
+                                <th> 序号</th>
+                                <th> 效果</th>
+                                <th> 所需类名</th>
+                                <th> 定制所需</th>
+                                <th> 备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>面包屑</td>
+                                <td>1</td>
+                                <td>面包屑</td>
+                                <td><code class="language-markup">.rob-breadcrumb</code>(面包屑父标签)</td>
+                                <td> breadcrumb(必要)</td>
+                                <td>配置$breadcrumb-separator参数来实现 > 或 / 隔断 ; 使用ol、ul定义一个<code class="language-markup">.rob-breadcrumb</code>类名</td>
+                            </tr>
+                            <tr>
+                                <td>面包屑icon</td>
+                                <td>2</td>
+                                <td>面包屑icon</td>
+                                <td><code class="language-markup">.rob-breadcrumb</code>(面包屑父标签)</td>
+                                <td>breadcrumb(必要)</td>
+                                <td> 配置$breadcrumb-separator参数来实现 > 或 / 隔断 ;
+                                使用ol、ul定义一个<code class="language-markup">.rob-breadcrumb</code>类名</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <i class="rob-icon rob-icon-home code-show" ng-click="showCode('rob-breadcrumb')"></i>
+                </section>
+                <section class="code-box-content" id="rob-breadcrumb">
+                    <pre>
+        <code class="language-markup">
+    &lt;!-- 面包屑默认 -->
+    &lt;ol class="rob-breadcrumb">
+      &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Library&lt;/a>&lt;/li>
+      &lt;li class="active">Data&lt;/li>
+    &lt;/ol>
+
+    &lt;!-- 面包屑 icon -->
+    &lt;ol class="rob-breadcrumb">
+      &lt;li>&lt;a href="#">&lt;i class="rob-icon-home">&lt;/i>Home&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">&lt;i class="rob-icon-home">&lt;/i>Library&lt;/a>&lt;/li>
+      &lt;li  class="active">&lt;a href="#">Data&lt;/a>&lt;/li>
+    &lt;/ol>
+
+        </code>
+        </pre>
+                </section>
+            </div>
+        </div>
+    
+
+
+    
+</article>

@@ -1,0 +1,25 @@
+@import "../../../base/base";
+.#{$cls-prefix}btn-default.#{$cls-prefix}btn-line {
+ 
+  &,
+  &[disabled],
+  fieldset[disabled] & {
+    @include button-disabled-bd-bg($buttonFTrob-btn-defaultTrob-btn-lineBCTrob-btn-defaultTrob-btn-lineLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineFbackground-color,$buttonFTrob-btn-defaultTrob-btn-lineBCTrob-btn-defaultTrob-btn-lineLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineFborder-color,$buttonFTrob-btn-defaultTrob-btn-lineBCTrob-btn-defaultTrob-btn-lineLdisabledRBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-defaultTrob-btn-lineWhoverBCTrob-btn-defaultTrob-btn-lineWfocusBCTrob-btn-defaultTrob-btn-lineLdisabledRWhoverBCTrob-btn-defaultTrob-btn-lineLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineWhoverBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineWfocusFbackground-color,$buttonFTrob-btn-defaultTrob-btn-lineWhoverBCTrob-btn-defaultTrob-btn-lineWfocusBCTrob-btn-defaultTrob-btn-lineLdisabledRWhoverBCTrob-btn-defaultTrob-btn-lineLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineWhoverBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineWfocusFborder-color,$buttonFTrob-btn-defaultTrob-btn-lineWhoverBCTrob-btn-defaultTrob-btn-lineWfocusBCTrob-btn-defaultTrob-btn-lineLdisabledRWhoverBCTrob-btn-defaultTrob-btn-lineLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineWhoverBCfieldsetLdisabledRCTrob-btn-defaultTrob-btn-lineWfocusFcolor);
+    }
+  }
+}
+
+.#{$cls-prefix}btn-default.#{$cls-prefix}btn-line {
+    @include button-variant($buttonFTrob-btn-defaultTrob-btn-lineFcolor, $buttonFTrob-btn-defaultTrob-btn-lineFbackground-color, $buttonFTrob-btn-defaultTrob-btn-lineFborder-color, $buttonFTrob-btn-defaultTrob-btn-lineWhoverFbackground-color,$buttonFTrob-btn-defaultTrob-btn-lineWhoverFborder-color,$buttonFTrob-btn-defaultTrob-btn-lineWhoverFcolor);
+    &:focus,
+    &.focus,
+    &:active,
+    &.active
+      {
+        color: $buttonFTrob-btn-defaultTrob-btn-lineWfocusBCTrob-btn-defaultTrob-btn-lineTfocusBCTrob-btn-defaultTrob-btn-lineWactiveBCTrob-btn-defaultTrob-btn-lineTactiveFcolor;
+      }
+    }
+

@@ -1,0 +1,307 @@
+@import "../../base/base";
+@media (min-width: 769px) {
+  .#{$cls-prefix}sidebar-menu-3 {
+    &.close {
+      width: 54px;
+      .#{$cls-prefix}menu-firstnode:hover a {
+        width: 100% !important;
+      }
+      &>li {
+        &:hover {
+          >a {
+            width: 249px;
+            text-align: left;
+            >.title {
+              display: inline-block !important;
+              padding-left: 20px;
+            }
+          }
+          >.sub-menu {
+            top: 58px;
+            left: 55px !important
+          }
+        }
+        >a {
+          min-height: 0;
+          >.title {
+            display: none;
+          }
+        }
+        //>.sub-menu{
+        //  left: 54px!important;
+        //}
+      }
+    }
+    width:$menuFTrob-sidebar-menu-3FAmediaCUmin-widthWC769pxVFwidth;
+    background-color: $menuFTrob-sidebar-menu-3FAmediaCUmin-widthWC769pxVFbackground-color;
+    /*菜单背景颜色*/
+    .arrow {
+      display: none !important;
+    }
+    > li {
+      position: relative;
+      &.active {
+        > a {
+          background-color: $menuFTrob-sidebar-menu-3CPCliTactiveCPCaFAmediaCUmin-widthWC769pxVFbackground-color;/*一级菜单active的背景颜色*/
+          >.title{
+            color: $menuFTrob-sidebar-menu-3CPCliTactiveCPCaCPCTtitleFAmediaCUmin-widthWC769pxVFcolor;/*一级菜单active的字体颜色*/
+          }
+          > i {
+            color: $menuFTrob-sidebar-menu-3CPCliTactiveCPCaCPCiFAmediaCUmin-widthWC769pxVFcolor;/*一级菜单active的icon颜色*/
+          }
+        }
+      }
+      > .sub-menu{
+        >li {
+          &.active{
+            > a {
+              background-color: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliTactiveCPCaFAmediaCUmin-widthWC769pxVFbackground-color;/*二级菜单active的背景颜色*/
+              >.title{
+                color: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliTactiveCPCaCPCTtitleFAmediaCUmin-widthWC769pxVFcolor;/*一级菜单active的字体颜色*/
+              }
+              > i {
+                color: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliTactiveCPCaCPCiFAmediaCUmin-widthWC769pxVFcolor;/*二级菜单active的icon颜色*/
+              }
+            }
+          }
+          > .sub-menu{
+            >li{
+              &.active{
+                > a {
+                  background-color: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliTactiveCPCaFAmediaCUmin-widthWC769pxVFbackground-color;/*三级菜单active的背景颜色*/
+                  >.title{
+                    color: #ffffff;/*一级菜单active的字体颜色*/
+                  }
+                  > i {
+                    color: #fff;/*三级菜单active的icon颜色*/
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      > a {
+        border-top: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmin-widthWC769pxVFborder-top;
+        color: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmin-widthWC769pxVFcolor;
+        min-height: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmin-widthWC769pxVFmin-height;
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmin-widthWC769pxVFpadding;
+        text-decoration: none;
+        font-size: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmin-widthWC769pxVFfont-size;
+        font-weight: 300;
+        text-align: center;
+        > i {
+          top: $menuFTrob-sidebar-menu-3CPCliCPCaCPCiFAmediaCUmin-widthWC769pxVFtop;
+          margin-left: $menuFTrob-sidebar-menu-3CPCliCPCaCPCiFAmediaCUmin-widthWC769pxVFmargin-left;
+          margin-right: $menuFTrob-sidebar-menu-3CPCliCPCaCPCiFAmediaCUmin-widthWC769pxVFmargin-right;
+          color: $menuFTrob-sidebar-menu-3CPCliCPCaCPCiFAmediaCUmin-widthWC769pxVFcolor;
+          font-size: $menuFTrob-sidebar-menu-3CPCliCPCaCPCiFAmediaCUmin-widthWC769pxVFfont-size;
+        }
+        .title {
+          display: block;
+          text-align: center;
+        }
+      }
+      &:hover {
+        /*一级菜单hover颜色*/
+        > a {
+          background: $menuFTrob-sidebar-menu-3CPCliWhoverCPCaFAmediaCUmin-widthWC769pxVFbackground;
+          > .arrow {
+            z-index: 1;
+            right: 0;
+            margin-top: -36px;
+          }
+        }
+        > .sub-menu {
+          display: inline-block !important;
+          top: 0px;
+          left: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuFAmediaCUmin-widthWC769pxVFleft;
+          background-color: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuFAmediaCUmin-widthWC769pxVFbackground-color;
+          > li {
+            position: relative;
+            > a {
+              color: #b2c0d8;
+              display: block;
+              padding: 9px 15px;
+              text-decoration: none;
+              font-size: 13px;
+              font-weight: 300;
+            }
+
+            &:hover {
+              > a {
+                background: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuCPCliWhoverCPCaFAmediaCUmin-widthWC769pxVFbackground;
+                /*二级hover*/
+              }
+              > .sub-menu {
+                display: inline-block !important;
+                top: 0px;
+                left: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuFAmediaCUmin-widthWC769pxVFleft;
+                background-color: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuFAmediaCUmin-widthWC769pxVFbackground-color;
+                > li {
+                  > a {
+                    color: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuCPCliCPCaFAmediaCUmin-widthWC769pxVFcolor;
+                    display: block;
+                    padding: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuCPCliCPCaFAmediaCUmin-widthWC769pxVFpadding;
+                    text-decoration: none;
+                    font-size: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuCPCliCPCaFAmediaCUmin-widthWC769pxVFfont-size;
+                    font-weight: 300;
+                  }
+                  &:hover {
+                    > a {
+                      background: $menuFTrob-sidebar-menu-3CPCliWhoverCPCTsub-menuCPCliWhoverCPCTsub-menuCPCliWhoverCPCaFAmediaCUmin-widthWC769pxVFcolor;
+                      /*三级hover*/
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    li {
+      display: block;
+      margin: 0px;
+      padding: 0px;
+      border: 0;
+      .sub-menu {
+        /*hover隐藏菜单绝对定位*/
+        display: none;
+        width: 194px;
+        z-index: 2000;
+        position: absolute;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  /*手机端*/
+  .#{$cls-prefix}sidebar-menu-3 {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $menuFTrob-sidebar-menu-3FAmediaCUmax-widthWC768pxVFbackground-color;
+    /*菜单背景颜色*/
+    li {
+      a {
+        /*公共样式*/
+        display: block;
+        position: relative;
+        margin: 0;
+        text-decoration: none;
+        font-weight: 300;
+        border-top: $menuFTrob-sidebar-menu-3CliCaFAmediaCUmax-widthWC768pxVFborder-top;
+        color: $menuFTrob-sidebar-menu-3CliCaFAmediaCUmax-widthWC768pxVFcolor;
+      }
+      span.arrow {
+        /*菜单的箭头样式（闭合状态）*/
+        font-size: 12px;
+        float: right;
+        margin-top: -1px;
+        transform: rotate(90deg);
+      }
+      span.arrow.open {
+        /*菜单的箭头样式（展开状态）*/
+        font-size: 12px;
+        float: right;
+        margin-top: -1px;
+        transform: rotate(180deg);
+      }
+    }
+    > li {
+      > a {
+        padding: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmax-widthWC768pxVFpadding;
+        font-size: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmax-widthWC768pxVFfont-size;
+        line-height: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmax-widthWC768pxVFline-height;
+        height: $menuFTrob-sidebar-menu-3CPCliCPCaFAmediaCUmax-widthWC768pxVFheight;
+        /*一级菜单的图标大小*/
+        > .title {
+          font-size: 14px;
+          /*一级菜单的字体大小*/
+        }
+      }
+      &.active {
+        > a {
+          /*一级菜单高亮*/
+          background: #3d4957 !important;
+          /*一级菜单高亮的背景颜色*/
+          color: #fff;
+          /*一级菜单高亮的文字颜色*/
+          //border: none;
+          //text-shadow: none;
+          //font-size: 14px;
+        }
+      }
+      &:hover {
+        > a {
+          /*一级菜单hover颜色*/
+          background-color: $menuFTrob-sidebar-menu-3CPCliWhoverCPCaFAmediaCUmax-widthWC768pxVFbackground-color;
+        }
+      }
+      > .sub-menu {
+        > li {
+          &.open,
+          &.active {
+            > a {
+              /*二级菜单展开和选中的时候背景颜色改变*/
+              background: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliTopenCPCaBCTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliTactiveCPCaFAmediaCUmax-widthWC768pxVFbackground;
+            }
+          }
+          &:hover {
+            > a {
+              /*二级菜hover的时候背景颜色改变*/
+              background: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliWhoverCPCaFAmediaCUmax-widthWC768pxVFbackground;
+            }
+          }
+          > a {
+            padding: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFpadding;
+            line-height: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFline-height;
+            height: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFheight;
+            font-size: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFfont-size;
+            /*二级菜单的图标大小*/
+            > .title {
+              font-size: 14px;
+              /*二级菜单的字体大小*/
+            }
+          }
+          > .sub-menu {
+            > li {
+              &.open,
+              &.active {
+                > a {
+                  /*三级菜单展开和选中的时候背景颜色改变*/
+                  background: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliTopenCPCaBCTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliTactiveCPCaFAmediaCUmax-widthWC768pxVFbackground;
+                }
+              }
+              &:hover {
+                > a {
+                  /*三级菜hover的时候背景颜色改变*/
+                  background: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliWhoverCPCaFAmediaCUmax-widthWC768pxVFbackground;
+                }
+              }
+              > a {
+                line-height: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFline-height;
+                height: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFheight;
+                padding: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFpadding;
+                font-size: $menuFTrob-sidebar-menu-3CPCliCPCTsub-menuCPCliCPCTsub-menuCPCliCPCaFAmediaCUmax-widthWC768pxVFfont-size;
+                /*三级菜单的图标大小*/
+                > .title {
+                  font-size: 14px;
+                  /*三级菜单的字体大小*/
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

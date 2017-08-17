@@ -1,0 +1,712 @@
+<article class="markdown">
+    <h1>Alert 弹窗</h1>
+    <section class="markdown">
+        <p>
+            为任意 <code class="language-markup">&lt;div&gt;</code> 标签添加<code class="language-markup">.rob-alert </code>类可以为其赋予基本的样式
+        </p>
+    </section>
+   
+
+<section class="">
+        <h2 id="弹窗演示"><span>弹窗演示</span><a href="#弹窗演示" class="anchor">#</a></h2>
+    </section>
+   <div class="rob-col-lg-24">
+            <div class="code-box">
+                <section class="code-box-demo">
+               
+      
+      
+            <!--
+          <img src="assets\images\icon_sucess.png" alt="">  rob-alert-sm
+            -->
+        <div class="rob-alert-cover"  data-dismiss="rob-alert" style="display:none"></div>
+       
+
+        <!-- 只有内容 -->
+        <div id="alert1" class="rob-alert" style="display:none">
+          <div class="rob-alert-content">
+          这是一段内容~ 
+          啊啊啊啊啊啊啊啊啊啊啊啊啊， 
+          啊啊啊啊啊啊啊啊啊啊
+          </div>
+      </div>
+        
+        <!-- 内容+内标题+右上关闭按钮 -->
+        <div id="alert2" class="rob-alert rob-alert-dismissible"  style="display:none">
+          <button type="button" class="rob-alert-close" data-dismiss="rob-alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+            <div class="rob-alert-content">
+            <div class="rob-alert-content-title">这是一个标题</div>
+            这是一段内容~ 
+            </div>
+         </div>
+
+      <!-- 内容+单独标题+右上关闭按钮 -->
+        <div id="alert3" class="rob-alert rob-alert-dismissible"  style="display:none">
+          <button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+            <div class="rob-alert-title">这是一个标题</div>
+            <div class="rob-alert-content">
+            这是一段内容~ 
+            </div>
+        </div>
+
+        <!-- 内容+单独标题带颜色+右上关闭按钮 -->
+        <div id="alert4" class="rob-alert rob-alert-dismissible" style="display:none">
+          <button type="button" class="rob-alert-close" data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+            <div class="rob-alert-title rob-alert-title-color">这是一个标题</div>
+            <div class="rob-alert-content">
+            这是一段内容~ 
+            </div>
+
+        </div>
+
+        <!-- 内容+按钮+右上关闭按钮  -->
+        <div id="alert5" class="rob-alert rob-alert-dismissible"   role="alert"   style="display:none">
+        <button type="button" class="rob-alert-close" data-dismiss="rob-alert" aria-label="Close">
+        <span aria-hidden="true" >×</span>
+        </button>
+
+        <div class="rob-alert-content"><i class="rob-icon-quill"></i> 这是一段内容~</div>
+        <div class="rob-alert-button-color">
+          <button type="button"  class="rob-btn rob-btn-default">确定</button>
+         <!--  <button type="button" class="rob-btn rob-btn-default">取消</button> -->
+        </div>
+      </div>
+
+        <!-- 标题+内容+按钮+右上关闭按钮  -->
+        <div id="alert6" class="rob-alert rob-alert-dismissible fade in "   role="alert"   style="display:none">
+        <button type="button" class="rob-alert-close"  data-dismiss="rob-alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+
+        <div  class="rob-alert-title">这是一个标题</div>
+        <div class="rob-alert-content"><i class="rob-icon-quill"></i> 这是一段内容~</div>
+        <div class="rob-alert-button">
+          <button type="button"  class="rob-btn rob-btn-default">确定</button>
+         <!--  <button type="button" class="rob-btn rob-btn-default">取消</button> -->
+        </div>
+      </div>
+
+      <!-- 内容+双按钮(带背景颜色,确定按钮)+右上关闭按钮  -->
+        <div id="alert7" class="rob-alert rob-alert-dismissible" role="alert " style="display:none">
+        <button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+
+        <div class="rob-alert-content"><div class="rob-alert-content-title">这是一个标题</div>这是一段内容~</div>
+        <div class="rob-alert-button-color">
+
+          <button type="button" class="rob-btn rob-btn-minor">取消</button> 
+          <button type="button"  class="rob-btn rob-btn-default">确定</button>
+        </div>
+      </div>
+
+
+        <!-- 内容+双按钮(带背景颜色,删除按钮)+右上关闭按钮  -->
+        <div id="alert8" class="rob-alert rob-alert-dismissible"   role="alert " style="display:none">
+        <button type="button" class="rob-alert-close" data-dismiss="rob-alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+
+        <div class="rob-alert-content"><div class="rob-alert-content-title">这是一个标题</div>这是一段内容~</div>
+        <div class="rob-alert-button-color">
+
+          <button type="button" class="rob-btn rob-btn-minor">取消</button> 
+          <button type="button"  class="rob-btn rob-btn-danger">删除</button>
+        </div>
+      </div>
+
+
+
+      <!-- 内容+双按钮(不带背景颜色,确定按钮)+右上关闭按钮  -->
+        <div id="alert9" class="rob-alert rob-alert-dismissible"  role="alert " style="display:none">
+        <button type="button" class="rob-alert-close"  data-dismiss="rob-alert" aria-label="Close">
+        <span aria-hidden="true" >×</span>
+        </button>
+
+        <div class="rob-alert-content"><div class="rob-alert-content-title">这是一个标题</div>这是一段内容~</div>
+        <div class="rob-alert-button">
+
+          <button type="button" class="rob-btn rob-btn-minor">取消</button> 
+          <button type="button"  class="rob-btn rob-btn-default">确定</button>
+
+        </div>
+      </div>
+
+
+        <!-- 内容+双按钮(不带背景颜色,删除按钮)+右上关闭按钮  -->
+        <div id="alert10" class="rob-alert rob-alert-dismissible"  role="alert " style="display:none">
+          <button type="button" class="rob-alert-close"   data-dismiss="rob-alert"  aria-label="Close">
+              <span aria-hidden="true">×</span>
+          </button>
+
+           <div class="rob-alert-content"><div class="rob-alert-content-title">这是一个标题</div>这是一段内容~</div>
+           <div class="rob-alert-button">
+
+          <button type="button" class="rob-btn rob-btn-minor">取消</button> 
+          <button type="button"  class="rob-btn rob-btn-danger">删除</button>
+        </div>
+      </div>
+
+
+      <!-- 多条内容+单独标题带颜色+右上关闭按钮+双按钮 -->
+      <!--  -->
+        <div id="alert11" class="rob-alert rob-alert-dismissible" style="display:none" >
+          <button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+            <div class="rob-alert-title rob-alert-title-color">这是一个标题</div>
+            <div class="rob-alert-content rob-col-lg-24" style="float:none;">
+            
+            <ul class="clearfix">
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="ChargeAccount" >充值账户:</label><span id="ChargeAccount">14234234</span></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">用户ID:</label><input type="text" class="rob-input" style="width:30%;display:inline-block"/></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">充值金额:</label><span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元</span></li>
+            </ul>
+            </div>
+             <div class="rob-alert-button">
+
+                <button type="button"  class="rob-btn rob-btn-minor" >取消</button>
+                <button type="button"  class="rob-btn rob-btn-default">确认</button>
+
+              </div>
+        </div>
+
+
+        <!-- 多条内容+单独标题不带颜色+右上关闭按钮+双按钮带背景 -->
+        <div id="alert12" class="rob-alert rob-alert-dismissible rob-row" style="display:none">
+          <button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+            <div class="rob-alert-title ">这是一个标题</div>
+            <div class="rob-alert-content rob-col-lg-24" style="float:none;">
+            
+            <ul class="clearfix">
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="ChargeAccount" >充值账户:</label><span id="ChargeAccount">14234234</span></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">用户ID:</label><input type="text" class="rob-input" style="width:30%;display:inline-block"/></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">充值金额:</label><span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元</span></li>
+            </ul>
+            </div>
+             <div class="rob-alert-button-color">
+
+                <button type="button"  class="rob-btn rob-btn-minor">取消</button>
+                <button type="button"  class="rob-btn rob-btn-default">确认</button>
+
+              </div>
+        </div>
+
+
+
+        <!-- 多条内容+单独标题带颜色+右上关闭按钮+按钮 -->
+        <div id="alert13" class="rob-alert rob-alert-dismissible" style="display:none">
+          <button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+            <div class="rob-alert-title rob-alert-title-color">这是一个标题</div>
+            <div class="rob-alert-content rob-col-lg-24" style="float:none;">
+            
+            <ul class="clearfix">
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="ChargeAccount" >充值账户:</label><span id="ChargeAccount">14234234</span></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">用户ID:</label><input type="text" class="rob-input" style="width:30%;display:inline-block"/></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">充值金额:</label><span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元</span></li>
+            </ul>
+            </div>
+             <div class="rob-alert-button">
+
+                <button type="button"  class="rob-btn rob-btn-default">立即充值</button>
+
+              </div>
+        </div>
+
+
+
+        <!-- 多条内容+单独标题不带颜色+右上关闭按钮+按钮带背景颜色 -->
+        <div id="alert14" class="rob-alert rob-alert-dismissible" style="display:none">
+          <button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+            <div class="rob-alert-title">这是一个标题</div>
+            <div class="rob-alert-content rob-col-lg-24" style="float:none;">
+            
+            <ul class="clearfix">
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="ChargeAccount" >充值账户:</label><span id="ChargeAccount">14234234</span></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">用户ID:</label><input type="text" class="rob-input" style="width:30%;display:inline-block"/></li>
+              <li class="rob-col-lg-offset-6 rob-col-lg-18"><label for="RechargeAmount">充值金额:</label><span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元</span></li>
+            </ul>
+            </div>
+             <div class="rob-alert-button-color">
+
+                <button type="button"  class="rob-btn rob-btn-default">立即充值</button>
+
+              </div>
+        </div>
+
+
+
+          
+
+
+          
+      <!-- icon+内容+内标题+右上关闭按钮+按钮 -->
+        <div id="alert15" class="rob-alert rob-alert-dismissible" style="display:none">
+          <button type="button" class="rob-alert-close" data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+
+            <div class="rob-alert-content">
+            <span class="ioc_info icon-f1"></span>
+            <div class="rob-alert-content-title">这是一个标题</div>
+            这是一段内容~ 
+            </div>
+            <div class="rob-alert-button">
+
+                <button type="button"  class="rob-btn rob-btn-default">知道了</button>
+
+              </div>
+         </div>
+
+
+
+        <!-- icon+内容+内标题+右上关闭按钮+带背景的按钮 -->
+        <div id="alert16" class="rob-alert rob-alert-dismissible"style="display:none">
+          <button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+
+            <div class="rob-alert-content">
+            <span class="ioc_info icon-f1"></span>
+            <div class="rob-alert-content-title">这是一个标题</div>
+            这是一段内容~ 
+            </div>
+            <div class="rob-alert-button-color">
+
+                <button type="button" class="rob-btn rob-btn-default"   aria-label="Close">知道了</button>
+
+              </div>
+         </div>
+
+
+          
+          <!-- icon+内容+内标题-->
+        <div id="alert17" class="rob-alert" style="display:none">
+
+            <div class="rob-alert-content">
+            <div class="content-left"><span class="ioc_info icon-f1"></span></div>
+            <div class="content-right"><div class="rob-alert-content-title">这是一个标题</div>
+            这是一段内容~ 
+            </div>
+            </div>
+            
+         </div>
+
+           
+           <button ng-click="showCode('alert1')" class="rob-btn rob-btn-default ">只有内容</button>
+           <button ng-click="showCode('alert2')" class="rob-btn rob-btn-default ">内容+内标题+右上关闭按钮</button>
+           <button ng-click="showCode('alert3')" class="rob-btn rob-btn-default ">内容+单独标题+右上关闭按钮</button>
+           <button ng-click="showCode('alert4')" class="rob-btn rob-btn-default ">内容+单独标题带颜色+右上关闭按钮</button>
+           <button ng-click="showCode('alert5')" class="rob-btn rob-btn-default ">内容+按钮+右上关闭按钮</button>
+           <button ng-click="showCode('alert6')" class="rob-btn rob-btn-default ">标题+内容+按钮+右上关闭按钮</button>
+           <button ng-click="showCode('alert7')" class="rob-btn rob-btn-default ">内容+双按钮(带背景颜色,确定按钮)+右上关闭按钮</button>
+           <button ng-click="showCode('alert8')" class="rob-btn rob-btn-default ">内容+双按钮(带背景颜色,删除按钮)+右上关闭按钮</button>
+           <button ng-click="showCode('alert9')" class="rob-btn rob-btn-default ">内容+双按钮(不带背景颜色,确定按钮)+右上关闭按钮</button>
+           <button ng-click="showCode('alert10')" class="rob-btn rob-btn-default ">内容+双按钮(不带背景颜色,删除按钮)+右上关闭按钮</button>
+           <button ng-click="showCode('alert11')" class="rob-btn rob-btn-default ">多条内容+单独标题带颜色+右上关闭按钮+双按钮</button>
+           <button ng-click="showCode('alert12')" class="rob-btn rob-btn-default ">多条内容+单独标题不带颜色+右上关闭按钮+双按钮带背景</button>
+           <button ng-click="showCode('alert13')" class="rob-btn rob-btn-default ">多条内容+单独标题带颜色+右上关闭按钮+按钮</button>
+           <button ng-click="showCode('alert14')" class="rob-btn rob-btn-default ">多条内容+单独标题不带颜色+右上关闭按钮+按钮带背景颜色</button>
+           <button ng-click="showCode('alert15')" class="rob-btn rob-btn-default ">icon+内容+内标题+右上关闭按钮+按钮</button>
+           <button ng-click="showCode('alert16')" class="rob-btn rob-btn-default ">icon+内容+内标题+右上关闭按钮+带背景的按钮</button>
+           <button ng-click="showCode('alert17')" class="rob-btn rob-btn-default ">icon+内容+内标题</button>
+            </section>
+              <section class="code-box-meta markdown">
+                    <div class="code-box-title">
+                       alert 弹层
+                    </div>
+                    <p>
+                        共15种不同的状态只需复制下面代码就可实现你想要的效果
+                    </p>
+                    <i class="rob-icon rob-icon-home code-show" ng-click="showCode('rob-alert-icon')"></i>
+                </section>
+                <section class="code-box-content" id="rob-alert-icon">
+                    <pre>
+        <code class="language-markup">
+        &lt;!-- 只有内容 -->
+        &lt;div id="alert1" class="rob-alert" style="display:none">
+          &lt;div class="rob-alert-content">
+          这是一段内容~ 
+          啊啊啊啊啊啊啊啊啊啊啊啊啊， 
+          啊啊啊啊啊啊啊啊啊啊
+          &lt;/div>
+      &lt;/div>
+  
+
+
+        &lt;!-- 内容+内标题+右上关闭按钮 -->
+        &lt;div id="alert2" class="rob-alert rob-alert-dismissible"  style="display:none">
+          &lt;button type="button" class="rob-alert-close" data-dismiss="rob-alert" aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+            &lt;div class="rob-alert-content">
+            &lt;div class="rob-alert-content-title">这是一个标题&lt;/div>
+            这是一段内容~ 
+            &lt;/div>
+         &lt;/div>
+
+
+
+      &lt;!-- 内容+单独标题+右上关闭按钮 -->
+        &lt;div id="alert3" class="rob-alert rob-alert-dismissible"  style="display:none">
+          &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+            &lt;div class="rob-alert-title">这是一个标题&lt;/div>
+            &lt;div class="rob-alert-content">
+            这是一段内容~ 
+            &lt;/div>
+        &lt;/div>
+
+
+
+        &lt;!-- 内容+单独标题带颜色+右上关闭按钮 -->
+        &lt;div id="alert4" class="rob-alert rob-alert-dismissible" style="display:none">
+          &lt;button type="button" class="rob-alert-close" data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+            &lt;div class="rob-alert-title rob-alert-title-color">这是一个标题&lt;/div>
+            &lt;div class="rob-alert-content">
+            这是一段内容~ 
+            &lt;/div>
+
+        &lt;/div>
+
+
+
+        &lt;!-- 内容+按钮+右上关闭按钮  -->
+        &lt;div id="alert5" class="rob-alert rob-alert-dismissible"   role="alert"   style="display:none">
+        &lt;button type="button" class="rob-alert-close" data-dismiss="rob-alert" aria-label="Close">
+        &lt;span aria-hidden="true" >×&lt;/span>
+        &lt;/button>
+
+        &lt;div class="rob-alert-content">&lt;i class="rob-icon-quill">&lt;/i> 这是一段内容~&lt;/div>
+        &lt;div class="rob-alert-button-color">
+          &lt;button type="button"  class="rob-btn rob-btn-default">确定&lt;/button>
+         &lt;!--  &lt;button type="button" class="rob-btn rob-btn-default">取消&lt;/button> -->
+        &lt;/div>
+      &lt;/div>
+
+
+
+        &lt;!-- 标题+内容+按钮+右上关闭按钮  -->
+        &lt;div id="alert6" class="rob-alert rob-alert-dismissible fade in "   role="alert"   style="display:none">
+        &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert" aria-label="Close">
+        &lt;span aria-hidden="true">×&lt;/span>
+        &lt;/button>
+
+        &lt;div  class="rob-alert-title">这是一个标题&lt;/div>
+        &lt;div class="rob-alert-content">&lt;i class="rob-icon-quill">&lt;/i> 这是一段内容~&lt;/div>
+        &lt;div class="rob-alert-button">
+          &lt;button type="button"  class="rob-btn rob-btn-default">确定&lt;/button>
+         &lt;!--  &lt;button type="button" class="rob-btn rob-btn-default">取消&lt;/button> -->
+        &lt;/div>
+      &lt;/div>
+
+
+
+      &lt;!-- 内容+双按钮(带背景颜色,确定按钮)+右上关闭按钮  -->
+        &lt;div id="alert7" class="rob-alert rob-alert-dismissible" role="alert " style="display:none">
+        &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+        &lt;span aria-hidden="true">×&lt;/span>
+        &lt;/button>
+
+        &lt;div class="rob-alert-content">&lt;div class="rob-alert-content-title">这是一个标题&lt;/div>这是一段内容~&lt;/div>
+        &lt;div class="rob-alert-button-color">
+
+          &lt;button type="button" class="rob-btn rob-btn-minor">取消&lt;/button> 
+          &lt;button type="button"  class="rob-btn rob-btn-default">确定&lt;/button>
+        &lt;/div>
+      &lt;/div>
+
+
+
+        &lt;!-- 内容+双按钮(带背景颜色,删除按钮)+右上关闭按钮  -->
+        &lt;div id="alert8" class="rob-alert rob-alert-dismissible"   role="alert " style="display:none">
+        &lt;button type="button" class="rob-alert-close" data-dismiss="rob-alert" aria-label="Close">
+        &lt;span aria-hidden="true">×&lt;/span>
+        &lt;/button>
+
+        &lt;div class="rob-alert-content">&lt;div class="rob-alert-content-title">这是一个标题&lt;/div>这是一段内容~&lt;/div>
+        &lt;div class="rob-alert-button-color">
+
+          &lt;button type="button" class="rob-btn rob-btn-minor">取消&lt;/button> 
+          &lt;button type="button"  class="rob-btn rob-btn-danger">删除&lt;/button>
+        &lt;/div>
+      &lt;/div>
+
+
+
+      &lt;!-- 内容+双按钮(不带背景颜色,确定按钮)+右上关闭按钮  -->
+        &lt;div id="alert9" class="rob-alert rob-alert-dismissible"  role="alert " style="display:none">
+        &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert" aria-label="Close">
+        &lt;span aria-hidden="true" >×&lt;/span>
+        &lt;/button>
+
+        &lt;div class="rob-alert-content">&lt;div class="rob-alert-content-title">这是一个标题&lt;/div>这是一段内容~&lt;/div>
+        &lt;div class="rob-alert-button">
+
+          &lt;button type="button" class="rob-btn rob-btn-minor">取消&lt;/button> 
+          &lt;button type="button"  class="rob-btn rob-btn-default">确定&lt;/button>
+
+        &lt;/div>
+      &lt;/div>
+
+
+
+        &lt;!-- 内容+双按钮(不带背景颜色,删除按钮)+右上关闭按钮  -->
+        &lt;div id="alert10" class="rob-alert rob-alert-dismissible"  role="alert " style="display:none">
+          &lt;button type="button" class="rob-alert-close"   data-dismiss="rob-alert"  aria-label="Close">
+              &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+
+           &lt;div class="rob-alert-content">&lt;div class="rob-alert-content-title">这是一个标题&lt;/div>这是一段内容~&lt;/div>
+           &lt;div class="rob-alert-button">
+
+          &lt;button type="button" class="rob-btn rob-btn-minor">取消&lt;/button> 
+          &lt;button type="button"  class="rob-btn rob-btn-danger">删除&lt;/button>
+        &lt;/div>
+      &lt;/div>
+
+
+
+      &lt;!-- 多条内容+单独标题带颜色+右上关闭按钮+双按钮 -->
+      &lt;!--  -->
+        &lt;div id="alert11" class="rob-alert rob-alert-dismissible" style="display:none" >
+          &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+            &lt;div class="rob-alert-title rob-alert-title-color">这是一个标题&lt;/div>
+            &lt;div class="rob-alert-content ">
+            
+            &lt;ul>
+              &lt;li>&lt;label for="ChargeAccount">充值账户:&lt;/label>&lt;span id="ChargeAccount">14234234&lt;/span>&lt;/li>
+              &lt;li>&lt;label for="RechargeAmount">用户ID:&lt;/label>&lt;input type="text" class="rob-input" style="width:30%;display:inline-block"/>&lt;/li>
+              &lt;li>&lt;label for="RechargeAmount">充值金额:&lt;/label>&lt;span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元&lt;/span>&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+             &lt;div class="rob-alert-button">
+
+                &lt;button type="button"  class="rob-btn rob-btn-minor" >取消&lt;/button>
+                &lt;button type="button"  class="rob-btn rob-btn-default">确认&lt;/button>
+
+              &lt;/div>
+        &lt;/div>
+
+
+
+        &lt;!-- 多条内容+单独标题不带颜色+右上关闭按钮+双按钮带背景 -->
+        &lt;div id="alert12" class="rob-alert rob-alert-dismissible" style="display:none">
+          &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+            &lt;div class="rob-alert-title ">这是一个标题&lt;/div>
+            &lt;div class="rob-alert-content ">
+            
+            &lt;ul>
+              &lt;li>&lt;label for="ChargeAccount">充值账户:&lt;/label>&lt;span id="ChargeAccount">14234234&lt;/span>&lt;/li>
+              &lt;li>&lt;label for="RechargeAmount">用户ID:&lt;/label>&lt;input type="text" class="rob-input" style="width:30%;display:inline-block"/>&lt;/li>
+              &lt;li>&lt;label for="RechargeAmount">充值金额:&lt;/label>&lt;span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元&lt;/span>&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+             &lt;div class="rob-alert-button-color">
+
+                &lt;button type="button"  class="rob-btn rob-btn-minor">取消&lt;/button>
+                &lt;button type="button"  class="rob-btn rob-btn-default">确认&lt;/button>
+
+              &lt;/div>
+        &lt;/div>
+
+
+
+        &lt;!-- 多条内容+单独标题带颜色+右上关闭按钮+按钮 -->
+        &lt;div id="alert13" class="rob-alert rob-alert-dismissible" style="display:none">
+          &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+            &lt;div class="rob-alert-title rob-alert-title-color">这是一个标题&lt;/div>
+            &lt;div class="rob-alert-content ">
+            
+            &lt;ul>
+              &lt;li>&lt;label for="ChargeAccount">充值账户:&lt;/label>&lt;span id="ChargeAccount">14234234&lt;/span>&lt;/li>
+              &lt;li>&lt;label for="RechargeAmount">充值金额:&lt;/label>&lt;span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元&lt;/span>&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+             &lt;div class="rob-alert-button">
+
+                &lt;button type="button"  class="rob-btn rob-btn-default">立即充值&lt;/button>
+
+              &lt;/div>
+        &lt;/div>
+
+
+
+        &lt;!-- 多条内容+单独标题不带颜色+右上关闭按钮+按钮带背景颜色 -->
+        &lt;div id="alert14" class="rob-alert rob-alert-dismissible" style="display:none">
+          &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+            &lt;div class="rob-alert-title">这是一个标题&lt;/div>
+            &lt;div class="rob-alert-content ">
+            
+            &lt;ul>
+              &lt;li>&lt;label for="ChargeAccount">充值账户:&lt;/label>&lt;span id="ChargeAccount">14234234&lt;/span>&lt;/li>
+              &lt;li>&lt;label for="RechargeAmount">充值金额:&lt;/label>&lt;span id="RechargeAmount" class="rob-alert-content-li-span">200000.00元&lt;/span>&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+             &lt;div class="rob-alert-button-color">
+
+                &lt;button type="button"  class="rob-btn rob-btn-default">立即充值&lt;/button>
+
+              &lt;/div>
+        &lt;/div>
+
+
+                   
+      &lt;!-- icon+内容+内标题+右上关闭按钮+按钮 -->
+        &lt;div id="alert15" class="rob-alert rob-alert-dismissible" style="display:none">
+          &lt;button type="button" class="rob-alert-close" data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+
+            &lt;div class="rob-alert-content">
+            &lt;span class="ioc_info icon-f1">&lt;/span>
+            &lt;div class="rob-alert-content-title">这是一个标题&lt;/div>
+            这是一段内容~ 
+            &lt;/div>
+            &lt;div class="rob-alert-button">
+
+                &lt;button type="button"  class="rob-btn rob-btn-default">知道了&lt;/button>
+
+              &lt;/div>
+         &lt;/div>
+
+
+
+        &lt;!-- icon+内容+内标题+右上关闭按钮+带背景的按钮 -->
+        &lt;div id="alert16" class="rob-alert rob-alert-dismissible"style="display:none">
+          &lt;button type="button" class="rob-alert-close"  data-dismiss="rob-alert"  aria-label="Close">
+          &lt;span aria-hidden="true">×&lt;/span>
+          &lt;/button>
+
+            &lt;div class="rob-alert-content">
+            &lt;span class="ioc_info icon-f1">&lt;/span>
+            &lt;div class="rob-alert-content-title">这是一个标题&lt;/div>
+            这是一段内容~ 
+            &lt;/div>
+            &lt;div class="rob-alert-button-color">
+
+                &lt;button type="button" class="rob-btn rob-btn-default"   aria-label="Close">知道了&lt;/button>
+
+              &lt;/div>
+         &lt;/div>
+
+
+
+          &lt;!-- icon+内容+内标题-->
+        &lt;div id="alert17" class="rob-alert" style="display:none">
+
+            &lt;div class="rob-alert-content">
+            &lt;div class="content-left">&lt;span class="ioc_info icon-f1">&lt;/span>&lt;/div>
+            &lt;div class="content-right">&lt;div class="rob-alert-content-title">这是一个标题&lt;/div>
+            这是一段内容~ 
+            &lt;/div>
+            &lt;/div>
+            
+         &lt;/div>
+
+
+        </code>
+        </pre>
+   
+</section>
+            </div>
+        </div>
+</article>
+
+
+
+
+
+   <script>
+
+     $(function(){
+                //注意：事件要绑定在UI容器上，而不是关闭按钮中 标签加上data-dismiss="alert
+            /*$(".alert-block").on("close",function(){
+                    alert("这是关闭前调用的")
+                }) */            /*   $(".alert-block").on("closed",function(){
+                    alert("这是关闭后调用的")
+                })*/
+            }) 
+
+      </script>
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+        <!-- 
+
+           Button trigger modal
+      <button type="button" class="rob-btn rob-btn-primary rob-btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+      </button>
+
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="rob-alert-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="rob-btn rob-btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="rob-btn rob-btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+                </section>
+                <section class="code-box-meta markdown">
+                    <div class="code-box-title">
+                        <a href="">
+                            默认的表格
+                        </a>
+                    </div>
+                    <p>
+                        只需为table标签添加 <code class="language-markup">.rob-table </code>类名就可以实现一个最基本的表格
+                    </p>
+                    <i class="rob-icon rob-icon-home code-show" ng-click="showCode('table-table')"></i>
+                </section>
+                <section class="code-box-content" id="table-table">
+                    <pre>
+        <code class="language-markup">
+            &lt;table class="rob-table">
+            
+        </code>
+        </pre>
+                </section>
+            </div>
+        </div> -->

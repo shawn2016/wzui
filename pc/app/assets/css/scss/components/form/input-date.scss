@@ -1,0 +1,27 @@
+@import "../../base/base";
+.#{$cls-prefix}input-date {
+  display: block;
+  margin-left: 0px;
+  .rob-input-item {
+    width: 50%;
+    display: block;
+    padding-left: 15px;
+    padding-right: 0px;
+    float: left;
+    .rob-input {
+      display: block;
+    }
+  }
+  .rob-input-item:first-child {
+    padding-left: 0px;
+  }
+  .rob-input-item:last-child {
+    &:before {
+      content: '－';
+      position: absolute;
+      z-index: 10;
+      left: 1px;
+      line-height: $inputFTrob-input-dateCTrob-input-itemWlast-childWbeforeFline-height;
+    }
+  }
+}

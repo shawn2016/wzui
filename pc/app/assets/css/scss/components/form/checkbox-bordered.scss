@@ -1,0 +1,7 @@
+@import "../../base/base";
+   [type="checkbox"].#{$cls-prefix}checkbox-bordered:not(:checked) + label:after{
+        border-radius: 50%;
+    }
+     [type="checkbox"].#{$cls-prefix}checkbox-bordered:checked + label:after{
+        border-radius: 50%;
+    }

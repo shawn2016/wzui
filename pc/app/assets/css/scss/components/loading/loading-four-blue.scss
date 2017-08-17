@@ -1,0 +1,30 @@
+@import "../../base/base";
+//1-2
+.#{$cls-prefix}loading-four-blue {
+  background-color: $loadingFTrob-loading-four-blueFbackground-color;
+  .#{$cls-prefix}loading-item-one {
+    background-color: #fff;
+  }
+  .#{$cls-prefix}loading-item-two {
+    background-color: #fff;
+  }
+  .#{$cls-prefix}loading-item-three {
+    background-color: #fff;
+  }
+  .#{$cls-prefix}loading-item-four {
+    background-color: #fff;
+  }
+  .#{$cls-prefix}loading-label {
+    color: #fff;
+  }
+}
+.#{$cls-prefix}loading-ie-blue{
+  display: none;
+    display: block\9;
+   background: url(../images/loading-blue.gif) no-repeat;
+         width: 175px;
+    height: 35px;
+    margin:0 auto;
+    display: block\9;
+
+}

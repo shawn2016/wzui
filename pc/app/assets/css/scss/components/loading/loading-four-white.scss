@@ -1,0 +1,165 @@
+@import "../../base/base";
+.#{$cls-prefix}loading-ie-white{
+  display: none;
+    display: block\9;
+   background: url(../images/loading-white.gif) no-repeat;
+         width: 175px;
+    height: 35px;
+    margin:0 auto;
+    display: block\9;
+
+}
+
+.#{$cls-prefix}loading-item-one {
+  animation: object_one 1s infinite;
+  -webkit-animation: object_one 1s infinite;
+  -moz-animation: object_one 1s infinite;
+  -ms-animation: object_one 1s infinite;
+  -o-animation: object_one 1s infinite;
+  background-color: $loadingFTrob-loading-item-oneFbackground-color;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+}
+
+.#{$cls-prefix}loading-item-two {
+  animation: object_two 1s infinite;
+  -webkit-animation: object_two 1s infinite;
+  -moz-animation: object_two 1s infinite;
+  -ms-animation: object_two 1s infinite;
+  -o-animation: object_two 1s infinite;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  background-color: $loadingFTrob-loading-item-twoFbackground-color;
+}
+
+.#{$cls-prefix}loading-item-three {
+  animation: object_three 1s infinite;
+  -webkit-animation: object_three 1s infinite;
+  -moz-animation: object_three 1s infinite;
+  -ms-animation: object_three 1s infinite;
+  -o-animation: object_three 1s infinite;
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  background-color: $loadingFTrob-loading-item-threeFbackground-color;
+}
+
+.#{$cls-prefix}loading-item-four {
+  animation: object_four 1s infinite;
+  -webkit-animation: object_four 1s infinite;
+  -moz-animation: object_four 1s infinite;
+  -ms-animation: object_four 1s infinite;
+  -o-animation: object_four 1s infinite;
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  background-color: $loadingFTrob-loading-item-fourFbackground-color;
+}
+
+@keyframes object_one {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  100% {
+    
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes object_two {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes object_three {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes object_four {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}

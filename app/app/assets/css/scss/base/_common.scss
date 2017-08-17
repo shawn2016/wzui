@@ -1,0 +1,61 @@
+$browser-default-font-size:100px;
+html {
+  font-size: $browser-default-font-size;
+}
+
+@media only screen and (min-width: 320px) and (max-width:320px) {
+  html {
+    font-size: 85.33px!important
+  }
+}
+
+@media only screen and (min-width: 384px) {
+  html {
+    font-size: 106.67px!important
+  }
+}
+
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 114.44px!important
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 110.4px!important
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 204.8px!important
+  }
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hidden{
+  display: none !important;
+}
+.pull-right{
+  float: right;
+}
+.pull-left{
+  float: left;
+}

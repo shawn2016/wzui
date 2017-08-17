@@ -1,0 +1,43 @@
+@import "../../base/base";
+.#{$cls-prefix}collapse-two-multiple{
+
+  .panel-default{
+    margin-bottom: 0;
+    >.panel-heading{
+
+      border-top: $collapseFTrob-collapse-two-multipleCTpanel-defaultCPCTpanel-headingFborder-top;
+      background:  $collapseFTrob-collapse-two-multipleCTpanel-defaultCPCTpanel-headingFbackground;
+
+
+      .panel-title{
+        font-size: $collapseFTrob-collapse-two-multipleCTpanel-defaultCPCTpanel-headingCTpanel-titleFfont-size;
+        .panel-title-a{
+          margin-left: 10px;
+          padding: $collapseFTrob-collapse-two-multipleCTpanel-defaultCPCTpanel-headingCTpanel-titleCTpanel-title-aFpadding;
+          display: inline-block;
+          width: 100%;
+          color: $collapseFTrob-collapse-two-multipleCTpanel-defaultCPCTpanel-headingCTpanel-titleCTpanel-title-aFcolor;
+          i{
+            margin-right: 10px;
+          }
+        }
+      }
+
+    }
+  }
+  .panel-collapse{
+    .panel-body{
+      padding:$collapseFTrob-collapse-two-multipleCTpanel-collapseCTpanel-bodyFpadding;
+      line-height:$collapseFTrob-collapse-two-multipleCTpanel-collapseCTpanel-bodyFline-height;
+      font-size:$collapseFTrob-collapse-two-multipleCTpanel-collapseCTpanel-bodyFfont-size;
+
+    }
+  }
+  .collapse.in{
+    display: block;
+  }
+  .collapse{
+    display: none;
+  }
+}
+

@@ -1,0 +1,43 @@
+@import "../../base/base";
+.#{$cls-prefix}input-line {
+  border-bottom: $inputFTrob-input-lineFborder-bottom;
+  [class*="col-"] {
+    position: static;
+  }
+  .#{$cls-prefix}input {
+    border: none;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      &+.#{$cls-prefix}input-line-border {
+        border-bottom: $inputFTrob-input-lineCTrob-inputWfocusCXCTrob-input-line-borderFborder-bottom;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: 5;
+          bottom: 0;
+          left: 50%;
+          height: 2px;
+          width: 0;
+          visibility: hidden;
+          transition: .2s ease all;
+        }
+      }
+    }
+    &[disabled] {
+      background-color: transparent;
+    }
+  }
+  .#{$cls-prefix}has-icon-left,.#{$cls-prefix}has-icon-right{
+    position: static;
+  }
+  .#{$cls-prefix}has-icon-left .#{$cls-prefix}is-icon-left{
+    left:($gridFgrid-gutter-widthFwidth / 2);
+  }x
+   .#{$cls-prefix}has-icon-right .#{$cls-prefix}is-icon-right{
+    right:($gridFgrid-gutter-widthFwidth / 2);
+  }
+}

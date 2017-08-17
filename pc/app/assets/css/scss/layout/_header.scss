@@ -1,0 +1,59 @@
+#header {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  background: #fff;
+  height: 80px;
+  margin-bottom: 24px;
+  padding: 0 48px;
+  width: 100%;
+  #logo {
+    img {
+      width: 40px;
+      margin-right: 8px;
+    }
+    a,
+    img {
+      line-height: 80px;
+      height: 80px;
+    }
+    a {
+      float: left;
+    }
+    span {
+      float: right;
+    }
+  }
+  .header-menu {
+    float: right;
+    font-size: 14px;
+    li {
+      &.active{
+         border-bottom: 2px solid #108ee9;
+        color: #108ee9;
+        a{
+        color: #108ee9;
+        }
+      }
+      height: 80px;
+      line-height: 80px;
+      padding:0 20px;
+      text-align: center;
+      border-bottom-width: 3px;
+      position: relative;
+      top: 1px;
+      float: left;
+      border-bottom: 2px solid transparent;
+      a {
+        display: block;
+        color: rgba(0, 0, 0, .65);
+      }
+      &:hover {
+        border-bottom: 2px solid #108ee9;
+        color: #108ee9;
+        a{
+          color: #108ee9;
+        }
+      }
+    }
+  }
+}

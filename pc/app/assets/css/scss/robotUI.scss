@@ -1,0 +1,205 @@
+@import "base/base";
+@import "base/fn";
+/*=============components=======*/
+
+
+@import "components/grid/grid"; //网格
+//按钮
+@import "components/button/btn"; //公用
+@import "components/button/btn-default"; //默认
+@import "components/button/btn-main"; //主要
+@import "components/button/default/btn-line"; //默认空心
+@import "components/button/default/btn-dashed"; //默认虚线
+@import "components/button/btn-minor"; //次要
+@import "components/button/btn-minor2"; //次要2
+@import "components/button/btn-success"; //成功
+@import "components/button/success/btn-line"; //成功空心
+@import "components/button/success/btn-dashed"; //成功虚线
+@import "components/button/btn-warning"; //警告
+@import "components/button/warning/btn-line"; //警告空心
+@import "components/button/warning/btn-dashed"; //警告虚线
+@import "components/button/btn-danger"; //危险按钮
+@import "components/button/danger/btn-line"; //危险空心
+@import "components/button/danger/btn-dashed"; //危险虚线
+//@import "components/button/btn-dashed"; //虚线按钮
+//@import "components/button/btn-outline"; //实线按钮
+@import "components/button/btn-link"; //链接按钮
+@import "components/button/btn-block"; //块级按钮
+@import "components/button/btn-circle"; //按钮圆角
+@import "components/button/btn-icon-only"; //只有icon按钮
+@import "components/button/btn-lg"; //大尺寸按钮
+@import "components/button/btn-sm"; //小尺寸按钮
+@import "components/button/btn-xs"; //超小尺寸按钮
+
+
+
+//表格
+@import "components/table/table";
+//@import "components/table/table-backgrounds";//tr行的颜色修改
+@import "components/table/table-bordered-erect";//垂直边框
+@import "components/table/table-bordered";//全边框
+ //@import "components/table/table-col";//改变元素展示方式
+@import "components/table/table-condensed";//紧凑表格
+//@import "components/table/table-custom";//自定义表格
+//@import "components/table/table-flipscroll";//响应翻转滚动表格
+@import "components/table/table-hover";//悬浮
+//@import "components/table/table-light";//高亮表格
+@import "components/table/table-responsive";//响应式表格
+//@import "components/table/table-scrollable";//滚动条表格
+@import "components/table/table-striped";//斑马线
+
+
+
+
+
+
+
+//图片
+@import "components/image/image";
+@import "components/image/img-darken";//图片变淡
+@import "components/image/img-div-border";//图片外层div的边框
+@import "components/image/img-highlight";//图片高亮
+@import "components/image/img-shoal";//图片变浅
+@import "components/image/img-border";//图片边框
+@import "components/image/img-div-position";//图片外层div相对定位
+@import "components/image/img-hover-text";//图片 hover之后文字
+@import "components/image/img-superscript";//图片角标定位
+@import "components/image/img-responsive";//根据屏幕大小改变图片大小
+@import "components/image/img-rounded";//图片圆角
+// @import "components/image/img-thumbnail";//图片缩略图
+@import "components/image/img-circle";//完全圆图片
+@import "components/image/images-box";//完全圆图片
+
+//通知
+@import "components/notification/notification";
+
+
+//面包屑导航
+@import "components/breadcrumb/breadcrumb";
+
+
+
+//alert弹出框
+@import "components/alert/alert";
+@import "components/alert/alert-cover";
+@import "components/alert/alert-dismissable";
+// @import "components/alert/alert-feedbackState";
+@import "components/alert/alert-sm";
+@import "components/alert/alert-title-color";
+
+// @import "components/modals/modals"; //模态框
+//表单
+@import "components/form/input"; //表单-输入框
+@import "components/form/input-label"; //输入框标题
+@import "components/form/input-require"; //需关联input-label文件
+@import "components/form/input-has-error"; //表单错误样式
+@import "components/form/input-date"; //时间双输入框
+@import "components/form/input-line"; //横线输入框
+@import "components/form/input-textarea"; //文本域样式
+@import "components/form/input-select-group"; //带下拉框的输入框
+@import "components/form/radio"; //表单-单选框
+@import "components/form/radio-with-gap"; //单选间隔
+@import "components/form/radio-filled-in"; //单选圆角填充
+@import "components/form/checkbox"; //表单-复选框
+@import "components/form/checkbox-filled-in"; //填充型号关联与表单-复选框
+@import "components/form/checkbox-bordered"; //圆角复选关联与表单-复选框和填充型
+@import "components/form/select"; //表单-选择框
+@import "components/form/switch";//表单-切换按钮
+@import "components/form/switch-two";//表单-切换按钮另外一种
+@import "components/form/upload-btn";//按钮上传
+@import "components/form/upload-card";//卡片上传 
+
+//分页
+@import "components/pagination/pagination"; //分页-基本样式
+@import "components/pagination/pagination-jump"; //分页-基本样式
+@import "components/pagination/pagination-simple-input"; //分页-简易带输入框样式
+@import "components/pagination/pagination-simple"; //分页-简易样式
+@import "components/pagination/pagination-border-radius"; //分页-圆角样式
+@import "components/pagination/pagination-border-radius-circle"; //分页-圆形样式
+@import "components/labels/label-one";
+@import "components/labels/label-two";
+@import "components/labels/label-three";
+@import "components/labels/label-four";
+@import "components/labels/label-five";
+@import "components/labels/label-six";
+@import "components/labels/label-hover-underline";
+
+
+
+//loading
+@import "components/loading/loading";
+@import "components/loading/loading-four-white";
+@import "components/loading/loading-four-blue";
+@import "components/loading/loading-ring";
+@import "components/loading/loading-img";
+@import "components/loading/loading-smile";
+
+// tooltip
+@import "components/tooltip/tooltip1";//tooltip
+// collapse
+@import "components/collapse/collapse-single";//collapse
+@import "components/collapse/collapse-multiple";//collapse
+@import "components/collapse/collapse-two-single";//collapse
+@import "components/collapse/collapse-two-multiple";//collapse
+// tab
+@import "components/tab/nav";//tab
+@import "components/tab/nav-tabs";//tab
+@import "components/tab/nav-tabs1";//tab
+@import "components/tab/nav-tabs2";//tab
+@import "components/tab/nav-tabs3";//tab
+@import "components/tab/nav-tabs-toggle";//tab
+
+@import "components/badge/badge-red";//tab
+@import "components/badge/badge-white";//tab
+@import "components/badge/badge-green";//tab
+@import "components/badge/badge-normal";//tab
+@import "components/badge/badge-Warning";//tab
+@import "components/badge/badge-remind";//tab
+@import "components/badge/badge-success";//tab
+@import "components/badge/badge-unavailable";//tab
+@import "components/badge/badge-bell";//tab
+@import "components/badge/badge-bell1";//tab
+
+// steps
+@import "components/steps/steps";//steps
+@import "components/steps/is-horizontal";//horizontal
+@import "components/steps/is-vertical";//vertical
+@import "components/steps/is-img";//img
+//progress
+@import "components/progress/progress";//progress
+//timeline
+@import "components/timeline/ant-timeline";//timeline
+//slider
+@import "components/slider/slider";//slider
+//scrollbar
+@import "components/scrollbar/scrollbar";//scrollbar
+//rate
+@import "components/rate/rate";//rate
+//calendar
+@import "components/calendar/calendar";//rate
+
+
+// // /*=============layout=======*/
+@import "components/../layout/prism"; //代码高亮
+@import "components/../layout/layout";
+@import "components/../layout/common";
+@import "components/../layout/header";
+@import "components/../layout/menu";
+@import "components/../layout/footer";
+@import "components/../layout/app";
+@import "components/../layout/gt";
+
+
+/*=============menu=======*/
+/*==纵向菜单==*/
+@import "components/menu/sidebar-menu-1";
+@import "components/menu/sidebar-menu-2";
+@import "components/menu/sidebar-menu-3";
+/*==横向菜单==*/
+@import "components/horizenmenu/navbar-horizen1";
+@import "components/horizenmenu/navbar-horizen2";
+
+
+
+//popover 弹出框
+@import "components/popover/popover";

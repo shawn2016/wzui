@@ -1,0 +1,132 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-alert {
+  border: 1px solid transparent;
+  border-radius: 0.28571em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 35%;
+  box-shadow: 0px 3px 30px 0 rgba(0, 0, 0, 0.2);
+  line-height: normal;
+  z-index: 100;
+  min-width: 280px;
+  background-color: #FFF; }
+  .rob-alert .rob-alert-title {
+    margin-top: 0;
+    color: #393939;
+    border-bottom: 1px dashed #EAEAEA;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;
+    padding: 1.11111em 0;
+    font-size: 1.28571em;
+    margin-bottom: -1.42857em; }
+  .rob-alert .rob-alert-content {
+    padding: 4.14286em 0;
+    text-align: center;
+    color: #8f8f8f;
+    font-size: 1em; }
+    .rob-alert .rob-alert-content .rob-alert-content-title {
+      font-size: 1.28571em;
+      padding-bottom: 0.77778em;
+      font-weight: 500;
+      color: #393939; }
+    .rob-alert .rob-alert-content label {
+      padding-right: 1.42857em; }
+    .rob-alert .rob-alert-content i {
+      font-size: 1.78571em;
+      vertical-align: sub; }
+    .rob-alert .rob-alert-content .content-left {
+      display: inline-block; }
+      .rob-alert .rob-alert-content .content-left span, .rob-alert .rob-alert-content .content-left i {
+        margin-bottom: 0;
+        margin-right: 1.42857em; }
+    .rob-alert .rob-alert-content .content-right {
+      display: inline-block;
+      vertical-align: middle; }
+  .rob-alert > .rob-alert-title + .rob-alert-content {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1em;
+    padding: 4.14286em 1.42857em;
+    color: #8f8f8f; }
+    .rob-alert > .rob-alert-title + .rob-alert-content i {
+      font-size: 1.78571em;
+      vertical-align: sub; }
+    .rob-alert > .rob-alert-title + .rob-alert-content label {
+      padding-right: 1.42857em; }
+    .rob-alert > .rob-alert-title + .rob-alert-content > ul {
+      margin: 0 auto;
+      margin-bottom: 0;
+      color: #8f8f8f; }
+    .rob-alert > .rob-alert-title + .rob-alert-content li {
+      line-height: 2.14286em;
+      margin-bottom: 1.42857em;
+      text-align: right; }
+      .rob-alert > .rob-alert-title + .rob-alert-content li::after {
+        display: block;
+        clear: both;
+        content: ""; }
+      .rob-alert > .rob-alert-title + .rob-alert-content li::before {
+        content: " ";
+        display: table; }
+      .rob-alert > .rob-alert-title + .rob-alert-content li label {
+        float: left;
+        width: 7.14286em;
+        padding-right: 1.42857em; }
+      .rob-alert > .rob-alert-title + .rob-alert-content li span {
+        float: left; }
+      .rob-alert > .rob-alert-title + .rob-alert-content li .rob-alert-content-li-span {
+        font-size: 1.5em;
+        color: #8ac536; }
+      .rob-alert > .rob-alert-title + .rob-alert-content li input {
+        float: left; }
+    .rob-alert > .rob-alert-title + .rob-alert-content li:last-child {
+      margin-bottom: 0; }
+  .rob-alert .rob-alert-content + .rob-alert-button, .rob-alert .rob-alert-content + .rob-alert-button-color {
+    margin-top: -1.42857em; }
+  .rob-alert > .rob-alert-button {
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 3.21429em; }
+    .rob-alert > .rob-alert-button button {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.14286em;
+      padding: 0.8125em 0;
+      min-width: 120px;
+      width: 35%; }
+    .rob-alert > .rob-alert-button button:nth-child(2) {
+      margin-left: 0.8em; }
+  .rob-alert > .rob-alert-button-color {
+    margin-bottom: 0;
+    text-align: center;
+    padding: 1.57143em 0;
+    background-color: #f3f7fc; }
+    .rob-alert > .rob-alert-button-color button {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.14286em;
+      padding: 0.8125em 0;
+      min-width: 120px;
+      width: 35%; }
+    .rob-alert > .rob-alert-button-color button:nth-child(2) {
+      margin-left: 0.8em; }
+  .rob-alert > p + p {
+    margin-top: 0.35714em; }

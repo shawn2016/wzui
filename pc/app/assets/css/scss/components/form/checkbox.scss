@@ -1,0 +1,76 @@
+@import "../../base/base";
+
+
+
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0
+}
+
+[type="checkbox"]+label {
+  position: relative;
+  padding-left: $checkboxFLtypeDYcheckboxYRCXClabelFpadding-left;
+  cursor: pointer;
+  display: inline-block;
+  height: $checkboxFLtypeDYcheckboxYRCXClabelFheight;
+  line-height: $checkboxFLtypeDYcheckboxYRCXClabelFline-height;
+  font-size: $checkboxFLtypeDYcheckboxYRCXClabelFfont-size;
+  @include user-select(none);
+}
+
+[type="checkbox"]:not(:checked):disabled+label:before {
+  background-color: transparent;
+  border-color: $checkboxFLtypeDYcheckboxYRWdisabledCXClabelFborder-color;
+  cursor: not-allowed;
+}
+
+[type="checkbox"]:disabled + label {
+  color: $checkboxFLtypeDYcheckboxYRWdisabledCXClabelFcolor;
+  cursor: not-allowed;
+}
+
+[type="checkbox"].tabbed:focus+label:after {
+  @include scale(0);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+[type="checkbox"]:checked+label:before {
+  top: -4px;
+  left: -5px;
+  width: $checkboxFLtypeDYcheckboxYRCXClabelFwidth;
+  height: $checkboxFLtypeDYcheckboxYRCXClabelFheight;
+  border-top: $checkboxFLtypeDYcheckboxYRCXClabelFborder-top;
+  border-left: $checkboxFLtypeDYcheckboxYRCXClabelFborder-left;
+  border-right: $checkboxFLtypeDYcheckboxYRCXClabelFborder-right;
+  border-bottom: $checkboxFLtypeDYcheckboxYRCXClabelFborder-bottom;
+  @include rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%
+}
+
+[type="checkbox"]:checked:disabled+label:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.26)
+}
+
+[type="checkbox"]+label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $checkboxFLtypeDYcheckboxYRCXClabelWbeforeFwidth;
+  height: $checkboxFLtypeDYcheckboxYRCXClabelWbeforeFheight;
+  z-index: 0;
+  border: $checkboxFLtypeDYcheckboxYRCXClabelWbeforeFborder;
+  border-radius: 1px;
+  margin-top: 2px;
+  transition: .2s
+}

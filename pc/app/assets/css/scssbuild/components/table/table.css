@@ -1,0 +1,76 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  border: 1px solid #dce2ea; }
+
+th {
+  color: #393939; }
+
+td {
+  color: #393939;
+  cursor: pointer; }
+
+th, td {
+  text-align: center;
+  /* word-break: $table-td-word-break;
+  white-space: $table-td-white-space; */
+  font-weight: normal; }
+
+thead {
+  background-color: #fafbfd;
+  background-image: linear-gradient(to top, #f3f7fc 0%, #fafbfd 100%);
+  background-image: -webkit-linear-gradient(bottom, #f3f7fc 0%, #fafbfd 100%); }
+
+.rob-table {
+  width: 100%;
+  max-width: 100%; }
+  .rob-table > thead > tr > th,
+  .rob-table > thead > tr > td,
+  .rob-table > tbody > tr > th,
+  .rob-table > tbody > tr > td,
+  .rob-table > tfoot > tr > th,
+  .rob-table > tfoot > tr > td {
+    padding: 10px;
+    line-height: 1.42857;
+    vertical-align: middle; }
+  .rob-table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dce2ea; }
+  .rob-table > caption + thead > tr:first-child > th,
+  .rob-table > caption + thead > tr:first-child > td,
+  .rob-table > colgroup + thead > tr:first-child > th,
+  .rob-table > colgroup + thead > tr:first-child > td,
+  .rob-table > thead:first-child > tr:first-child > th,
+  .rob-table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  .rob-table > tbody + tbody {
+    border-top: 2px solid #dce2ea; }
+  .rob-table .rob-table {
+    background-color: #fff; }
+
+/***
+Customized Bootstrap Tables
+***/
+.rob-table td,
+.rob-table th {
+  font-size: 14px; }
+
+.rob-table.rob-table-bordered thead > tr > th {
+  border-bottom: 0; }
+
+.rob-table td .rob-img-responsive {
+  width: 100%; }

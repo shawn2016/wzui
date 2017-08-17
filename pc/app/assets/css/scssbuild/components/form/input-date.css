@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-input-date {
+  display: block;
+  margin-left: 0px; }
+  .rob-input-date .rob-input-item {
+    width: 50%;
+    display: block;
+    padding-left: 15px;
+    padding-right: 0px;
+    float: left; }
+    .rob-input-date .rob-input-item .rob-input {
+      display: block; }
+  .rob-input-date .rob-input-item:first-child {
+    padding-left: 0px; }
+  .rob-input-date .rob-input-item:last-child:before {
+    content: '－';
+    position: absolute;
+    z-index: 10;
+    left: 1px;
+    line-height: 40px; }

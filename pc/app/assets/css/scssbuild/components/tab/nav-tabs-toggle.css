@@ -1,0 +1,58 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-nav-tabs-toggle {
+  background-color: #eff1f6;
+  border: solid 1px #e5e6e9;
+  padding: 0; }
+  .rob-nav-tabs-toggle > li {
+    float: left;
+    margin-bottom: -1px; }
+    .rob-nav-tabs-toggle > li:nth-last-child(2) a {
+      margin-right: 0; }
+    .rob-nav-tabs-toggle > li > a {
+      padding: 16px 22px;
+      color: #393939;
+      margin-right: 61px;
+      text-align: center;
+      /* border: 1px solid transparent;*/ }
+      .rob-nav-tabs-toggle > li > a:hover {
+        color: #35baff;
+        background-color: #eff1f6; }
+    .rob-nav-tabs-toggle > li.active > a, .rob-nav-tabs-toggle > li.active > a:hover, .rob-nav-tabs-toggle > li.active > a:focus {
+      background-color: #eff1f6;
+      color: #35baff;
+      /* border: 1px solid #91ce3b;*/
+      border-bottom: 3px solid #35baff;
+      cursor: default;
+      /*  padding: 20px 79px;*/ }
+  .rob-nav-tabs-toggle span {
+    float: left;
+    padding: 23px 22px 20px; }
+    .rob-nav-tabs-toggle span:hover {
+      cursor: pointer;
+      color: #35baff; }
+  .rob-nav-tabs-toggle.response > li {
+    width: 10%;
+    min-width: 79px;
+    height: 10%;
+    margin-left: 20px; }
+    .rob-nav-tabs-toggle.response > li:nth-last-child(2) a {
+      margin-right: 0;
+      width: 100%; }
+    .rob-nav-tabs-toggle.response > li > a {
+      padding: 20px  10%;
+      min-width: 95px; }
+  .rob-nav-tabs-toggle.response span {
+    width: 2%;
+    height: 100%;
+    line-height: 100%; }

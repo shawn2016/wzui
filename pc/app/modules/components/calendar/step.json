@@ -1,0 +1,29 @@
+{
+    "type": "日历",
+    "desc": "",
+    "id": "calendarVars",
+    "vars": [{
+      "key": "$calendar-active-color",
+      "value": "#20a0ff",
+      "desc": "日历active颜色"
+    },{
+      "key": "$calendar-color",
+      "value": "#48576a",
+      "desc": "日历文字颜色"
+    },{
+      "key": "$calendar-prev-month",
+      "value": "#ddd",
+      "desc": "日历上下月颜色"
+    },{
+      "key": "$calendar-disabled-color",
+      "value": "#ccc",
+      "desc": "日历禁用颜色"
+    },{
+      "key": "$calendar-disabled-bg",
+      "value": "#f4f4f4",
+      "desc": "日历禁用背景颜色"
+    }]
+  }
+
+
+  

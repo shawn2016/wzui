@@ -1,0 +1,114 @@
+@import "../../base/base";
+
+form {
+  @include clearfix;
+}
+
+.#{$cls-prefix}form-group {
+  font-size: 12px;
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, .65);
+  vertical-align: top;
+  &:before {
+    display: table;
+    content: " ";
+  }
+  position: relative;
+  @include clearfix;
+}
+
+//输入框基本
+.#{$cls-prefix}input {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: $inputFTrob-inputFheight;
+  padding: $inputFTrob-inputFpadding;
+  font-size: $inputFTrob-inputFfont-size;
+  line-height: $inputFTrob-inputFline-height;
+  color: $inputFTrob-inputFcolor;
+  background-color: $inputFTrob-inputFbackground-color;
+  border: $inputFTrob-inputFborder;
+  border-radius:$inputFTrob-inputFborder-radius;
+  // @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, .075));
+  // @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+  @include form-control-focus;
+  @include placeholder;
+  &:hover {
+    border:$inputFTrob-inputWhoverFborder;
+  }
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: $inputFTrob-inputLdisabledRBCfieldsetLdisabledRCTrob-inputFbackground-color;
+    opacity: 1;
+    // border: 1px solid $input-border;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+
+//左边icon
+.#{$cls-prefix}is-icon-left {
+  display: none;
+}
+
+.#{$cls-prefix}is-icon-right {
+  display: none;
+}
+
+.#{$cls-prefix}has-icon-left {
+  @include input-has-icon-left(left, $inputFTrob-has-icon-leftCTrob-is-icon-leftFfont-size, $inputFTrob-has-icon-leftCTrob-is-icon-leftFcolor, $inputFTrob-has-icon-leftCTrob-is-icon-leftFheight);
+}
+
+//右边
+.#{$cls-prefix}has-icon-right {
+  @include input-has-icon-right(right, $inputFTrob-has-icon-rightCTrob-is-icon-rightFfont-size, $inputFTrob-has-icon-rightCTrob-is-icon-rightFcolor, $inputFTrob-has-icon-rightCTrob-is-icon-rightFheight);
+}
+
+
+
+//登录组
+
+.#{$cls-prefix}panel {
+  border:1px solid #dfdfdf;
+  margin:40px auto; width:35%; 
+  min-width:300px;  
+  padding: 20px 20px 0;
+  .#{$cls-prefix}form-group {
+     .#{$cls-prefix}panel-button {
+      padding: 0 20px;
+     }
+     input {
+      font-size:14px;
+     }
+     button {
+      margin-top:30px; font-size:14px;
+     }
+  }
+  .#{$cls-prefix}panel-heading {
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  h3 {
+    color: #5e6970;
+    font-size: 28px;
+    font-weight: 400;margin-top:10px;
+    margin-bottom: 50px;
+  }
+  
+}
+}
+
+.#{$cls-prefix}panel-fixed {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

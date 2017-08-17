@@ -1,0 +1,70 @@
+@import "../../base/base";
+.#{$cls-prefix}nav-tabs2 {
+  background-color: #f2f4f6;
+  border: solid 1px #e5e6e9;
+  /* border-bottom: none;
+   background:  #ebecee;*/
+  padding:34px 0 0 24px ;
+  > li {
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -1px;
+
+    // Actual tabs (as links)
+    > a {
+      padding: 12px 52px;
+      color:  #393939;
+      margin-right: 5px;
+
+      /* border: 1px solid transparent;*/
+
+      border-radius: 4px 4px 0 0;
+      &:hover {
+        color: #fff;
+        background:$tabFTrob-nav-tabs2CPCliCPCaWhoverFbackground ;
+      }
+      background: linear-gradient(to right, #ced1d7, #dadce1)
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        margin-top: -9px;
+        color: $tabFTrob-nav-tabs2CPCliTactiveCPCaBCTrob-nav-tabs2CPCliTactiveCPCaWhoverBCTrob-nav-tabs2CPCliTactiveCPCaWfocusFcolor;
+        background: $tabFTrob-nav-tabs2CPCliTactiveCPCaBCTrob-nav-tabs2CPCliTactiveCPCaWhoverBCTrob-nav-tabs2CPCliTactiveCPCaWfocusFbackground;
+        /* border: 1px solid #91ce3b;*/
+        //border-bottom-color: transparent;
+        cursor: default;
+        padding: 16px 52px;
+        border-radius:4px 4px 0 0;
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  &.response{
+    > li {
+      text-align: center;
+      width: 10%;
+      min-width: 39px;
+      height: 10%;
+      > a{
+        padding: 5.9% 10%;
+        text-align: center;
+      }
+      &.active > a {
+        &,
+        &:hover,
+        &:focus{
+          padding: 7.6% 10%;
+          margin-top: -3%;
+
+
+        }
+      }
+
+    }
+  }
+
+}

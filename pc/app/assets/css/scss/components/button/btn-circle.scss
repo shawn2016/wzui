@@ -1,0 +1,23 @@
+@import "../../base/base";
+/* Circle Buttons */
+
+
+.#{$cls-prefix}btn-circle {
+  border-radius: 20px !important;  
+}
+
+.#{$cls-prefix}btn-circle-right {
+  border-radius:  0 20px 20px 0 !important;
+}
+
+.#{$cls-prefix}btn-circle-left {
+  border-radius: 20px 0 0 20px !important;
+}
+
+.#{$cls-prefix}btn-circle-bottom {
+  border-radius:  0 0 20px 20px !important;
+}
+
+.#{$cls-prefix}btn-circle-top {
+  border-radius: 20px 20px 0 0 !important;
+}

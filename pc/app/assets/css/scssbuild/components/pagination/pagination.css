@@ -1,0 +1,78 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-pagination {
+  display: inline-block; }
+  .rob-pagination > li {
+    margin-left: 0;
+    float: left;
+    line-height: 0px;
+    margin-bottom: 10px;
+    display: inline; }
+    .rob-pagination > li.rob-pagination-dot {
+      margin-left: -15px; }
+      .rob-pagination > li.rob-pagination-dot span {
+        border: none; }
+      .rob-pagination > li.rob-pagination-dot:hover {
+        background-color: transparent; }
+    .rob-pagination > li a {
+      border: 1px solid #ededed;
+      margin: 0 15px;
+      color: #8e8e8e;
+      /* @include border-radius(4px);*/
+      position: relative;
+      float: left;
+      padding: 6px 10px;
+      line-height: 1.428571429;
+      text-decoration: none;
+      /*  background-color: $pagination-bg;*/
+      margin-left: -1px; }
+    .rob-pagination > li:first-child > a,
+    .rob-pagination > li:first-child > span {
+      margin-left: 0;
+      /* @include border-left-radius($border-radius-base);*/ }
+    .rob-pagination > li:last-child > a,
+    .rob-pagination > li:last-child > span {
+      /* @include border-right-radius($border-radius-base);*/ }
+  .rob-pagination > li > a:hover,
+  .rob-pagination > li > span:hover {
+    color: #fff;
+    background: #cc1612;
+    border-color: #cc1612;
+    transition: all .3s; }
+  .rob-pagination > .active > a, .rob-pagination > .active > a:hover,
+  .rob-pagination > .active > span,
+  .rob-pagination > .active > span:hover {
+    color: #fff;
+    background: #cc1612;
+    border-color: #cc1612;
+    transition: all .3s; }
+  .rob-pagination > .disabled > span,
+  .rob-pagination > .disabled > span:hover,
+  .rob-pagination > .disabled > span:focus,
+  .rob-pagination > .disabled > a,
+  .rob-pagination > .disabled > a:hover,
+  .rob-pagination > .disabled > a:focus {
+    color: #ffffff;
+    background-color: #d8d8d8;
+    border-color: #ddd;
+    cursor: not-allowed; }
+
+@media only screen and (max-width: 768px) {
+  .rob-pagination > li a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    margin-left: -1px; }
+  .rob-pagination > li > span {
+    padding: 5px 10px; }
+  .rob-pagination > li input {
+    padding: 2px 4px; } }

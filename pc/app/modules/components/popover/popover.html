@@ -1,0 +1,249 @@
+<article class="markdown">
+    <h1>popover 弹出框</h1>
+    <section class="markdown">
+        <p>
+            popover 弹出框类似tooltip效果
+        </p>
+    </section>
+    <section class="markdown">
+        <h2 id="实例"><span>基本实例</span><a href="#实例" class="anchor">#</a></h2>
+    </section>
+    
+
+    <div class="rob-col-lg-24">
+        <div class="code-box">
+            <section class="code-box-demo">
+
+               <div class="container" style="padding: 100px 50px 10px;" >
+                    <h3>点击显示</h3>
+                    <button type="button" class="rob-btn rob-btn-default" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="left"
+                            data-content="左侧的 Popover 中的一些内容">
+                        左侧的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-success" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="top"
+                            data-content="顶部的 Popover 中的一些内容">
+                        顶部的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-success" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="bottom"
+                            data-content="底部的 Popover 中的一些内容">
+                        底部的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-warning" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="right"
+                            data-content="右侧的 Popover 中的一些内容">
+                        右侧的 Popover
+                    </button>
+                    <button id="custom" class="rob-btn rob-btn-default" data-toggle="popover" data-html="true" data-placement="bottom" data-content='
+                    <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-striped">
+                        <thead>
+                            <tr>
+                                <th> 序号</th>
+                                <th> 姓名</th>
+                                <th> 所属企业</th>
+                                <th> 产品类型</th>
+                                <th> 申请时间</th>
+                                <th> 申请人</th>
+                                <th> 操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                            <tr>
+                                <td> 2</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                            <tr>
+                                <td> 3</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>'>展示表格</button>
+                </div>
+
+                 <div class="container" style="padding: 100px 50px 10px;" >
+                    <h3>悬浮显示</h3>
+                    <button type="button" class="rob-btn rob-btn-default"   data-trigger="hover" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="left"
+                            data-content="左侧的 Popover 中的一些内容">
+                        悬浮左侧的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-success"   data-trigger="hover" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="top"
+                            data-content="顶部的 Popover 中的一些内容">
+                        悬浮顶部的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-success"   data-trigger="hover" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="bottom"
+                            data-content="底部的 Popover 中的一些内容">
+                        悬浮底部的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-warning"   data-trigger="hover" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="right"
+                            data-content="右侧的 Popover 中的一些内容">
+                        悬浮右侧的 Popover
+                    </button>
+                    <button id="custom"   data-trigger="hover" class="rob-btn rob-btn-default" data-toggle="popover" data-html="true" data-placement="bottom" data-content='
+                    <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-striped">
+                        <thead>
+                            <tr>
+                                <th> 序号</th>
+                                <th> 姓名</th>
+                                <th> 所属企业</th>
+                                <th> 产品类型</th>
+                                <th> 申请时间</th>
+                                <th> 申请人</th>
+                                <th> 操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                            <tr>
+                                <td> 2</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                            <tr>
+                                <td> 3</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>'>悬浮展示表格</button>
+                </div>
+
+                <div class="container" style="padding: 100px 50px 10px;" >
+                    <h3>focus显示</h3>    
+                    <button type="button" class="rob-btn rob-btn-default"   data-trigger="focus" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="left"
+                            data-content="左侧的 Popover 中的一些内容">
+                        focus左侧的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-success"   data-trigger="focus" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="top"
+                            data-content="顶部的 Popover 中的一些内容">
+                        focus顶部的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-success"   data-trigger="focus" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="bottom"
+                            data-content="底部的 Popover 中的一些内容">
+                        focus底部的 Popover
+                    </button>
+                    <button type="button" class="rob-btn rob-btn-warning"   data-trigger="focus" title="Popover title"
+                            data-container="body" data-toggle="popover" data-placement="right"
+                            data-content="右侧的 Popover 中的一些内容">
+                        focus右侧的 Popover
+                    </button>
+                    <button id="custom"   data-trigger="focus"  class="rob-btn rob-btn-default" data-toggle="popover" data-html="true" data-placement="bottom" data-content='
+                    <div class="rob-table-responsive">
+                    <table class="rob-table rob-table-striped">
+                        <thead>
+                            <tr>
+                                <th> 序号</th>
+                                <th> 姓名</th>
+                                <th> 所属企业</th>
+                                <th> 产品类型</th>
+                                <th> 申请时间</th>
+                                <th> 申请人</th>
+                                <th> 操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                            <tr>
+                                <td> 2</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                            <tr>
+                                <td> 3</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td> Table cell</td>
+                                <td><i class="rob-icon-home"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>'>focus展示表格</button>
+                </div>
+
+            </section>
+            <section class="code-box-meta markdown">
+                <div class="code-box-title">
+                    <a href="">
+                        popover 弹出框
+                    </a>
+                </div>
+                <!-- <p>
+                    通过为按钮（Internet Explorer 9 及更低版本的浏览器将会把按钮中的文本绘制为灰色而且会有阴影）或a标签的属性设置 disabled 属性或为a标签设置类名就可以呈现出无法点击的效果。
+                </p> -->
+                
+                <i class="rob-icon rob-icon-home code-show" ng-click="showCode('rob-popover')"></i>
+
+            </section>
+            <section class="code-box-content" id="rob-popover">
+                    <pre>
+<code class="language-markup">
+    &lt;
+</code>
+</pre>
+            </section>
+        </div>
+    </div>
+    </section>
+</article>
+

@@ -1,0 +1,57 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-warning.rob-btn-dashed {
+  color: #ff962f;
+  background-color: #FFF;
+  border-color: #ff962f;
+  border-style: dashed; }
+  .rob-btn-warning.rob-btn-dashed:focus, .rob-btn-warning.rob-btn-dashed.focus {
+    color: #ff962f;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: #f48b23;
+    border-color: #f48b23; }
+  .rob-btn-warning.rob-btn-dashed:hover {
+    color: #FFF;
+    background-color: #f48b23;
+    border-color: #f48b23; }
+  .rob-btn-warning.rob-btn-dashed:active, .rob-btn-warning.rob-btn-dashed.active,
+  .open > .rob-btn-warning.rob-btn-dashed.dropdown-toggle {
+    color: #ff962f;
+    background-color: #f48b23;
+    border-color: #f48b23; }
+    .rob-btn-warning.rob-btn-dashed:active:hover, .rob-btn-warning.rob-btn-dashed:active:focus, .rob-btn-warning.rob-btn-dashed:active.focus, .rob-btn-warning.rob-btn-dashed.active:hover, .rob-btn-warning.rob-btn-dashed.active:focus, .rob-btn-warning.rob-btn-dashed.active.focus,
+    .open > .rob-btn-warning.rob-btn-dashed.dropdown-toggle:hover,
+    .open > .rob-btn-warning.rob-btn-dashed.dropdown-toggle:focus,
+    .open > .rob-btn-warning.rob-btn-dashed.dropdown-toggle.focus {
+      color: #FFF;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: #f48b23;
+      border-color: #f48b23; }
+  .rob-btn-warning.rob-btn-dashed:active, .rob-btn-warning.rob-btn-dashed.active,
+  .open > .rob-btn-warning.rob-btn-dashed.dropdown-toggle {
+    background-image: none; }
+  .rob-btn-warning.rob-btn-dashed .badge {
+    color: #FFF;
+    background-color: #ff962f; }
+  .rob-btn-warning.rob-btn-dashed:focus, .rob-btn-warning.rob-btn-dashed.focus, .rob-btn-warning.rob-btn-dashed:active, .rob-btn-warning.rob-btn-dashed.active {
+    color: #FFF; }
+  .rob-btn-warning.rob-btn-dashed.disabled, .rob-btn-warning.rob-btn-dashed[disabled] {
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    color: #FFF; }
+    .rob-btn-warning.rob-btn-dashed.disabled:hover, .rob-btn-warning.rob-btn-dashed.disabled:focus, .rob-btn-warning.rob-btn-dashed[disabled]:hover, .rob-btn-warning.rob-btn-dashed[disabled]:focus {
+      border-color: #d8d8d8;
+      background-color: #d8d8d8;
+      color: #FFF; }

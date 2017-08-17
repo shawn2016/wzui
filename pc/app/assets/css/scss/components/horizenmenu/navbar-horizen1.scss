@@ -1,0 +1,239 @@
+@import "../../base/base";
+@media (min-width:769px) {
+  .#{$cls-prefix}navbar-horizen1 {
+    display: block;
+    background-color: $horizenmenuFTrob-navbar-horizen1FAmediaCUmin-widthWC769pxVFbackground-color;
+    height: auto;
+    clear: both;
+    .#{$cls-prefix}hormenu-ul1 {
+      clear: both;
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        clear: both;
+      }
+      &>.#{$cls-prefix}hormenu-li1 {
+        float: left;
+        position: relative;
+        font-size: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmin-widthWC769pxVFfont-size;
+        height: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmin-widthWC769pxVFheight;
+        line-height: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmin-widthWC769pxVFline-height;
+        color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmin-widthWC769pxVFcolor;
+        cursor: pointer; //z-index:9 !important;
+        &>span {
+          display: inline-block;
+          padding: 0 25px;
+        }
+        &:hover {
+          &>ul {
+            display: block;
+          }
+          &>span {
+            color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1WhoverCPCspanFAmediaCUmin-widthWC769pxVFcolor;
+            background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1WhoverCPCspanFAmediaCUmin-widthWC769pxVFbackground;
+          }
+        } // 二级菜单 正常的从右侧显示的
+        & .#{$cls-prefix}hormenu-ul2-basic {
+          z-index: 9999 !important;
+          background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicFAmediaCUmin-widthWC769pxVFbackground;
+          position: absolute;
+          left: 0;
+          top: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicFAmediaCUmin-widthWC769pxVFtop;
+          display: none;
+          &>li {
+            width: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliFAmediaCUmin-widthWC769pxVFwidth;
+            line-height: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliFAmediaCUmin-widthWC769pxVFline-height;
+            font-size: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliFAmediaCUmin-widthWC769pxVFfont-size;
+            color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliFAmediaCUmin-widthWC769pxVFcolor;
+            white-space: normal;
+            padding: 0 13px;
+            position: relative;
+            &:hover {
+              &>ul {
+                display: block;
+              }
+              color:$horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliWhoverFAmediaCUmin-widthWC769pxVFcolor;
+              background:$horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliWhoverFAmediaCUmin-widthWC769pxVFbackground;
+            } // 三级菜单
+            &>ul {
+              background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulFAmediaCUmin-widthWC769pxVFbackground;
+              color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulFAmediaCUmin-widthWC769pxVFcolor;
+              position: absolute;
+              left: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulFAmediaCUmin-widthWC769pxVFleft;
+              top: 0;
+              display: none;
+              font-size: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulFAmediaCUmin-widthWC769pxVFfont-size;
+              &>li {
+                width: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulCPCliFAmediaCUmin-widthWC769pxVFwidth;
+                line-height: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulCPCliFAmediaCUmin-widthWC769pxVFline-height;
+                color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulCPCliFAmediaCUmin-widthWC769pxVFcolor;
+                white-space: normal;
+                padding: 0 13px;
+                &:hover {
+                  color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulCPCliWhoverFAmediaCUmin-widthWC769pxVFcolor;
+                  background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-basicCPCliCPCulCPCliWhoverFAmediaCUmin-widthWC769pxVFbackground;
+                }
+              }
+            }
+          }
+        } // 二级菜单 一个大的DIV块里面是多列、
+        & .#{$cls-prefix}hormenu-ul2-DivList {
+          z-index: 9;
+          width: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListFAmediaCUmin-widthWC769pxVFwidth;
+          background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListFAmediaCUmin-widthWC769pxVFbackground;
+          position: absolute;
+          left: 0;
+          top: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListFAmediaCUmin-widthWC769pxVFtop;
+          display: none;
+          padding: 15px 5px 15px 5px;
+          color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListFAmediaCUmin-widthWC769pxVFcolor;
+          &>li {
+            width: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListCPCliFAmediaCUmin-widthWC769pxVFwidth;
+            float: left;
+            line-height: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListCPCliFAmediaCUmin-widthWC769pxVFline-height;
+            text-align: center;
+            padding: 0 !important;
+            border-radius: 5px;
+            &:hover {
+              color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListCPCliWhoverFAmediaCUmin-widthWC769pxVFcolor;
+              background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CTrob-hormenu-ul2-DivListCPCliWhoverFAmediaCUmin-widthWC769pxVFbackground;
+            }
+          }
+        } // 带icon 的菜单
+        // .#{$cls-prefix}hormenu-ul2-iconlist{  }
+      }
+    }
+    .#{$cls-prefix}hormenu-icon-right {
+      display: block;
+      float: right;
+      margin-top: 13px;
+      transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      color: #fff;
+    }
+    .#{$cls-prefix}hormenu-icon-left {
+      display: inline-block;
+      margin-right: 6px;
+      color: #fff;
+    }
+  }
+}
+
+
+@media (max-width:768px) {
+  .#{$cls-prefix}navbar-horizen1 {
+    background-color: $horizenmenuFTrob-navbar-horizen1FAmediaCUmax-widthWC768pxVFbackground-color;
+    display: block;
+    .#{$cls-prefix}hormenu-ul1 {
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        clear: both;
+      }
+      &>.#{$cls-prefix}hormenu-li1 {
+        border-top: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmax-widthWC768pxVFborder-top;
+        position: relative;
+        font-size: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmax-widthWC768pxVFfont-size;
+        line-height: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmax-widthWC768pxVFline-height;
+        color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1FAmediaCUmax-widthWC768pxVFcolor;
+        cursor: pointer; //z-index:9 !important;
+        &>span {
+          display: block;
+          padding: 0 40px;
+        }
+        &.active {
+          &>span {
+            color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTactiveCPCspanFAmediaCUmax-widthWC768pxVFcolor;
+            background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTactiveCPCspanFAmediaCUmax-widthWC768pxVFbackground;
+          }
+        }
+        &.open {
+          border-top: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1TopenFAmediaCUmax-widthWC768pxVFborder-topa;
+          &>span {
+            color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTopenCPCspanFAmediaCUmax-widthWC768pxVFcolor;
+            background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTopenCPCspanFAmediaCUmax-widthWC768pxVFbackground;
+          }
+        }
+        // 二级菜单 
+        &>ul {
+          display: none;
+          z-index: 9999 !important;
+          background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulFAmediaCUmax-widthWC768pxVFbackground;
+          &>li {
+            width: 100%;
+            line-height: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliFAmediaCUmax-widthWC768pxVFline-height;
+            color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliFAmediaCUmax-widthWC768pxVFcolor;
+            white-space: normal;
+            &>span {
+              display: block;
+              padding: 0 60px;
+            }
+            &.active>span {
+              color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTactiveCPCspanFAmediaCUmax-widthWC768pxVFcolor;
+              background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTactiveCPCspanFAmediaCUmax-widthWC768pxVFbackground;
+              &>.#{$cls-prefix}hormenu-icon-right {
+                transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+              }
+            }
+            &.open>span {
+              color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTopenCPCspanFAmediaCUmax-widthWC768pxVFcolor;
+              background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliTopenCPCspanFAmediaCUmax-widthWC768pxVFbackground;
+              &>.#{$cls-prefix}hormenu-icon-right {
+                transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+              }
+            }
+            // 三级菜单
+            &>ul {
+              display: none;
+              background: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliCPCulFAmediaCUmax-widthWC768pxVFbackground;
+              color: $horizenmenuFTrob-navbar-horizen1CTrob-hormenu-ul1CPCTrob-hormenu-li1CPCulCPCliCPCulFAmediaCUmax-widthWC768pxVFcolor;
+              &>li {
+                &>span {
+                  padding: 0 90px;
+                }
+                // width:100%;
+                // line-height: $hormenuP-height1;
+                // color: $hormenu3-fontcolor1;
+                // white-space: normal;
+                // &:hover,
+                // &.active {
+                //   color: $hormenuP-color2;
+                //   background: $hormenuP-bg4!important;
+                // }
+              }
+            }
+          }
+        }
+      }
+    }
+    .#{$cls-prefix}hormenu-icon-right {
+      display: block;
+      float: right;
+      margin-top: 13px;
+      margin-right: -30px;
+      transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      color: #337ab7;
+      margin-top: 20px;
+    }
+    .#{$cls-prefix}hormenu-icon-left {
+      display: inline-block;
+      margin-right: 6px;
+      color: #337ab7;
+    }
+  }
+}

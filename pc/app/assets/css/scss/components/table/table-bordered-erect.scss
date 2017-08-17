@@ -1,0 +1,21 @@
+@import "../../base/base";
+.#{$cls-prefix}table-bordered-erect {
+  border:  $tableFTrob-table-bordered-erectFborder;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-left: $tableFTrob-table-bordered-erectCPCtheadCPCtrCPCthBCTrob-table-bordered-erectCPCtheadCPCtrCPCtdBCTrob-table-bordered-erectCPCtbodyCPCtrCPCthBCTrob-table-bordered-erectCPCtbodyCPCtrCPCtdBCTrob-table-bordered-erectCPCtfootCPCtrCPCthBCTrob-table-bordered-erectCPCtfootCPCtrCPCtdFborder-left;
+        border-right:  $tableFTrob-table-bordered-erectCPCtheadCPCtrCPCthBCTrob-table-bordered-erectCPCtheadCPCtrCPCtdBCTrob-table-bordered-erectCPCtbodyCPCtrCPCthBCTrob-table-bordered-erectCPCtbodyCPCtrCPCtdBCTrob-table-bordered-erectCPCtfootCPCtrCPCthBCTrob-table-bordered-erectCPCtfootCPCtrCPCtdFborder-right;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 1px;
+    }
+  }
+}

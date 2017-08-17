@@ -1,0 +1,15 @@
+"cssCopy": [{
+    "type": "tooltip 文字提示",
+    "desc":"",
+    "id":"tooltip",
+    "components": [
+    {
+      "value": "tooltip/tooltip",
+      "isCheck": true,
+      "parentId": "tooltip1",
+      "arrayList": [],
+      "desc": "必要"
+    }
+    
+    ]
+  }]

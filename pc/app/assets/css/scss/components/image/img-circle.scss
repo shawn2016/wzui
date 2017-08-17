@@ -1,0 +1,5 @@
+@import "../../base/base";
+// Perfect circle
+.#{$cls-prefix}img-circle {
+  border-radius: 50%; // set radius in percents
+}

@@ -1,0 +1,10 @@
+@import "../../base/base";
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.#{$cls-prefix}table-striped {
+  > tbody > tr:nth-of-type(even) {
+    background-color: $tableFTrob-table-stripedCPCtbodyCPCtrWnth-of-typeUevenVFbackground-color;
+  }
+}

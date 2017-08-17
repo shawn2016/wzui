@@ -1,0 +1,74 @@
+    <header id="header" class="">
+        <div class="rob-row rob-no-gutters">
+            <div class="rob-col-lg-4 rob-col-md-5 rob-col-sm-24 rob-col-xs-24">
+                <div id="logo">
+                    <a href="">
+                        <img src="https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg">
+                        <span>robotUI</span>
+                    </a>
+                    <i class="rob-icon-angle-down" ng-click="showMenu()"></i>
+                </div>
+
+            </div>
+            <div class="rob-col-lg-20 rob-col-xs-0 rob-col-sm-0 rob-col-md-19">
+                <ul class="header-menu " id="header-menu">
+                    <li ng-class="{true: 'active', false: ''}[state=='homePage']" ng-click="fristMenu('homePage')">
+                        <a href="">
+                            <span>
+                          首页
+                        </span>
+                        </a>
+                    </li>
+                    <li ng-class="{true: 'active', false: ''}[state=='start']" ng-click="fristMenu('start')">
+                        <a href="">
+                            <span>
+                          起步
+                        </span>
+                        </a>
+                    </li>
+                    <li ng-class="{true: 'active', false: ''}[state=='css']"  ng-click="fristMenu('css')">
+                        <a href="">
+                            <span>
+                          全局css样式
+                        </span>
+                        </a>
+                    </li>
+                    <li ng-class="{true: 'active', false: ''}[state=='components']"  ng-click="fristMenu('components')">
+                        <a href="">
+                            <span>
+                          组件
+                        </span>
+                        </a>
+                    </li>
+                    <li ng-class="{true: 'active', false: ''}[state=='javascript']"  ng-click="fristMenu('javascript')">
+                        <a href="">
+                            <span>
+                          JavaScript 插件
+                        </span>
+                        </a>
+                    </li>
+                     <li ng-class="{true: 'active', false: ''}[state=='customize']" ng-click="fristMenu('customize')">
+                        <a href="">
+                            <span>
+                          定制
+                        </span>
+                        </a>
+                    </li>
+                      <li >
+                        <a target="_blank" href="../../modules/layoutit/layoutit/index.html">
+                            <span>
+                          可视化布局
+                        </span>
+                        </a>
+                    </li>
+                    <li ng-class="{true: 'active', false: ''}[state=='website']"  ng-click="fristMenu('website')">
+                        <a href="">
+                            <span>
+                          网站实例
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>

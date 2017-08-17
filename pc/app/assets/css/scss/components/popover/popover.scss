@@ -1,0 +1,146 @@
+
+
+
+
+@import "../../base/base";
+//== Popovers
+//
+//##
+
+
+
+
+//
+// Popovers
+// --------------------------------------------------
+
+
+.#{$cls-prefix}popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $popoverFTrob-popoverFz-index;
+  display: none;
+  max-width: $popoverFTrob-popoverFmax-width;
+  padding: 1px;
+  // Our parent element can be arbitrary since popovers are by default inserted as a sibling of their target element.
+  // So reset our font and text properties to avoid inheriting weird values.
+  //@include reset-text;
+  font-size: $popoverFTrob-popoverFfont-size;
+
+  background-color: $popoverFTrob-popoverFbackground-color;
+  background-clip: padding-box;
+  border: $popoverFTrob-popoverFborder;
+  border-radius: $popoverFTrob-popoverFborder-radius;
+  //@include box-shadow(0 5px 10px rgba(0,0,0,.2));
+
+  // Offset the popover to account for the popover arrow
+  &.top     { margin-top: $popoverFTrob-popoverTtopFmargin-top; }
+  &.right   { margin-left: $popoverFTrob-popoverTrightFmargin-left; }
+  &.bottom  { margin-top: $popoverFTrob-popoverTbottomFmargin-top; }
+  &.left    { margin-left: $popoverFTrob-popoverTleftFmargin-left; }
+}
+
+
+.#{$cls-prefix}popover-title {
+  margin: 0; // reset heading margin
+  padding: 8px 14px;
+  font-size: $popoverFTrob-popover-titleFfont-size;
+  background-color: $popoverFTrob-popover-titleFbackground-color;
+  border-bottom: $popoverFTrob-popover-titleFborder-bottom;
+  border-radius: ($popoverFTrob-popoverFborder-radius - 1) ($popoverFTrob-popoverFborder-radius - 1) 0 0;
+}
+
+.#{$cls-prefix}popover-content {
+  padding: 9px 14px;
+}
+
+// Arrows
+//
+// .arrow is outer, .arrow:after is inner
+
+.#{$cls-prefix}popover > .arrow {
+  &,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+}
+.#{$cls-prefix}popover > .arrow {
+  border-width: $popoverFTrob-popoverCPCTarrowFborder-width;
+}
+.#{$cls-prefix}popover > .arrow:after {
+  border-width: $popoverFTrob-popoverCPCTarrowWafterFborder-width;
+  content: "";
+}
+
+.#{$cls-prefix}popover {
+  &.top > .arrow {
+    left: 50%;
+    margin-left: -$popoverFTrob-popoverTtopCPCTarrowFmargin-left;
+    border-bottom-width: 0;
+    border-top-color: $popoverFTrob-popoverTtopCPCTarrowFborder-top-color; // IE8 fallback
+   
+    bottom: -$popoverFTrob-popoverTtopCPCTarrowFbottom;
+    &:after {
+      content: " ";
+      bottom: 1px;
+      margin-left: -$popoverFTrob-popoverTtopCPCTarrowWafterFmargin-left;
+      border-bottom-width: 0;
+      border-top-color: $popoverFTrob-popoverTtopCPCTarrowWafterFborder-top-color;
+    }
+  }
+
+
+  &.right > .arrow {
+    top: 50%;
+    left: -$popoverFTrob-popoverTrightCPCTarrowFleft;
+    margin-top: -$popoverFTrob-popoverTrightCPCTarrowFmargin-top;
+    border-left-width: 0;
+    border-right-color: $popoverFTrob-popoverTrightCPCTarrowFborder-right-color; // IE8 fallback
+    &:after {
+      content: " ";
+      left: 1px;
+      bottom: -$popoverFTrob-popoverTrightCPCTarrowWafterFbottom;
+      border-left-width: 0;
+      border-right-color: $popoverFTrob-popoverTrightCPCTarrowWafterFborder-right-color;
+    }
+  }
+
+
+  &.bottom > .arrow {
+    left: 50%;
+    margin-left: -$popoverFTrob-popoverTbottomCPCTarrowFmargin-left;
+    border-top-width: 0;
+    border-bottom-color: $popoverFTrob-popoverTbottomCPCTarrowFborder-bottom-color; // IE8 fallback
+    top: -$popoverFTrob-popoverTbottomCPCTarrowFtop;
+    &:after {
+      content: " ";
+      top: 1px;
+      margin-left: -$popoverFTrob-popoverTbottomCPCTarrowWafterFmargin-left;
+      border-top-width: 0;
+      border-bottom-color: $popoverFTrob-popoverTbottomCPCTarrowWafterFborder-bottom-color;
+    }
+  }
+
+
+
+  &.left > .arrow {
+    top: 50%;
+    right: -$popoverFTrob-popoverTleftCPCTarrowFright;
+    margin-top: -$popoverFTrob-popoverTleftCPCTarrowFmargin-top;
+    border-right-width: 0;
+    border-left-color: $popoverFTrob-popoverTleftCPCTarrowFborder-left-color; // IE8 fallback
+    &:after {
+      content: " ";
+      right: 1px;
+      border-right-width: 0;
+      border-left-color: $popoverFTrob-popoverTleftCPCTarrowWafterFborder-left-color;
+      bottom: -$popoverFTrob-popoverTleftCPCTarrowWafterFbottom;
+    }
+  }
+}

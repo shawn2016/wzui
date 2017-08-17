@@ -1,0 +1,5 @@
+@import "../../base/base";
+// Rounded corners
+.#{$cls-prefix}img-rounded {
+  border-radius: $imgFTrob-img-roundedFborder-radius;
+}

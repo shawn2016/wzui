@@ -1,0 +1,106 @@
+@import "../../base/base";
+.#{$cls-prefix}pagination {
+  display: inline-block;
+
+
+
+  > li {
+    margin-left: 0;
+    float: left;
+    line-height: 0px;
+    margin-bottom:10px;
+    display: inline; // Remove list-style and block-level defaults
+    &.rob-pagination-dot{
+      margin-left: -15px;
+      span{
+        border:none;
+      }
+      &:hover{
+        background-color: transparent;
+      }
+    }
+    a{
+      border: 1px solid #ededed;
+      margin: 0 15px;
+      color: #8e8e8e;
+      /* @include border-radius(4px);*/
+      position: relative;
+      float: left; // Collapse white-space
+      padding: $paginationFTrob-paginationCPCliCaFpadding;
+      line-height: 1.428571429;
+      text-decoration: none;
+
+      /*  background-color: $pagination-bg;*/
+
+      margin-left: -1px;
+    }
+
+    &:first-child {
+      > a,
+      > span {
+        margin-left: 0;
+        /* @include border-left-radius($border-radius-base);*/
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        /* @include border-right-radius($border-radius-base);*/
+      }
+    }
+
+  }
+
+  > li > a,
+  > li > span {
+    &:hover {
+      color: $paginationFTrob-paginationCPCliCPCaWhoverBCTrob-paginationCPCliCPCspanWhoverFcolor ;
+      background: $paginationFTrob-paginationCPCliCPCaWhoverBCTrob-paginationCPCliCPCspanWhoverFbackground;
+      border-color: $paginationFTrob-paginationCPCTactiveCPCaBCTrob-paginationCPCTactiveCPCaWhoverBCTrob-paginationCPCTactiveCPCspanBCTrob-paginationCPCTactiveCPCspanWhoverFborder-color;
+      transition: all .3s;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover {
+      color: #fff ;
+      background: $paginationFTrob-paginationCPCTactiveCPCaBCTrob-paginationCPCTactiveCPCaWhoverBCTrob-paginationCPCTactiveCPCspanBCTrob-paginationCPCTactiveCPCspanWhoverFbackground;
+      border-color: $paginationFTrob-paginationCPCTactiveCPCaBCTrob-paginationCPCTactiveCPCaWhoverBCTrob-paginationCPCTactiveCPCspanBCTrob-paginationCPCTactiveCPCspanWhoverFborder-color;
+      transition: all .3s;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: #ffffff;
+      background-color: #d8d8d8;
+      border-color: #ddd ;
+      cursor: not-allowed;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .#{$cls-prefix}pagination {
+    > li{
+      a{
+        margin:0 5px;
+        padding:5px 10px;
+        margin-left: -1px;
+      }
+      > span{
+        padding:5px 10px;
+      }
+      input{
+        padding:2px 4px;
+      }
+    }
+  }
+}

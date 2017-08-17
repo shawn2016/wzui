@@ -1,0 +1,115 @@
+@import "../../base/base";
+
+
+table {
+  background-color: $tableFrob-tableFbackground-color;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  border: $tableFtableFborder;
+  // min-width: 280px;
+}
+
+// caption {
+//   padding-top: $table-cell-padding;
+//   padding-bottom: $table-cell-padding;
+//   color: $table-text-muted;
+//   text-align: left;
+// }
+
+th {
+    color: $tableFthFcolor;
+}
+td {
+   color: $tableFtdFcolor;
+   cursor: pointer;
+}
+th,td {
+  text-align: center;
+  /* word-break: $table-td-word-break;
+  white-space: $table-td-white-space; */
+  font-weight: $tableFthBtdFfont-weight;
+  
+}
+thead {
+  background-color: $tableFtheadFbackground-color;
+ // @include table-thead($table-thead-startColor,$table-thead-endColor);
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#f3f7fc, endColorstr=#fafbfd,GradientType=1);
+ background-image: linear-gradient(to top, #f3f7fc 0%,#fafbfd 100%); 
+ background-image: -webkit-linear-gradient(bottom, #f3f7fc 0%,#fafbfd 100%); 
+}
+
+
+
+
+// Baseline styles
+
+.#{$cls-prefix}table {
+  width: 100%;
+  max-width: 100%;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $tableFTrob-tableCPCtheadCPCtrCPCthBCTrob-tableCPCtheadCPCtrCPCtdBCTrob-tableCPCtbodyCPCtrCPCthBCTrob-tableCPCtbodyCPCtrCPCtdBCTrob-tableCPCtfootCPCtrCPCthBCTrob-tableCPCtfootCPCtrCPCtdFpadding;
+        line-height: $tableFTrob-tableCPCtheadCPCtrCPCthBCTrob-tableCPCtheadCPCtrCPCtdBCTrob-tableCPCtbodyCPCtrCPCthBCTrob-tableCPCtbodyCPCtrCPCtdBCTrob-tableCPCtfootCPCtrCPCthBCTrob-tableCPCtfootCPCtrCPCtdFline-height;
+        vertical-align: middle;
+        //border-top: 1px solid $table-border-color;
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom:  $tableFTrob-tableCPCtheadCPCtrCPCthFborder-bottom;
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: $tableFTrob-tableCPCtbodyCXCtbodyFborder-top;
+  }
+
+  // Nesting
+  .#{$cls-prefix}table {
+    background-color: $tableFTrob-tableCTrob-tableFbackground-color;
+  }
+}
+
+
+/***
+Customized Bootstrap Tables
+***/
+
+.#{$cls-prefix}table {
+    td,
+    th {
+        font-size: $tableFTrob-tableCtdBCTrob-tableCthFfont-size;
+    }
+
+  &.#{$cls-prefix}table-bordered {
+        thead > tr > th {
+            border-bottom: 0;
+     }
+    }
+
+  td .#{$cls-prefix}img-responsive  {
+    width:100%;
+  }
+}
+
+
+
+

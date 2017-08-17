@@ -1,0 +1,10 @@
+@import "../../base/base";
+.#{$cls-prefix}img-darken {
+  &:hover { 
+    border-color: $imgFTrob-img-darkenWhoverFborder-color;
+    box-shadow: $imgFTrob-img-darkenWhoverFbox-shadow;
+    filter: $imgFTrob-img-darkenWhoverFfilter;
+    transition: all .3s;
+  }
+  
+}

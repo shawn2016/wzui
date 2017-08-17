@@ -1,0 +1,22 @@
+@import "../../../base/base";
+.#{$cls-prefix}btn-warning.#{$cls-prefix}btn-dashed {
+  @include button-variant($buttonFTrob-btn-warningTrob-btn-dashedFcolor,$buttonFTrob-btn-warningTrob-btn-dashedFbackground-color, $buttonFTrob-btn-warningTrob-btn-dashedFborder-color, $buttonFTrob-btn-warningTrob-btn-dashedWhoverFbackground-color,$buttonFTrob-btn-warningTrob-btn-dashedWhoverFborder-color,$buttonFTrob-btn-warningTrob-btn-dashedWhoverFcolor);
+ 		 &:focus,
+ 		  &.focus,
+    &:active,
+    &.active   {
+		    color: $buttonFTrob-btn-warningTrob-btn-dashedWfocusBCTrob-btn-warningTrob-btn-dashedTfocusBCTrob-btn-warningTrob-btn-dashedWactiveBCTrob-btn-warningTrob-btn-dashedTactiveFcolor;
+		  }
+		  border-style: dashed;
+		  &.disabled,
+      &[disabled] {
+    @include button-disabled-bd-bg($buttonFTrob-btn-warningTrob-btn-dashedTdisabledBCTrob-btn-warningTrob-btn-dashedLdisabledRFbackground-color,$buttonFTrob-btn-warningTrob-btn-dashedTdisabledBCTrob-btn-warningTrob-btn-dashedLdisabledRFborder-color,$buttonFTrob-btn-warningTrob-btn-dashedTdisabledBCTrob-btn-warningTrob-btn-dashedLdisabledRFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-warningTrob-btn-dashedTdisabledWhoverBCTrob-btn-warningTrob-btn-dashedTdisabledWfocusBCTrob-btn-warningTrob-btn-dashedLdisabledRWhoverBCTrob-btn-warningTrob-btn-dashedLdisabledRWfocusFbackground-color,$buttonFTrob-btn-warningTrob-btn-dashedTdisabledWhoverBCTrob-btn-warningTrob-btn-dashedTdisabledWfocusBCTrob-btn-warningTrob-btn-dashedLdisabledRWhoverBCTrob-btn-warningTrob-btn-dashedLdisabledRWfocusFborder-color,$buttonFTrob-btn-warningTrob-btn-dashedTdisabledWhoverBCTrob-btn-warningTrob-btn-dashedTdisabledWfocusBCTrob-btn-warningTrob-btn-dashedLdisabledRWhoverBCTrob-btn-warningTrob-btn-dashedLdisabledRWfocusFcolor);
+    }
+  }
+}
+
+
+

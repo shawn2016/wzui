@@ -1,0 +1,63 @@
+@import "../../base/base";
+
+//loading全屏背景颜色
+
+.#{$cls-prefix}loading-bg {
+  background: $loadingFTrob-loading-bgFbackground;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+//1-1
+.#{$cls-prefix}loading {
+  background-color: $loadingFTrob-loadingFbackground-color;
+  width: 35%;
+  min-width: 280px;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  z-index: 100;
+  border-radius: 4px;
+  //margin: 0 auto;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.#{$cls-prefix}loading-body {
+  @include clearfix;
+  text-align: center;
+  padding: 75px 0 70px;
+}
+
+.#{$cls-prefix}loading-icon {
+  display: inline-block;
+  display: none\9;
+  @include clearfix;
+  
+  .#{$cls-prefix}loading-item {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    float: left;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+
+
+
+
+
+.#{$cls-prefix}loading-label {
+  font-size:$loadingFTrob-loading-labelFfont-size;
+  color: $loadingFTrob-loading-labelFcolor;
+  margin-top: 10px;
+}
+
+
+
+
+

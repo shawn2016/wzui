@@ -1,0 +1,355 @@
+<div class="">
+            <div class="main-container">
+                <section class="customize-title">
+                    <h1 class="title">robotUI for you</h1>
+                    <p class="text-gradient">
+                        通过自定义 robotUI UI sass 变量和 jQuery 插件，定制一份属于你自己的 robotUI 版本吧。
+                    </p>
+                </section>
+                <section>
+                    <div class="rob-form-group rob-col-lg-24">
+                        <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24">
+                            <label for="inputEmail3" class="rob-input-label rob-input-require">变量列表：
+                            </label>
+                        </div>
+                        <div class="rob-col-lg-24 rob-col-md-24 rob-col-sm-24 rob-col-xs-24">
+                            <div class="rob-input-item">
+                                <textarea class="rob-input rob-input-textarea" ng-model="classList">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rob-form-group rob-col-lg-24">
+                        <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24">
+                            <label for="inputEmail3" class="rob-input-label rob-input-require">变量备注后：
+                            </label>
+                        </div>
+                        <div class="rob-col-lg-24 rob-col-md-24 rob-col-sm-24 rob-col-xs-24">
+                            <div class="rob-input-item">
+                                <div data-clipboard-text={{newClassList}} id="newClassList">{{newClassList}}
+                                    <button class="rob-btn rob-btn-danger rob-btn-dashed rob-btn-xs" style="margin:0" ng-click="copyVars2()">
+                                        复制
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rob-form-group rob-col-lg-24">
+                        <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24">
+                            <button class="rob-btn rob-btn-default rob-btn-block" ng-click="classListTo()">
+                                添加备注
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="customize-title">
+                    <h1 class="title" ng-click="showCode('varsPro')">
+                    变量生成器
+                     <i style="font-size:14px;" class="rob-icon-angle-down code-show"  ></i>
+                    </h1>
+                    <div class="bs-docs-section bs-customizer-import" id="varsPro">
+                        <p>
+                            scss变量也这么高逼格！！！
+                        </p>
+                        <div class="rob-form-group rob-col-lg-24">
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24 ">
+                                <label for="inputEmail3" class="rob-input-label">最小屏幕：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-16 rob-col-md-16 rob-col-sm-24 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input" ng-model="pcWidth" id="inputEmail3" placeholder="请输入最小屏幕,如@media (min-width: 769px)">
+                                </div>
+                            </div>
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24">
+                                (pc端为空)
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-24">
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24 ">
+                                <label for="inputEmail3" class="rob-input-label rob-input-require">dom层
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-16 rob-col-md-16 rob-col-sm-24 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input" ng-model="domTrans" id="inputEmail3" placeholder="请复制dom">
+                                </div>
+                            </div>
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24">
+                                <button class="rob-btn rob-btn-default rob-btn-block" ng-click="domTransFunc('dom')">
+                                    dom转变量
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-24">
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24 ">
+                                <label for="inputEmail3" class="rob-input-label rob-input-require">变量名：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-16 rob-col-md-16 rob-col-sm-24 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input" ng-model="varsTrans" id="inputEmail3" placeholder="请复制变量名">
+                                </div>
+                            </div>
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24">
+                                <button class="rob-btn rob-btn-default rob-btn-block" ng-click="domTransFunc('vars')">
+                                    变量转dom
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-24">
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24 ">
+                                <label for="inputEmail3" class="rob-input-label rob-input-require">组件名:
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-md-20 rob-col-sm-24 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input" ng-model="componentName" id="inputEmail3" placeholder="请输入组件名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-24">
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24 ">
+                                <label for="inputEmail3" class="rob-input-label rob-input-require">属性名：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-md-20 rob-col-sm-24 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <input type="text" class="rob-input" ng-model="propertyName" id="inputEmail3" placeholder="请输入属性名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-form-group rob-col-lg-24">
+                            <div class="rob-col-lg-4 rob-col-md-4 rob-col-sm-24 rob-col-xs-24 ">
+                                <label for="inputEmail3" class="rob-input-label">生成的变量：
+                                </label>
+                            </div>
+                            <div class="rob-col-lg-20 rob-col-md-20 rob-col-sm-24 rob-col-xs-24">
+                                <div class="rob-input-item">
+                                    <div data-clipboard-text={{varName}} id="varsNameId">{{varName}}
+                                        <button class="rob-btn rob-btn-danger rob-btn-dashed rob-btn-xs" style="margin:0" ng-click="copyVars()">
+                                            复制
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-row">
+                            <div class="rob-col-lg-24">
+                                <button class="rob-btn rob-btn-success rob-btn-block rob-btn-lg" ng-click="varsFunction()">
+                                    合并
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <div ui-view=""></div> -->
+                <section class="customize-title">
+                    <h1 class="title" ng-click="showCode('projectConfig')">
+                    导入配置
+                     <i style="font-size:14px;" class="rob-icon-angle-down code-show"  ></i>
+                    </h1>
+                    <div class="bs-docs-section bs-customizer-import" id="projectConfig">
+                        <p>
+                            每次定制下载文件中都会有一个config.json，你拖进来试试！😍😍👍
+                        </p>
+                        <div id="import-drop-target" class="bs-dropzone">
+                            <div class="import-header">
+                                <span class="rob-icon-download" aria-hidden="true"></span>
+                            </div>
+                            <p class="lead">有现成的配置？上传并导入你的 <code>config.json</code> 文件。</p>
+                            <p class="upload">将文件拖拽到这里或
+                                <label id="import-manual-trigger" class="btn-link">手动上传
+                                    <input type="file" id="import-file-select" class="hidden">
+                                </label>。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="customize-title">
+                    <h1 class="title" ng-click="showCode('project22')">
+                    可视化定制
+                     <i style="font-size:14px;" class="rob-icon-angle-down code-show"  ></i>
+                    </h1>
+                    <div id="project22">
+                        <p class="text-gradient">
+                            <div>
+                                所需sass文件不知道怎么勾选？快去可视化布局拖拽组件，实现所需sass文件快速定制吧！
+                            </div>
+                            <p>
+                                重新打开一个浏览器窗口，通过可视化布局拖拽组件后，点击快速定制按钮即可发现sass已经自动勾选上了！☺
+                            </p>
+                        </p>
+                        <button class="rob-btn rob-btn-default rob-btn-block rob-btn-lg" ng-click="fast()">快速定制</button>
+                    </div>
+                </section>
+                <section class="customize-title">
+                    <h1 class="title" ng-click="showCode('projectDesc')">
+                    项目说明
+                     <i style="font-size:14px;" class="rob-icon-angle-down code-show"  ></i>
+                    </h1>
+                    <div class="rob-row" id="projectDesc">
+                        <p>
+                            给你的项目添加项目配置说明吧,为下一次导入配置留下深刻印象！😂
+                        </p>
+                        <div class="rob-col-lg-12 text-right rob-form-group">
+                            <div class="rob-col-lg-4">
+                                <label class="rob-input-label rob-input-require">姓名：</label>
+                            </div>
+                            <div class="rob-col-lg-20">
+                                <input type="text" class="rob-input" name="" placeholder="请输入姓名" ng-model="configJson.author">
+                            </div>
+                        </div>
+                        <div class="rob-col-lg-12 text-right rob-form-group">
+                            <div class="rob-col-lg-4">
+                                <label class="rob-input-label rob-input-require">项目名：</label>
+                            </div>
+                            <div class="rob-col-lg-20">
+                                <input type="text" class="rob-input" name="" placeholder="请输入项目名" ng-model="configJson.projectName">
+                            </div>
+                        </div>
+                        <div class="rob-col-lg-12 text-right rob-form-group">
+                            <div class="rob-col-lg-4">
+                                <label class="rob-input-label rob-input-require">项目中文名：</label>
+                            </div>
+                            <div class="rob-col-lg-20">
+                                <input type="text" class="rob-input" name="" placeholder="请输入项目中文名" ng-model="configJson.project">
+                            </div>
+                        </div>
+                        <div class="rob-col-lg-12 text-right rob-form-group">
+                            <div class="rob-col-lg-4">
+                                <label class="rob-input-label rob-input-require">版本号：</label>
+                            </div>
+                            <div class="rob-col-lg-20">
+                                <input type="text" class="rob-input" name="" placeholder="请输入项目配置版本" ng-model="configJson.versions">
+                            </div>
+                        </div>
+                        <div class="rob-col-lg-24 text-right rob-form-group">
+                            <div class="rob-col-lg-2">
+                                <label class="rob-input-label rob-input-require">项目备注：</label>
+                            </div>
+                            <div class="rob-col-lg-22">
+                                <textarea type="text" class="rob-input" name="" placeholder="请添加项目备注" rows="6" ng-model="configJson.remark">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="customize-title">
+                    <h1 class="title">定制</h1>
+                    <p class="text-gradient">
+                        动动手，就能实现所需定制文件😇
+                    </p>
+                    <div class="rob-row">
+                        <div class="rob-col-lg-8" id="widgetsConfig">
+                            <h1>css 组件 
+                    <i style="font-size:14px;" ng-class="{true: 'i-down', false: 'i-down-2'}[hideAllCode]" class="rob-icon-angle-down code-show"  ng-click="showAll('css')" ></i>
+                    </h1>
+                            <div id="cssSass">
+                                <h1>
+                        
+                           <input ng-model="cssCopyState" ng-click="isAllCssCheck('cssCopy')" ng-checked="cssCopyState" type="checkbox" id="cssCopy" class="rob-checkbox-filled-in"  />
+                                        <label for="cssCopy" style="font-size: 20px;font-weight: 600">组件(全选/反选)
+                                        </label>
+                                         
+                        </h1>
+                                <div class="cssMenu" ng-repeat="items in configJson.cssCopy track by $index">
+                                    <input ng-model="items.isCheck" ng-click="isAllCheck(items.id,items.isCheck)" ng-checked={{items.isCheck}} type="checkbox" id="{{$index}}{{items.id}}" class="rob-checkbox-filled-in" />
+                                    <label for="{{$index}}{{items.id}}" style="font-size: 16px;font-weight: 600">{{items.type}}
+                                    </label>
+                                    <i ng-click="showCode(items.id)" style="font-size:14px;" class="rob-icon-angle-down code-show"></i>
+                                    <div class="cssZujian" id={{items.id}}>
+                                        <div class="cssMenu" ng-repeat="item1 in items.components track by $index">
+                                            <input type="checkbox" ng-model="item1.isCheck" ng-click="checkCssFun(item1.value)" ng-checked={{item1.isCheck}} class="rob-checkbox-filled-in" id="{{item1.value}}{{item1.parentId}}" />
+                                            <label for="{{item1.value}}{{item1.parentId}}">{{item1.value}}
+                                                <label class="customize-sublabel">{{item1.desc}}</label>
+                                            </label>
+                                            <div class="cssMenu" ng-repeat="item2 in item1.arrayList track by $index">
+                                                <input type="checkbox" ng-model="item2.isCheck" ng-click="checkCssFun(item2.value)" ng-checked={{item2.isCheck}} class="rob-checkbox-filled-in" id="{{item2.value}}{{item2.parentId}}" />
+                                                <label for="{{item2.value}}{{item2.parentId}}">{{item2.value}}
+                                                    <label class="customize-sublabel">{{item2.desc}}</label>
+                                                </label>
+                                                <div class="cssMenu" ng-repeat="item3 in item2.arrayList track by $index">
+                                                    <input type="checkbox" ng-model="item3.isCheck" ng-click="checkCssFun(item3.value)" ng-checked={{item3.isCheck}} class="rob-checkbox-filled-in" id="{{item3.value}}{{item3.parentId}}" />
+                                                    <label for="{{item3.value}}{{item3.parentId}}">{{item3.value}}
+                                                        <label class="customize-sublabel">{{item3.desc}}</label>
+                                                    </label>
+                                                    <div class="cssMenu" ng-repeat="item4 in item3.arrayList track by $index">
+                                                        <input type="checkbox" ng-model="item4.isCheck" ng-click="checkCssFun(item4.value)" ng-checked={{item4.isCheck}} class="rob-checkbox-filled-in" id="{{item4.value}}{{item4.parentId}}" />
+                                                        <label for="{{item4.value}}{{item4.parentId}}">{{item4.value}}
+                                                            <label class="customize-sublabel">{{item4.desc}}</label>
+                                                        </label>
+                                                        <div class="cssMenu" ng-repeat="item5 in item4.arrayList track by $index">
+                                                            <input type="checkbox" ng-model="item5.isCheck" ng-click="checkCssFun(item5.value)" ng-checked={{item5.isCheck}} class="rob-checkbox-filled-in" id="{{item5.value}}{{item5.parentId}}" />
+                                                            <label for="{{item5.value}}{{item5.parentId}}">{{item5.value}}
+                                                                <label class="customize-sublabel">{{item5.desc}}</label>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rob-col-lg-8">
+                            <h1>JavaScript 插件
+                            <i style="font-size:14px;" class="rob-icon-angle-down code-show"  ng-click="showCode('cssSass')" ></i></h1>
+                            <div class="div-item">
+                                <label class="am-checkbox-inline" for="animation.less">
+                                    <input type="checkbox" value="animation.less" id="animation.less"> animation.less
+                                </label>
+                                <span>CSS 动画
+                            <i style="font-size:14px;" class="rob-icon-angle-down code-show"  ng-click="showCode('cssSass')" ></i></span>
+                            </div>
+                        </div>
+                        <div class="rob-col-lg-8 " id="jsConfig">
+                            <h1>通用 CSS
+                        <i style="font-size:14px;" class="rob-icon-angle-down code-show"  ng-click="showCode('cssSass')" ></i>
+                        </h1>
+                        </div>
+                    </div>
+                </section>
+                <section class="customize-title">
+                    <div class="rob-row">
+                        <div class="rob-col-lg-24">
+                            <h1 class="title">全局变量设置</h1>
+                            <p class="text-gradient">
+                                通过 Sass 变量可以自定义颜色、尺寸等，最终将会反映到你所下载的 CSS 样式表文件中。
+                            </p>
+                            <div class="customize">
+                                <div class="clearfix rob-row" ng-repeat="items in configJson.varsCopy">
+                                    <h3 ng-click="showCode(items.id)">
+                      {{items.type}}
+                       <i  style="font-size:14px;" class="rob-icon-angle-down code-show" ></i>
+                </h3>
+                                    <div id={{items.id}} class="cssZujian">
+                                        <div class="rob-col-lg-8" ng-repeat="item in items.vars">
+                                            <label class="customize-label">{{$index+1}}.{{item.key}}</label>
+                                            <label class="customize-sublabel">{{item.desc}}</label>
+                                            <input type="text" class="rob-input" name="" ng-model="item.value">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <button class="rob-btn rob-btn-default rob-btn-block rob-btn-lg rob-btn-dashed" ng-click="startGo()"> <i class="rob-icon-download">
+            </i>开始构建
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rob-loading-bg " ng-show="loading4"></div>
+<div class="rob-loading " ng-show="loading4">
+    <div class="rob-loading-body">
+        <div class="rob-loading-img"></div>
+        <div class="rob-loading-ie-logo"></div>
+        <div class="rob-loading-label">
+            稍等,数据加载中...
+        </div>
+    </div>
+</div>

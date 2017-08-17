@@ -1,0 +1,64 @@
+"breadcrumb": [ {
+    "type": "breadcrumb 面包屑",
+    "desc":"",
+    "id":"breadcrumbVars",
+    "vars": [
+    {
+      "key": "$breadcrumb-font-size-base",
+      "value": "14px",
+      "desc": "面包屑初始字体大小"
+    }, {
+      "key": "$breadcrumb-line-height-base",
+      "value": "1.428571429",
+      "desc": "面包屑初始行高"
+    }, {
+      "key": "$breadcrumb-line-height-computed",
+      "value": "floor(($breadcrumb-font-size-base * $breadcrumb-line-height-base))",
+      "desc": "计算行高"
+    }, {
+      "key": "$breadcrumb-border-radius-base",
+      "value": "4px",
+      "desc": "面包屑初始边框圆角大小"
+    }, {
+      "key": "$breadcrumb-padding-vertical",
+      "value": "8px",
+      "desc": "面包屑初始边框垂直宽度"
+    }, {
+      "key": "$breadcrumb-padding-horizontal",
+      "value": "8px",
+      "desc": "面包屑初始边框水平宽度"
+    }, {
+      "key": "$breadcrumb-bg",
+      "value": "#fff",
+      "desc": "面包屑背景颜色"
+    }, {
+      "key": "$breadcrumb-color",
+      "value": "#ccc",
+      "desc": "面包屑字体颜色"
+    }, {
+      "key": "$breadcrumb-color",
+      "value": "#ccc",
+      "desc": "面包屑字体颜色"
+    }, {
+      "key": "$breadcrumb-active-color",
+      "value": "#393939",
+      "desc": "面包屑选中字体颜色"
+    }, {
+      "key": "$breadcrumb-separator",
+      "value": "'/'",
+      "desc": "定义面包屑分隔符*重要*"
+    }, {
+      "key": "$breadcrumb-a-color",
+      "value": "#8f8f8f",
+      "desc": "导航内a标签的字体颜色"
+    }, {
+      "key": "$btn-default-hover-bg",
+      "value": "#35baff",
+      "desc": "导航内a标签hover的字体颜色"
+    }, {
+      "key": "$breadcrumb-a-i-padding-right",
+      "value": "5px",
+      "desc": "导航内a标签内字体图标边距"
+    }
+    ]
+  }]

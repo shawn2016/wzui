@@ -1,0 +1,6 @@
+@import "../../base/base";
+//文本域
+textarea.#{$cls-prefix}input {
+  height: auto;
+  resize: none;
+}

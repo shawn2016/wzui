@@ -1,0 +1,65 @@
+@import "../../base/base";
+
+//
+// Alert-growl
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.#{$cls-prefix}alert-growl {
+  padding: $notificationFTrob-alert-growlFpadding;
+  border: 1px solid transparent;
+  border-radius: $notificationFTrob-alert-growlFborder-radius;
+  background-color: $notificationFTrob-alert-growlFbackground-color;
+
+}
+
+.#{$cls-prefix}alert-dismissable-growl, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.#{$cls-prefix}alert-dismissible-growl {
+
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: $notificationFTrob-alert-dismissable-growlCTcloseBCTrob-alert-dismissible-growlCTcloseFtop;
+    right: $notificationFTrob-alert-dismissable-growlCTcloseBCTrob-alert-dismissible-growlCTcloseFright;
+    background: $notificationFTrob-alert-dismissable-growlCTcloseBCTrob-alert-dismissible-growlCTcloseFbackground;
+    border: 0;
+    color: $notificationFTrob-alert-dismissable-growlCTcloseBCTrob-alert-dismissible-growlCTcloseFcolor;
+    &:focus,
+    &.focus {
+      outline: none;
+    }
+  }
+}
+
+.#{$cls-prefix}alert-content-growl {
+
+  //padding: pxToem(58px) 0;
+  color: $notificationFTrob-alert-content-growlFcolor;
+  font-size: $notificationFTrob-alert-content-growlFfont-size;
+
+  .#{$cls-prefix}alert-content-title {
+    font-size: $notificationFTrob-alert-content-growlCTrob-alert-content-titleFfont-size;
+    padding-bottom: $notificationFTrob-alert-content-growlCTrob-alert-content-titleFpadding-bottom;
+    font-weight: 500;
+    color: $notificationFTrob-alert-content-growlCTrob-alert-content-titleFcolor;
+  }
+
+  > .content-left {
+    display: inline-block;
+    span, i {
+      font-size: $notificationFTrob-alert-content-growlCPCTcontent-leftCspanBCTrob-alert-content-growlCPCTcontent-leftCiFfont-size;
+      margin-bottom: 0;
+      margin-right: $notificationFTrob-alert-content-growlCPCTcontent-leftCspanBCTrob-alert-content-growlCPCTcontent-leftCiFmargin-right;
+      vertical-align: middle;
+
+    }
+  }
+  > .content-right {
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+} 

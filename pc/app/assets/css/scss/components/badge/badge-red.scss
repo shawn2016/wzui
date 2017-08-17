@@ -1,0 +1,9 @@
+@import "../../base/base";
+.#{$cls-prefix}badge-red{
+
+  color: $badgeFTrob-badge-redFcolor;
+  padding: $badgeFTrob-badge-redFpadding;
+  border-radius: $badgeFTrob-badge-redFborder-radius;
+  margin-left: 8px;
+  background: $badgeFTrob-badge-redFbackground
+}

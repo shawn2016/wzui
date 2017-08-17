@@ -1,0 +1,152 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-steps > :last-child .rob-step-line {
+  display: none; }
+
+.rob-step {
+  position: relative;
+  vertical-align: top; }
+
+.rob-step:last-child .rob-step-main {
+  padding-right: 0; }
+
+.rob-step-line {
+  position: absolute;
+  border-color: inherit;
+  background-color: #fff; }
+
+.rob-step-line-inner {
+  display: block;
+  border-width: 0px;
+  border-style: solid;
+  border-color: inherit;
+  transition: all .15s;
+  width: 0;
+  height: 0; }
+
+.rob-step-icon {
+  display: block; }
+
+.rob-step-icon > * {
+  line-height: inherit; }
+
+.rob-step-head {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  text-align: center;
+  line-height: 40px;
+  font-size: 40px;
+  vertical-align: top;
+  transition: all .15s; }
+
+.rob-step-head.rob-is-finish {
+  color: #20a0ff;
+  border-color: #20a0ff; }
+
+.rob-step-head.rob-is-error {
+  color: #ff4949;
+  border-color: #ff4949; }
+
+.rob-step-head.rob-is-success {
+  color: #13ce66;
+  border-color: #13ce66; }
+
+.rob-step-head.rob-is-process,
+.rob-step-head.rob-is-wait {
+  color: #bfcbd9;
+  border-color: #bfcbd9; }
+
+.rob-step-head.rob-is-text {
+  font-size: 12px;
+  border-width: 1px;
+  border-style: solid; }
+
+.rob-step-head.rob-is-text.rob-is-finish {
+  color: #fff;
+  background-color: #20a0ff;
+  border-color: #20a0ff; }
+
+.rob-step-head.rob-is-text.rob-is-error {
+  color: #ff4949;
+  background-color: #fff;
+  border-color: #ff4949; }
+
+.rob-step-head.rob-is-text.rob-is-success {
+  color: #13ce66;
+  background-color: #fff;
+  border-color: #13ce66; }
+
+.rob-step-head.rob-is-text.rob-is-wait {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #fff; }
+
+.rob-step-head.rob-is-text.rob-is-process {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #fff; }
+
+.rob-step-main {
+  white-space: normal;
+  padding-right: 10px;
+  text-align: left; }
+
+.rob-step-title {
+  font-size: 14px;
+  line-height: 32px;
+  display: inline-block; }
+
+.rob-step-title.rob-is-finish {
+  color: #20a0ff; }
+
+.rob-step-title.rob-is-error {
+  color: #ff4949; }
+
+.rob-step-title.rob-is-success {
+  color: #13ce66; }
+
+.rob-step-title.rob-is-wait {
+  font-weight: 400;
+  color: #fff; }
+
+.rob-step-title.rob-is-process {
+  color: #fff; }
+
+.rob-step-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  width: 75px; }
+
+.rob-step-description.rob-is-finish {
+  color: #20a0ff; }
+
+.rob-step-description.rob-is-error {
+  color: #ff4949; }
+
+.rob-step-description.rob-is-success {
+  color: #13ce66; }
+
+.rob-step-description.rob-is-wait {
+  color: #97a8be; }
+
+.rob-step-description.rob-is-process {
+  color: #bfcbd9; }
+
+.rob-step-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden; }

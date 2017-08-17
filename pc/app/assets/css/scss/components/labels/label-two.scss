@@ -1,0 +1,31 @@
+@import "../../base/base";
+
+.#{$cls-prefix}label-two {
+  @include label-variant($labelFTrob-label-oneFbackground-color);
+  color:$labelFTrob-label-oneFcolor;
+  border: $labelFTrob-label-twoFborder ;
+  display: inline-block;
+  padding: $labelFTrob-label-twoFpadding;
+  font-size: $labelFTrob-label-twoFfont-size;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  font-family: YaHeiIKEA;
+
+  // [converter] extracted a& to a.label
+
+  // Empty labels collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+
+  // Quick fix for labels in buttons
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+}
+

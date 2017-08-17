@@ -1,0 +1,81 @@
+@import "../../base/base";
+
+
+
+
+
+
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  position: relative;
+  padding-left: $radioFLtypeDYradioYRWnotUWcheckedVCXClabelBCLtypeDYradioYRWcheckedCXClabelFpadding-left;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: $radioFLtypeDYradioYRWnotUWcheckedVCXClabelBCLtypeDYradioYRWcheckedCXClabelFfont-size;
+  @include transition(.28s ease);
+  @include user-select(none);
+}
+
+[type="radio"] + label:before,
+[type="radio"] + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: $radioFLtypeDYradioYRCXClabelWbeforeBCLtypeDYradioYRCXClabelWafterFwidth;
+  height: $radioFLtypeDYradioYRCXClabelWbeforeBCLtypeDYradioYRCXClabelWafterFheight;
+  z-index: 0;
+  @include transition(.28s ease);
+}
+
+[type="radio"]:not(:checked) + label:before {
+  border-radius: 50%;
+  border: $radioFLtypeDYradioYRWnotUWcheckedVCXClabelWbeforeFborder;
+}
+
+[type="radio"]:not(:checked) + label:after {
+  border-radius: 50%;
+  border: $radioFLtypeDYradioYRWnotUWcheckedVCXClabelWafterFborder;
+  z-index: -1;
+  @include scale(0);
+}
+
+[type="radio"]:checked + label:before {
+  border-radius: 50%;
+  border: $radioFLtypeDYradioYRWcheckedCXClabelWbeforeFborder;
+}
+
+[type="radio"]:checked + label:after {
+  border-radius: 50%;
+  border: $radioFLtypeDYradioYRWcheckedCXClabelWafterFborder;
+  background-color: $radioFLtypeDYradioYRWcheckedCXClabelWafterFbackground-color;
+  z-index: 0;
+  @include scale(1.02);
+}
+[type="radio"]:disabled:not(:checked) + label:before,
+[type="radio"]:disabled:checked + label:before {
+  background-color: transparent;
+  border-color: $radioFLtypeDYradioYRWdisabledWnotUWcheckedVCXClabelWbeforeBCLtypeDYradioYRWdisabledWcheckedCXClabelWbeforeFborder-color;
+  cursor: not-allowed;
+}
+[type="radio"]:disabled + label {
+  color: $radioFLtypeDYradioYRWdisabledCXClabelFcolor;
+  cursor: not-allowed;
+}
+
+[type="radio"]:disabled:not(:checked) + label:hover:before {
+  border-color:#cecece;
+}
+
+
+

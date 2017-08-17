@@ -1,0 +1,13 @@
+@import "../../base/base";
+.#{$cls-prefix}btn-danger {
+  @include button-variant($buttonFTrob-btn-dangerFcolor, $buttonFTrob-btn-dangerFbackground-color, $buttonFTrob-btn-dangerFborder-color, $buttonFTrob-btn-dangerWhoverFbackground-color,$buttonFTrob-btn-dangerWhoverFborder-color,$buttonFTrob-btn-dangerWhoverFcolor);
+
+  &.disabled,
+      &[disabled] {
+    @include button-disabled-bd-bg($buttonFTrob-btn-dangerTdisabledBCTrob-btn-dangerLdisabledRFbackground-color,$buttonFTrob-btn-dangerTdisabledBCTrob-btn-dangerLdisabledRFborder-color,$buttonFTrob-btn-dangerTdisabledBCTrob-btn-dangerLdisabledRFcolor);
+    &:hover,
+    &:focus {
+    @include button-disabled-bd-bg($buttonFTrob-btn-dangerTdisabledWhoverBCTrob-btn-dangerTdisabledWfocusBCTrob-btn-dangerLdisabledRWhoverBCTrob-btn-dangerLdisabledRWfocusFbackground-color,$buttonFTrob-btn-dangerTdisabledWhoverBCTrob-btn-dangerTdisabledWfocusBCTrob-btn-dangerLdisabledRWhoverBCTrob-btn-dangerLdisabledRWfocusFborder-color,$buttonFTrob-btn-dangerTdisabledWhoverBCTrob-btn-dangerTdisabledWfocusBCTrob-btn-dangerLdisabledRWhoverBCTrob-btn-dangerLdisabledRWfocusFcolor);
+    }
+  }
+}

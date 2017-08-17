@@ -1,0 +1,55 @@
+// Link buttons
+// -------------------------
+@import "../../base/base";
+// Make a button look and behave like a link
+.#{$cls-prefix}btn-link {
+  color: $buttonFTrob-btn-linkFcolor;
+  font-weight: normal;
+  border-radius: 0;
+  text-decoration: underline;
+  border: none;
+
+  &.disabled {
+    color: $buttonFTrob-btn-linkTdisabledFcolor;
+    background-color: transparent !important;
+    @include box-shadow(none);
+    &:hover,
+    &:focus {
+      color: #999999;
+      //text-decoration: none;
+    }
+  }
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+    &:hover,
+    &:focus,
+    &:active,
+    &.active
+   {
+    color: $buttonFTrob-btn-linkWhoverBCTrob-btn-linkWfocusBCTrob-btn-linkWactiveBCTrob-btn-linkTactiveFcolor;
+    text-decoration: $buttonFTrob-btn-linkWhoverBCTrob-btn-linkWfocusBCTrob-btn-linkWactiveBCTrob-btn-linkTactiveFtext-decoration;
+    background-color: transparent;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    color: $buttonFTrob-btn-linkLdisabledRBCfieldsetLdisabledRCTrob-btn-linkFcolor;
+    &:hover,
+    &:focus {
+      color: $buttonFTrob-btn-linkLdisabledRWhoverBCTrob-btn-linkLdisabledRWfocusBCfieldsetLdisabledRCTrob-btn-linkWhoverBCfieldsetLdisabledRCTrob-btn-linkWfocusFcolor;
+      //text-decoration: none;
+    }
+  }
+}

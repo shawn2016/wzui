@@ -1,0 +1,18 @@
+@import "../../base/base";
+.#{$cls-prefix}step.#{$cls-prefix}is-vertical .#{$cls-prefix}step-head,.#{$cls-prefix}step.#{$cls-prefix}is-vertical .#{$cls-prefix}step-main {
+    display: inline-block
+}
+.#{$cls-prefix}step.#{$cls-prefix}is-vertical .#{$cls-prefix}step-main {
+    padding-left: 10px
+}
+.#{$cls-prefix}step-line.#{$cls-prefix}is-vertical {
+    width: 2px;
+    box-sizing: border-box;
+    top: 32px;
+    bottom: 0;
+    left: 15px
+}
+.scroll{
+    width: 100%; overflow-x: auto;
+    overflow-y: hidden;
+}

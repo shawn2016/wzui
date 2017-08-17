@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+/*星星样式*/
+.star_score {
+  background: url(../images/stark2.png);
+  width: 160px;
+  height: 21px;
+  position: relative; }
+
+.star_score a {
+  height: 21px;
+  display: block;
+  text-indent: -999em;
+  position: absolute;
+  left: 0; }
+
+.star_score a:hover {
+  background: url(../images/stars2.png);
+  left: 0; }
+
+.star_score a.clibg {
+  background: url(../images/stars2.png);
+  left: 0; }
+
+#starttwo .star_score {
+  background: url(../images/starky.png); }
+
+#starttwo .star_score a:hover {
+  background: url(../images/starsy.png);
+  left: 0; }
+
+#starttwo .star_score a.clibg {
+  background: url(../images/starsy.png);
+  left: 0; }
+
+.show_number li {
+  width: 240px;
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 20px; }
+
+.atar_Show {
+  background: url(../images/stark2.png);
+  width: 160px;
+  height: 21px;
+  position: relative;
+  float: left; }
+
+.atar_Show p {
+  background: url(../images/stars2.png);
+  left: 0;
+  height: 21px;
+  width: 134px; }

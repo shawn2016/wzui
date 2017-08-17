@@ -1,0 +1,115 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-progress {
+  position: relative;
+  line-height: 1; }
+
+.rob-progress.is-exception .rob-progress-bar-inner {
+  background-color: #ff4949; }
+
+.rob-progress.is-exception .rob-progress-text {
+  color: #ff4949; }
+
+.rob-progress.is-success .rob-progress-bar-inner {
+  background-color: #13ce66; }
+
+.rob-progress.is-success .rob-progress-text {
+  color: #13ce66; }
+
+.rob-progress-text {
+  font-size: 14px;
+  color: #48576a;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  line-height: 1; }
+
+.rob-progress-text i {
+  vertical-align: middle;
+  display: block; }
+
+.rob-progress-circle {
+  display: inline-block; }
+
+.rob-progress-circle .rob-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.rob-progress-circle .rob-progress-text i {
+  vertical-align: middle;
+  display: inline-block; }
+
+.rob-progress-without-text .rob-progress-text {
+  display: none; }
+
+.rob-progress-without-text .rob-progress-bar {
+  padding-right: 0;
+  margin-right: 0;
+  display: block; }
+
+.rob-progress-text-inside .rob-progress-bar {
+  padding-right: 0;
+  margin-right: 0; }
+
+.rob-progress-bar {
+  padding-right: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -55px;
+  box-sizing: border-box; }
+
+.rob-progress-bar-outer {
+  border-radius: 100px;
+  height: 18px;
+  background-color: #e4e8f1;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle; }
+
+.rob-progress-bar-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+  background-color: #20a0ff;
+  text-align: right;
+  border-radius: 100px;
+  line-height: 1; }
+
+.rob-progress-bar-innerText {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 12px;
+  margin: 0 5px; }
+
+@-webkit-keyframes progress {
+  0% {
+    background-position: 0 0; }
+  to {
+    background-position: 32px 0; } }
+
+@keyframes progress {
+  0% {
+    background-position: 0 0; }
+  to {
+    background-position: 32px 0; } }

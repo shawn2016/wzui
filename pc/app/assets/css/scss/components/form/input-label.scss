@@ -1,0 +1,11 @@
+@import "../../base/base";
+.#{$cls-prefix}input-label {
+  width: 100%;
+  vertical-align: middle;
+  line-height: $inputFTrob-input-labelFline-height;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: $inputFTrob-input-labelFfont-size;
+}

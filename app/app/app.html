@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,target-densitydpi=device-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>主页</title>
+
+    <!-- build:css css/main.min.css -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/robotUI.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/main.css"> -->
+    
+
+  
+ 
+
+    <!-- endbuild -->
+    <!-- <script type="text/javascript" src="./lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./lib/angular-ui-route/angular-ui-router.min.js"></script>
+    <!-- build:js js/main.min.js -->
+    <!-- <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript"  src="./router.js"></script>
+    <script type="text/javascript" src="./modules/welcome/welcomeCtrl.js"></script> -->
+    <!-- endbuild -->
+</head>
+<body>
+<div class="page-wrapper">
+    <div ui-view="head"></div>
+    <div ui-view="view_centers" ></div>
+    <div ui-view="view_menu"></div>
+    <div ui-view="footer"></div>
+    </div>
+
+
+     <script data-main="main.js" src="lib/requirejs/require.js" id="main" data-baseurl="./"></script>
+   
+    <!-- data-baseurl是额外加入的属性，主要好处是可以轻松在html（0缓存）中对js的url进行修改。 -->
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-alert-dismissable .rob-alert-close,
+.rob-alert-dismissible .rob-alert-close {
+  position: absolute;
+  top: -0.75em;
+  right: -0.75em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.42857em;
+  color: #fff; }
+  .rob-alert-dismissable .rob-alert-close:hover,
+  .rob-alert-dismissible .rob-alert-close:hover {
+    background-color: #dc0000; }
+  .rob-alert-dismissable .rob-alert-close:focus,
+  .rob-alert-dismissible .rob-alert-close:focus {
+    outline: none; }
+  .rob-alert-dismissable .rob-alert-close span,
+  .rob-alert-dismissible .rob-alert-close span {
+    line-height: 1;
+    display: block;
+    cursor: pointer; }

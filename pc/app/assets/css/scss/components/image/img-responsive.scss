@@ -1,0 +1,5 @@
+@import "../../base/base";
+// Responsive images (ensure images don't scale beyond their parents)
+.#{$cls-prefix}img-responsive {
+  @include img-responsive;
+}

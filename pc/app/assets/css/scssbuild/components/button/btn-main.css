@@ -1,0 +1,58 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-btn-main, .rob-btn-main[disabled],
+fieldset[disabled] .rob-btn-main {
+  border-color: #d8d8d8;
+  background-color: #d8d8d8;
+  color: #fff; }
+  .rob-btn-main:hover, .rob-btn-main:focus, .rob-btn-main[disabled]:hover, .rob-btn-main[disabled]:focus,
+  fieldset[disabled] .rob-btn-main:hover,
+  fieldset[disabled] .rob-btn-main:focus {
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    color: #fff; }
+
+.rob-btn-main {
+  color: #393939;
+  background-color: #f8f8f8;
+  border-color: #dedede; }
+  .rob-btn-main:focus, .rob-btn-main.focus {
+    color: #393939;
+    /* background-color: darken($background, 10%);
+    border-color: darken($border, 25%); */
+    background-color: #dddddd;
+    border-color: #dedede; }
+  .rob-btn-main:hover {
+    color: #393939;
+    background-color: #dddddd;
+    border-color: #dedede; }
+  .rob-btn-main:active, .rob-btn-main.active,
+  .open > .rob-btn-main.dropdown-toggle {
+    color: #393939;
+    background-color: #dddddd;
+    border-color: #dedede; }
+    .rob-btn-main:active:hover, .rob-btn-main:active:focus, .rob-btn-main:active.focus, .rob-btn-main.active:hover, .rob-btn-main.active:focus, .rob-btn-main.active.focus,
+    .open > .rob-btn-main.dropdown-toggle:hover,
+    .open > .rob-btn-main.dropdown-toggle:focus,
+    .open > .rob-btn-main.dropdown-toggle.focus {
+      color: #393939;
+      /* background-color: darken($background, 17%);
+      border-color: darken($border, 25%); */
+      background-color: #dddddd;
+      border-color: #dedede; }
+  .rob-btn-main:active, .rob-btn-main.active,
+  .open > .rob-btn-main.dropdown-toggle {
+    background-image: none; }
+  .rob-btn-main .badge {
+    color: #f8f8f8;
+    background-color: #393939; }

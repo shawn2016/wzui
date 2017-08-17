@@ -1,0 +1,13 @@
+{
+    "type": "Rate 评分",
+    "desc": "",
+    "isCheck": true,
+    "id": "rate",
+    "components": [{
+      "value": "rate/rate",
+      "isCheck": true,
+      "parentId": "rate1",
+      "arrayList": [],
+      "desc": "评分"
+    }]
+  }

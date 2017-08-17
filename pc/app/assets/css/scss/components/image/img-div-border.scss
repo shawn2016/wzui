@@ -1,0 +1,13 @@
+@import "../../base/base";
+.#{$cls-prefix}img-div-border {
+  border: $imgFTrob-img-div-borderFborder;
+  display: inline-block;
+}
+
+.#{$cls-prefix}img-div-border-radius {
+  border-radius: $imgFTrob-img-div-border-radiusFborder-radius;
+  
+}
+.#{$cls-prefix}img-div-border-circle {
+  border-radius: 50%; 
+}

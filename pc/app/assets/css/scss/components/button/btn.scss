@@ -1,0 +1,131 @@
+//
+// Buttons
+// --------------------------------------------------
+@import "../../base/base";
+
+// Base styles
+// --------------------------------------------------
+//varliable
+
+
+.#{$cls-prefix}btn {
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  display: inline-block;
+  //width: $btn-base-width;
+  //height: $btn-base-height;
+  margin-bottom: 0; // For input.btn
+  font-weight: $buttonFTrob-btnFfont-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; 
+  border: 1px solid transparent;
+  white-space: nowrap;
+  @include button-size($buttonFTrob-btnFpadding, $buttonFTrob-btnFfont-size, $buttonFTrob-btnFline-height, $buttonFTrob-btnFborder-radius);
+  //line-height: $btn-icon-only-height - $btn-font-size-base/2;
+  @include user-select(none);
+
+  &,
+  &:active,
+  &.active {
+    outline:none;
+    &:focus,
+    &.focus {
+      @include tab-focus;
+      outline:none;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $buttonFTrob-btnWhoverBCTrob-btnWfocusBCTrob-btnTfocusFcolor;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: none;
+    background-image: none;
+    @include box-shadow(inset 0 0.03rem 0.05rem rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    //background-color: $btn-default-disabled-color;
+    //border: solid 1px $btn-default-disabled-border-color;
+    //@include opacity(.65);
+    @include box-shadow(none);
+  }
+
+  // [converter] extracted a& to a.btn
+}
+
+a.#{$cls-prefix}btn, button.#{$cls-prefix}btn {
+  //line-height: $btn-icon-only-height/$btn-font-size-base;
+  &.disabled,
+  fieldset[disabled] & {
+    border-color: #dedede;
+    background-color: #d8d8d8;
+    color: #fff;
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+    &:hover,
+    &:focus,
+    &.focus {
+    //color: $btn-default-color;
+    //text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .#{$cls-prefix}btn-group.#{$cls-prefix}btn-group-circle {
+    > .#{$cls-prefix}btn {
+        &:first-child {
+            border-radius: 25px 0 0 25px !important;
+        }
+
+        &:last-child {
+            border-radius: 0 25px 25px 0 !important;
+        }
+    }
+}
+
+.#{$cls-prefix}btn-group.#{$cls-prefix}btn-group-devided {
+    > .#{$cls-prefix}btn {
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.#{$cls-prefix}btn-group-vertical.#{$cls-prefix}btn-group-vertical-circle {
+    > .#{$cls-prefix}btn {
+        &:first-child {
+            border-radius: 25px 25px 0 0 !important;
+        }
+
+        &:last-child {
+            border-radius: 0 0 25px 25px !important;
+        }
+    }
+} */
+

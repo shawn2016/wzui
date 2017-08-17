@@ -1,0 +1,22 @@
+{
+    "type": "滚动条",
+    "desc": "",
+    "id": "scrollbarVars",
+    "vars": [{
+      "key": "$scrollbar-bg-color",
+      "value": "#aaa",
+      "desc": "滚动条颜色"
+    },{
+      "key": "$scrollbar-border-radius",
+      "value": "4px",
+      "desc": "滚动条圆角"
+    },{
+      "key": "$scrollbar-hover-bg-color",
+      "value": "#999",
+      "desc": "滚动条悬浮颜色"
+    },{
+      "key": "$scrollbar-in-color",
+      "value": "#eee",
+      "desc": "滚动条槽"
+    }]
+  }

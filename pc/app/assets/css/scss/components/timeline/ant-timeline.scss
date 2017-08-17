@@ -1,0 +1,147 @@
+@import "../../base/base";
+//时间轴 ul
+.#{$cls-prefix}ant-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+//时间轴 li
+.#{$cls-prefix}ant-timeline-item {
+  position: relative;
+  padding: $timelineFTrob-ant-timeline-itemFpadding;
+  list-style: none;
+  margin: 0;
+}
+
+//时间轴 中间线
+.#{$cls-prefix}ant-timeline-item-tail {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  height: 100%;
+  border-left: $timelineFTrob-ant-timeline-item-tailFborder-left;
+}
+
+//时间轴 末端线隐藏
+.#{$cls-prefix}ant-timeline-item-pending .#{$cls-prefix}ant-timeline-item-tail {
+  display: none
+}
+
+//时间轴 左面圈圈
+.#{$cls-prefix}ant-timeline-item-head {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 75px;
+  border: $timelineFTrob-ant-timeline-item-headFborder;
+}
+
+.#{$cls-prefix}ant-timeline-item-desc {
+  border: 1px solid #e0e5e8;
+  padding: 15px 25px 25px;
+  background-color: #f3f7fc;
+  &.right {
+    .arrow {
+      position: absolute;
+      display: block;
+      border-width: 10px;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      top: 37px;
+      left: 110px;
+      margin-top: -11px;
+      border-left-width: 0;
+      border-right-color: #e0e5e8;
+    }
+    .arrow::after {
+      position: absolute;
+      display: block;
+      width: 0;
+      border-width: 10px;
+      content: "";
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      content: " ";
+      left: 1px;
+      bottom: -10px;
+      border-left-width: 0;
+      border-right-color: #f3f7fc;
+    }
+  }
+}
+
+//时间轴 左面圈圈蓝色
+.#{$cls-prefix}ant-timeline-item-head-blue {
+  border: $timelineFTrob-ant-timeline-item-head-blueFborder;
+  color: #108ee9
+}
+
+//时间轴 左面圈圈红色
+.#{$cls-prefix}ant-timeline-item-head-red {
+  border-color: #f04134;
+  color: #f04134
+}
+
+//时间轴 左面圈圈绿色
+.#{$cls-prefix}ant-timeline-item-head-green {
+  border-color: #00a854;
+  color: #00a854
+}
+
+//时间轴 左面圈圈自定义
+
+/* .#{$cls-prefix}ant-timeline-item-head-custom {
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    left: -14px;
+    line-height: 1;
+    margin-top: 6px;
+    border: 0;
+    height: auto;
+    border-radius: 0;
+    padding: 3px 0;
+    font-size: 12px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+} */
+
+//时间轴 右面内容
+.#{$cls-prefix}ant-timeline-item-content {
+  padding: $timelineFTrob-ant-timeline-item-contentFpadding;
+  font-size: $timelineFTrob-ant-timeline-item-contentFfont-size;
+  position: relative;
+  top: -30px;
+}
+
+.#{$cls-prefix}ant-timeline-item-time {
+  position: absolute;
+  top: -3px;
+  font-size: 12px;
+  color: #393939;
+}
+
+//时间轴 最后一条内容的线
+.#{$cls-prefix}ant-timeline-item-last .#{$cls-prefix}ant-timeline-item-tail {
+  border-left: $timelineFTrob-ant-timeline-item-lastCTrob-ant-timeline-item-tailFborder-left;
+  display: none
+}
+
+//时间轴 最后一条内容
+.#{$cls-prefix}ant-timeline-item-last .#{$cls-prefix}ant-timeline-item-content {
+  min-height: 48px
+}
+
+//时间轴 若父元素有ant-timeline-pending 类 线显示
+.#{$cls-prefix}ant-timeline.#{$cls-prefix}ant-timeline-pending .#{$cls-prefix}ant-timeline-item-last .#{$cls-prefix}ant-timeline-item-tail {
+  display: block
+}

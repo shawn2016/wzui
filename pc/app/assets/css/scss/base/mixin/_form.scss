@@ -1,0 +1,50 @@
+@mixin form-control-focus($color: $inputFTrob-inputWfocusFborder-color) {
+  $color-rgba: rgba(red($color), green($color), blue($color), .6);
+  &:focus {
+    border-color: $inputFTrob-inputWfocusFborder-color;
+    outline: 0;
+    @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px $color-rgba);
+  }
+}
+//输入框icon
+@mixin input-has-icon-left($direction, $font-size, $color,$height) {
+
+  .#{$cls-prefix}input {
+    padding-#{$direction}: 35px;
+  }
+  position: relative;
+  .#{$cls-prefix}is-icon-#{$direction} {
+    display: block;
+    color: $color;
+    position: absolute;
+    z-index: 3;
+    #{$direction}: 0px;
+    top: $inputFTrob-has-icon-rightCTrob-is-icon-leftFtop;
+    padding: $inputFTrob-has-icon-leftCTrob-is-icon-leftFpadding;
+    font-size: $font-size;
+    height:$height;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+@mixin input-has-icon-right($direction, $font-size, $color,$height) {
+
+  .#{$cls-prefix}input {
+    padding-#{$direction}: 35px;
+  }
+  position: relative;
+  .#{$cls-prefix}is-icon-#{$direction} {
+    display: block;
+    color: $color;
+    position: absolute;
+    z-index: 3;
+    #{$direction}: 0px;
+    top: $inputFTrob-has-icon-rightCTrob-is-icon-rightFtop;
+    padding: $inputFTrob-has-icon-rightCTrob-is-icon-rightFpadding;
+    font-size: $font-size;
+    height:$height;
+    text-align: center;
+    cursor: pointer;
+  }
+}

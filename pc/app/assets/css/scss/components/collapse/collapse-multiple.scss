@@ -1,0 +1,52 @@
+@import "../../base/base";
+.#{$cls-prefix}collapse-multiple {
+  .panel-default{
+    margin-bottom: -1px;
+    >.panel-heading{
+      &:hover{
+        background: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingWhoverFbackground ;
+        border: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingWhoverFborder;
+
+      }
+      &:focus{
+        background: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingWfocusFbackground ;
+        border: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingWfocusFborder;
+
+      }
+      border: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingFborder;
+      background:  $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingFbackground;
+
+
+      .panel-title{
+        font-size: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingCTpanel-titleFfont-size;
+        .panel-title-a{
+          margin-left: 10px;
+          padding: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingCTpanel-titleCTpanel-title-aFpadding;
+          display: inline-block;
+          width: 100%;
+          color: $collapseFTrob-collapse-multipleCTpanel-defaultCPCTpanel-headingCTpanel-titleCTpanel-title-aFcolor;
+          i{
+            margin-right: 10px;
+          }
+        }
+      }
+
+    }
+  }
+  .panel-collapse{
+    .panel-body{
+      padding: $collapseFTrob-collapse-multipleCTpanel-collapseCTpanel-bodyFpadding;
+
+      line-height: $collapseFTrob-collapse-multipleCTpanel-collapseCTpanel-bodyFline-height;
+      font-size: $collapseFTrob-collapse-multipleCTpanel-collapseCTpanel-bodyFfont-size;
+      border: $collapseFTrob-collapse-multipleCTpanel-collapseCTpanel-bodyFborder;
+      border-top: $collapseFTrob-collapse-multipleCTpanel-collapseCTpanel-bodyFborder-top;
+    }
+  }
+  .collapse.in{
+    display: block;
+  }
+  .collapse{
+    display: none;
+  }
+}

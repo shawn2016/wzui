@@ -1,0 +1,32 @@
+@import "../../base/base";
+
+.#{$cls-prefix}label-three {
+  @include label-variant($labelFTrob-label-threeFbackground-color);
+  display: inline-block;
+  padding: $labelFTrob-label-threeFpadding;
+  font-size: $labelFTrob-label-threeFfont-size;
+  font-weight: bold;
+  line-height: 1;
+  color: $labelFTrob-label-threeFcolor;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  font-family: YaHeiIKEA;
+
+  // [converter] extracted a& to a.label
+
+  // Empty labels collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+
+  // Quick fix for labels in buttons
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+}
+
+
+

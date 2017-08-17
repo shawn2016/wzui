@@ -1,0 +1,7 @@
+@import "../../base/base";
+.#{$cls-prefix}label-hover-underline{
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

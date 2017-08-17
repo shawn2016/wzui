@@ -1,0 +1,151 @@
+@import "../../base/base";
+
+
+
+
+
+
+
+.#{$cls-prefix}pagination-simple {
+  display: inline-block;
+
+
+
+  > li {
+    margin-left: 0;
+    float: left;
+    line-height: 0;
+    display: inline; // Remove list-style and block-level defaults
+    font-size: 12px;
+    a{
+      //border: 1px solid $pagination-a-borderColor;
+      margin: 0 15px;
+      color: #8e8e8e;
+      /*   @include border-radius(4px);*/
+      position: relative;
+      float: left; // Collapse white-space
+      padding: $paginationFTrob-pagination-simpleCPCliCaFpadding;
+      line-height: 1.428571429;
+      text-decoration: none;
+
+      background-color: #ffffff;
+
+      margin-left: -1px;
+    }
+
+    &:first-child {
+      > a,
+      > span {
+        margin-left: 0;
+        color:  #cecece;
+        background: #ffffff;
+        border: none;
+        /*       @include border-left-radius($border-radius-base);*/
+      }
+
+    }
+    &:last-child {
+      > a,
+      > span {
+        background: #ffffff;
+        border: none;
+        /*     @include border-right-radius($border-radius-base);*/
+      }
+    }
+    /* input{
+       width: 35px;
+       border: 1px solid $pagination-a-borderColor;
+       padding: 2px 4px;
+       margin: 0 10px;
+       height: 31px;
+ /!*      border-radius: 4px;*!/
+     }*/
+
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $paginationFTrob-pagination-simpleCPCTactiveCPCaBCTrob-pagination-simpleCPCTactiveCPCaWhoverBCTrob-pagination-simpleCPCTactiveCPCaWfocusBCTrob-pagination-simpleCPCTactiveCPCspanBCTrob-pagination-simpleCPCTactiveCPCspanWhoverBCTrob-pagination-simpleCPCTactiveCPCspanWfocusFbackground;
+      border-color: $paginationFTrob-pagination-simpleCPCTactiveCPCaBCTrob-pagination-simpleCPCTactiveCPCaWhoverBCTrob-pagination-simpleCPCTactiveCPCaWfocusBCTrob-pagination-simpleCPCTactiveCPCspanBCTrob-pagination-simpleCPCTactiveCPCspanWhoverBCTrob-pagination-simpleCPCTactiveCPCspanWfocusFbackborder-color;
+      transition: all .3s;
+    }
+  }
+  li{
+
+
+    &:last-child,&:first-child {
+      > a {
+        &:hover,&:focus{
+
+          color:#8ac536 ;
+          background: #ffffff;
+          border: none;
+          @include border-right-radius(4px);
+        }
+      }
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $paginationFTrob-pagination-simpleCPCTactiveCPCaBCTrob-pagination-simpleCPCTactiveCPCaWhoverBCTrob-pagination-simpleCPCTactiveCPCaWfocusBCTrob-pagination-simpleCPCTactiveCPCspanBCTrob-pagination-simpleCPCTactiveCPCspanWhoverBCTrob-pagination-simpleCPCTactiveCPCspanWfocusFbackground;
+      border-color: $paginationFTrob-pagination-simpleCPCTactiveCPCaBCTrob-pagination-simpleCPCTactiveCPCaWhoverBCTrob-pagination-simpleCPCTactiveCPCaWfocusBCTrob-pagination-simpleCPCTactiveCPCspanBCTrob-pagination-simpleCPCTactiveCPCspanWhoverBCTrob-pagination-simpleCPCTactiveCPCspanWfocusFbackborder-color;
+    }
+  }
+
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: #cecece;
+      background-color: #ffffff;
+      border-color: #ddd;
+      cursor: not-allowed;
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .#{$cls-prefix}pagination-simple {
+    > li{
+      a{
+        margin:0 5px;
+        padding:5px 10px;margin-left: -1px;
+      }
+      > span{
+        padding:5px 10px;
+      }
+      input{
+        padding:2px 4px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

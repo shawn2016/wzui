@@ -1,0 +1,83 @@
+@import "../../base/base";
+.#{$cls-prefix}nav-tabs3 {
+  background-color: #eff1f6;
+  border: solid 1px #e5e6e9;
+  /* border-bottom: none;
+   background:  #ebecee;*/
+  padding:0;
+
+  > li {
+
+
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -1px;
+
+    // Actual tabs (as links)
+    > a {
+      padding: 11px 22px;
+      color:  #393939;
+      margin-right: 61px;
+
+      /* border: 1px solid transparent;*/
+
+      //border-radius: 4px 4px 0 0;
+      &:hover {
+        color:  #35baff;
+        background-color: #eff1f6;
+        //background:#91ce3b ;
+      }
+      //background: linear-gradient(to right, #ced1d7, #dadce1)
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $tabFTrob-nav-tabs3CPCliTactiveCPCaBCTrob-nav-tabs3CPCliTactiveCPCaWhoverBCTrob-nav-tabs3CPCliTactiveCPCaWfocusFbackground-color;
+        //margin-top: -10px;
+        color: $tabFTrob-nav-tabs3CPCliTactiveCPCaBCTrob-nav-tabs3CPCliTactiveCPCaWhoverBCTrob-nav-tabs3CPCliTactiveCPCaWfocusFcolor;
+        //background: #91ce3b;
+        /* border: 1px solid #91ce3b;*/
+        border-bottom: $tabFTrob-nav-tabs3CPCliTactiveCPCaBCTrob-nav-tabs3CPCliTactiveCPCaWhoverBCTrob-nav-tabs3CPCliTactiveCPCaWfocusFborder-bottom;
+        cursor: default;
+        /*  padding: 20px 79px;*/
+        //border-radius: 4px 4px 0 0;
+        text-align: center;
+      }
+    }
+
+  }
+
+  // pulling this in mainly for less shorthand
+  &.response{
+    > li {
+      text-align: center;
+      width: 8%;
+      min-width: 79px;
+      height: 10%;
+      margin-right: 2%;
+      > a{
+        padding: 10% 10%;
+        width: 100%;
+        text-align: center;
+        margin-right: 10%;
+      }
+      &.active > a {
+        &,
+        &:hover,
+        &:focus{
+          padding: 12% 10%;
+          margin-top: -4%;
+
+
+        }
+      }
+
+    }
+  }
+
+}
+
+

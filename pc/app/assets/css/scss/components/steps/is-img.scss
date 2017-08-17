@@ -1,0 +1,71 @@
+@import "../../base/base";
+//img
+.#{$cls-prefix}steps.#{$cls-prefix}is-horizontal.#{$cls-prefix}is-img {
+  width: -moz-calc(100% - 75px);
+  width: -webkit-calc(100% - 75px);
+  width: calc(100% - 75px);
+  & .rob-is-img {
+    float: left;
+    &+.rob-is-img {
+      // margin-left: -40px;
+    }
+    &+.rob-is-img:last-child {
+      width: 0;
+      // margin-left:0px;
+    }
+  }
+  //display: flex;
+  .#{$cls-prefix}step-title {
+    width: 75px;
+    text-align: center;
+  }
+  .#{$cls-prefix}step {
+    &:last-child {
+      .rob-step-main{
+        position: absolute;
+        right: -75px;
+        text-align: right;
+      }
+
+    }
+  }
+}
+
+.#{$cls-prefix}is-img {
+  .#{$cls-prefix}step-head {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+  }
+  .#{$cls-prefix}step-line.#{$cls-prefix}is-horizontal {
+    top: 38px;
+    left: 75px;
+  }
+  .#{$cls-prefix}step-line-desc {
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    top: -50px;
+  }
+  .#{$cls-prefix}is-finish .#{$cls-prefix}step-line-desc {
+    color: $stepsFTrob-is-imgCTrob-is-finishCTrob-step-line-descFcolor;
+  }
+  .#{$cls-prefix}is-error .#{$cls-prefix}step-line-desc {
+    color: $stepsFTrob-is-imgCTrob-is-errorCTrob-step-line-descFcolor;
+  }
+  .#{$cls-prefix}is-success .#{$cls-prefix}step-line-desc {
+    color: $stepsFTrob-is-imgCTrob-is-successCTrob-step-line-descFcolor;
+  }
+  .#{$cls-prefix}is-wait .#{$cls-prefix}step-line-desc {
+    color: $stepsFTrob-is-imgCTrob-is-waitCTrob-step-line-descFcolor;
+  }
+  .#{$cls-prefix}is-process .#{$cls-prefix}step-line-desc {
+    color: $stepsFTrob-is-imgCTrob-is-processCTrob-step-line-descFcolor;
+  }
+}
+
+.scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

@@ -1,0 +1,49 @@
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-nav-tabs1 {
+  border-bottom: none;
+  background: #fafbfd;
+  padding: 20px 0 20px 23px; }
+  .rob-nav-tabs1 > li {
+    float: left;
+    margin-bottom: -1px; }
+    .rob-nav-tabs1 > li > a {
+      padding: 18px 77px;
+      color: #73808a;
+      margin-right: 20px;
+      border: 1px solid #dedede;
+      border-radius: 0 0 0 0;
+      background-color: #fff; }
+      .rob-nav-tabs1 > li > a:hover {
+        color: #cc1612;
+        background: #fff;
+        border: 1px solid #cc1612; }
+    .rob-nav-tabs1 > li.active > a, .rob-nav-tabs1 > li.active > a:hover, .rob-nav-tabs1 > li.active > a:focus {
+      color: #cc1612;
+      background-color: #fff;
+      border: 1px solid #cc1612;
+      cursor: default; }
+  .rob-nav-tabs1.response > li {
+    text-align: center;
+    width: 7.6%;
+    min-width: 79px;
+    height: 10%;
+    font-size: 12px; }
+    .rob-nav-tabs1.response > li > a {
+      padding: 6px 10%; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }

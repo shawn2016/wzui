@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*=============normalize=======*/
+/*=============varibale=======*/
+/*=============mixins=======*/
+/* Cubic Bezier Transition */
+/*==============mixin=============*/
+/* @mixin table-thead($startColor,$endColor) {
+  
+background-image: linear-gradient(to top, $startColor 0%,$endColor 100%); 
+background-image: -webkit-linear-gradient(bottom, $startColor 0%,$endColor 100%); 
+  
+:root & {filter:none;}
+} */
+.rob-breadcrumb {
+  list-style: none; }
+  .rob-breadcrumb > li {
+    display: inline-block; }
+    .rob-breadcrumb > li + li:before {
+      content: "/ ";
+      color: #ccc;
+      vertical-align: middle; }
+    .rob-breadcrumb > li > a {
+      color: #7f7f7f; }
+      .rob-breadcrumb > li > a > i {
+        padding-right: 5px; }
+      .rob-breadcrumb > li > a:hover {
+        color: #dc0000; }
+  .rob-breadcrumb.rob-breadcrumb-pointed > li + li:before {
+    content: "> ";
+    color: #ccc;
+    vertical-align: baseline; }
+  .rob-breadcrumb > .active {
+    color: #393939; }
+    .rob-breadcrumb > .active > a {
+      color: #393939; }
+      .rob-breadcrumb > .active > a:hover {
+        color: #393939; }
